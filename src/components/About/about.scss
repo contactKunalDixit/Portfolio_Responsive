@@ -108,26 +108,25 @@
 
 @media screen and (max-width: 480px) {
 	.About {
-		// padding: 0px 10px 0 10px;
 		flex-direction: column;
 		height: 100vh;
-		padding-top: 15px;
 	}
 	.about-bground {
 		height: 100%;
 	}
 
 	.about-left {
-		height: 30vh;
+		height: 50vh;
+		width: 90vw;
 	}
 	.about-card {
-		height: 40vh;
+		height: 40%;
 		width: 100%;
 	}
 
 	.about-card.shadowBg {
 		position: absolute;
-		top: -10px;
+		top: 10px;
 		left: 30px;
 	}
 	.about-right {
@@ -167,3 +166,5 @@
 		font-size: 14px;
 	}
 }
+
+// ******Media Queries ******
