@@ -103,10 +103,8 @@
 
 //1 max-width:480
 @media screen and (max-width: 480px) {
-	html {
-		font-size: 14px;
-	}
 	.Intro {
+		font-size: 12px;
 		flex-direction: column-reverse;
 		.intro-left {
 			height: 100%;
@@ -124,12 +122,10 @@
 	}
 }
 
-//3 max-width:768
+//2 max-width:768
 @media screen and (max-width: 768px) and (min-width: 481px) {
-	html {
-		font-size: 16px;
-	}
 	.Intro {
+		font-size: 14px;
 		flex-direction: column-reverse;
 		.intro-left {
 			height: 100%;
@@ -148,15 +144,20 @@
 		.intro-right {
 			flex: 1.5;
 		}
+	}
+}
+
+//3
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.DownArrow {
+		display: none;
 	}
 }
 
 //4 max-width:1024px
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-	html {
-		font-size: 18px;
-	}
 	.Intro {
+		font-size: 17px;
 		.intro-left {
 			height: 100%;
 			flex: 2;
@@ -174,12 +175,10 @@
 	}
 }
 
-// max-width: 1200 n Potrait
+//5 max-width: 1200 n Potrait
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
-	html {
+	.Intro {
 		font-size: 18px;
-	}
-	.Intro {
 		.intro-left {
 			height: 100%;
 			flex: 1;
@@ -200,12 +199,10 @@
 	}
 }
 
-// // max-width: 1200 n MORE n Potrait
+//6 max-width: 1200 n MORE n Potrait
 @media screen and (min-width: 1201px) {
-	html {
-		font-size: 16px;
-	}
 	.Intro {
+		font-size: 22px;
 		.intro-left {
 			height: 100%;
 			flex: 1;
@@ -226,11 +223,12 @@
 	}
 }
 
+//7
 @media screen and (min-width: 1450px) {
 	html {
-		font-size: 30px;
 	}
 	.Intro {
+		font-size: 30px;
 		.intro-left {
 			height: 100%;
 			flex: 1;

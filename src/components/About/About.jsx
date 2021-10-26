@@ -47,7 +47,7 @@ const About = () => {
 				</p>
 
 				<p className='a-desc smScreen'>
-					i bring in 15+ years of experience with rich cross functional exposure
+					I bring in 15+ years of experience with rich cross functional exposure
 					to Customer Relationship Management, Project and process Management in
 					the SaaS, ITeS and hospitality sector.
 				</p>
