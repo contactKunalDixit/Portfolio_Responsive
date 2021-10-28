@@ -1,5 +1,148 @@
+// @import '../../global.scss';
 .testimonials {
-	width: 100vw;
-	height: 100vh;
-	background-color: antiquewhite;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	// @include mobile {
+	// 	justify-content: space-around;
+	// }
+
+	.contact-bg {
+		clip-path: polygon(69% 0, 100% 0, 100% 100%, 69% 100%);
+		background-color: #ffd6a5;
+		width: 100vw;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.testimonials-wrapper {
+		width: 90vw;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: space-evenly;
+		justify-content: space-evenly;
+		z-index: 1;
+		.testimonials-Title {
+			font-size: 3.5em;
+			font-weight: 400;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			// @include mobile {
+			// 	font-size: 20px;
+			// }
+		}
+		.testimonials-container {
+			width: 100%;
+			height: 80%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// @include mobile {
+			// 	flex-direction: column;
+			// 	height: 100%;
+			// }
+
+			.card {
+				width: 280px;
+				margin: 0 10px;
+				height: 70%;
+				border-radius: 10px;
+				box-shadow: 0px 0px 15px -8px black;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				padding: 20px;
+				transition: all 1s ease;
+
+				// @include mobile {
+				// 	height: 180px;
+				// 	margin: 10px 0;
+				// }
+
+				// &.featured {
+				// 	width: 300px;
+				// 	height: 70%;
+				// 	margin: 0 30px;
+
+				// 	// @include mobile {
+				// 	// 	width: 250px;
+				// 	// 	height: 180px;
+				// 	// 	margin: 1px;
+				// 	// }
+				// }
+
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				.top {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					img {
+						&.left,
+						&.right {
+							height: 25px;
+						}
+						&.user {
+							width: 60px;
+							height: 60px;
+							border-radius: 50%;
+							object-fit: cover;
+							margin: 0 30px;
+
+							// 	@include mobile {
+							// 		width: 40px;
+							// 		height: 40px;
+							// 	}
+							// }
+						}
+					}
+				}
+
+				.center {
+					padding: 10px;
+					border-radius: 10px;
+					background-color: rgb(235, 225, 227);
+
+					// @include mobile {
+					// 	font-size: 12px;
+					// 	padding: 5px;
+					// }
+				}
+
+				.bottom {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+
+					.bottom-userName {
+						font-weight: 400;
+						font-size: 16px;
+						margin-bottom: 5px;
+						// @include mobile {
+						// 	font-size: 14px;
+						// }
+					}
+					.bottom-userTitle {
+						font-weight: 400;
+						color: grey;
+						// @include mobile {
+						// 	font-size: 13px;
+					}
+				}
+			}
+		}
+	}
 }
