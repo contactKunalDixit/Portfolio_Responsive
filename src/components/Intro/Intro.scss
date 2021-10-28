@@ -167,6 +167,13 @@
 				text-align: center;
 				height: 70%;
 				justify-content: space-evenly;
+
+				.i-intro {
+					font-size: 2.3em;
+				}
+				.intro-desc {
+					font-size: 1.5em;
+				}
 			}
 		}
 		.intro-right {
@@ -202,7 +209,7 @@
 //6 max-width: 1200 n MORE n Potrait
 @media screen and (min-width: 1201px) {
 	.Intro {
-		font-size: 22px;
+		font-size: 18px;
 		.intro-left {
 			height: 100%;
 			flex: 1;
