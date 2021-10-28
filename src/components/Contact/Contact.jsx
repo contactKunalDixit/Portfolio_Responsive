@@ -109,7 +109,7 @@ const Contact = () => {
 								placeholder='Message'
 								name='message'
 								value={messageValue}
-								rows='4'
+								rows='3'
 								onChange={(e) => setMessageValue(e.target.value)}
 							></textarea>
 							<button>Submit</button>

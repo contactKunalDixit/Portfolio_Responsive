@@ -23,186 +23,580 @@
 		justify-content: center;
 		height: 100%;
 		width: 100%;
-	}
-	.c-Left {
-		// flex: 1;
-		width: 50%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		.c-title {
-			font-size: 3.75rem;
-			width: 80%;
-			font-weight: 500;
-		}
-		.c-title.smScreen {
-			display: none;
-		}
-
-		.c-info-item {
-			display: flex;
-			align-items: center;
-			margin: 3.125rem 0;
-			font-weight: 300;
-			width: 70%;
-			.c-icon {
-				width: 1.875rem;
-				height: 1.875rem;
-				margin-right: 1.25rem;
-			}
-		}
-	}
-	.c-Right {
-		// flex: 1;
-
-		width: 50%;
-		height: 100%;
-		display: flex;
-		// flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		.c-right-wrapper {
-			padding: 0.625rem;
-			width: 80%;
-			height: 80%;
+		.c-Left {
+			// flex: 1;
+			width: 50%;
+			height: 100%;
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			align-items: center;
-			justify-content: space-evenly;
-			.c-desc {
-				font-weight: 200;
+			.c-title {
+				font-size: 3.75rem;
+				width: 80%;
+				font-weight: 500;
 			}
-			.c-desc.SmScreen {
+			.c-title.smScreen {
 				display: none;
 			}
-			form {
-				margin-top: 1.25rem;
+			.c-info {
+				.c-info-item {
+					display: flex;
+					align-items: center;
+					margin: 3.125rem 0;
+					font-weight: 300;
+					width: 70%;
+					.c-icon {
+						width: 1.875rem;
+						height: 1.875rem;
+						margin-right: 1.25rem;
+					}
+				}
+			}
+		}
+		.c-Right {
+			// flex: 1;
+
+			width: 50%;
+			height: 100%;
+			display: flex;
+			// flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.c-right-wrapper {
+				padding: 0.625rem;
+				width: 80%;
+				height: 80%;
 				display: flex;
 				flex-direction: column;
-				align-items: flex-start;
-				justify-content: space-between;
-				width: 100%;
-				height: 60%;
-			}
-
-			input {
-				width: 50%;
-				height: 3.125rem;
-				border: none;
-				border-bottom: 1px solid black;
-				margin: 0.625rem 0px;
-				font-size: 0.875em;
-				padding-left: 0.625rem;
-			}
-
-			textarea {
-				width: 70%;
-				margin: 0/625rem 0;
-				font-size: 0.875em;
-				padding-left: 0.625rem;
-				border-bottom: 1px solid black;
-			}
-
-			button {
-				border: none;
-				padding: 0.938rem;
-				background-color: #59b256;
-				color: white;
-				font-weight: 500;
-				cursor: pointer;
-				margin-top: 20px;
+				align-items: center;
+				justify-content: space-evenly;
+				.c-desc {
+					font-weight: 400;
+				}
+				.c-desc.SmScreen {
+					display: none;
+				}
+				form {
+					margin-top: 1.25rem;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: space-between;
+					width: 100%;
+					height: 60%;
+					input {
+						width: 50%;
+						height: 3.125rem;
+						border: none;
+						border-bottom: 1px solid black;
+						margin: 0.625rem 0px;
+						font-size: 0.875em;
+						padding-left: 0.625rem;
+					}
+					textarea {
+						width: 70%;
+						margin: 0/625rem 0;
+						font-size: 0.875em;
+						padding-left: 0.625rem;
+						border-bottom: 1px solid black;
+					}
+					button {
+						border: none;
+						padding: 0.938rem;
+						background-color: #59b256;
+						color: white;
+						font-weight: 500;
+						cursor: pointer;
+						margin-top: 20px;
+					}
+				}
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
 	.Contact {
-	}
-	.contact-Wrapper {
-		flex-direction: column;
-		padding: 10px 50px;
+		font-size: 14px;
+
+		width: 100%;
 		height: 100%;
+		.contact-Wrapper {
+			width: 95%;
+			flex-direction: column;
+			// padding: 10px 50px;
+			height: 100%;
+			.c-Left {
+				height: 40%;
+				width: 100%;
+				overflow: auto;
+				.c-title {
+					font-size: 2.625em;
+					width: 100%;
+					font-weight: 400;
+					text-align: center;
+				}
+				.c-title.LgScreen {
+					display: none;
+				}
+				.c-title.smScreen {
+					display: block;
+				}
+				.c-info {
+					margin: 15px 0;
+					.c-info-item {
+						display: flex;
+						align-items: center;
+						margin: 10px 0;
+						font-weight: 400;
+						width: 100%;
+						font-size: 14px;
+					}
+				}
+			}
+			.c-Right {
+				height: 60%;
+				width: 100%;
+				// overflow: auto;
+				.c-right-wrapper {
+					padding: 0;
+					height: 100%;
+					width: 100%;
+					.c-desc.LgScreen {
+						display: none;
+						.Q-title {
+							display: block;
+							text-align: center;
+						}
+					}
+					.c-desc.SmScreen {
+						display: block;
+						margin-top: 15px;
+					}
+					form {
+						display: flex;
+						// flex-direction: column;
+						width: 100%;
+						align-items: center;
+						flex-wrap: wrap;
+						justify-content: center;
+						height: 100%;
+						overflow: auto;
+						margin-top: 0;
+						input {
+							width: 80%;
+							height: 20px;
+						}
+						textarea {
+							width: 80%;
+							margin: 10px 0px;
+							font-size: 14px;
+							padding-left: 10px;
+						}
+						button {
+							border: none;
+							padding: 8px;
+							background-color: #59b256;
+							color: white;
+							font-weight: 500;
+							cursor: pointer;
+							margin: 0 auto;
+							display: block;
+							border-radius: 10%;
+						}
+					}
+				}
+			}
+		}
 	}
-	.c-Left {
-		height: 40%;
-		width: 100%;
-		overflow: auto;
-	}
-	.c-title {
-		font-size: 42px;
-		width: 100%;
-		font-weight: 400;
-		text-align: center;
-	}
-	.c-title.LgScreen {
-		display: none;
-	}
-	.c-title.smScreen {
-		display: block;
-	}
-	.c-info {
-		margin: 15px 0;
-	}
-	.c-info-item {
-		display: flex;
-		align-items: center;
-		margin: 10px 0;
-		font-weight: 400;
-		width: 100%;
-		font-size: 14px;
-	}
-	.Q-title {
-		display: block;
-		text-align: center;
-	}
+}
 
-	.c-desc.LgScreen {
-		display: none;
-	}
-	.c-desc.SmScreen {
-		display: block;
-		text-align: center;
+@media screen and (min-width: 480px) {
+	.Contact {
 		font-size: 14px;
-	}
-	.c-Right {
-		height: 60%;
-		width: 100%;
-		// overflow: auto;
-	}
 
-	form {
-		display: flex;
-		// flex-direction: column;
 		width: 100%;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: center;
-		height: 80%;
-		overflow: auto;
-		margin-top: 15px;
+		height: 100%;
+		.contact-Wrapper {
+			width: 95%;
+			flex-direction: row;
+			// padding: 10px 50px;
+			height: 100%;
+			.c-Left {
+				height: 100%;
+				width: 50%;
+				overflow: auto;
+				.c-title {
+					font-size: 2.625em;
+					width: 100%;
+					font-weight: 400;
+					text-align: center;
+				}
+				.c-title.LgScreen {
+					display: none;
+				}
+				.c-title.smScreen {
+					display: block;
+				}
+				.c-info {
+					margin: 15px 0;
+					.c-info-item {
+						display: flex;
+						align-items: center;
+						margin: 10px 0;
+						font-weight: 400;
+						width: 100%;
+						font-size: 14px;
+					}
+				}
+			}
+			.c-Right {
+				height: 100%;
+				width: 50%;
+				// overflow: auto;
+				.c-right-wrapper {
+					padding: 0;
+					height: 100%;
+					width: 100%;
+					.c-desc.LgScreen {
+						display: none;
+						.Q-title {
+							display: block;
+							text-align: center;
+						}
+					}
+					.c-desc.SmScreen {
+						display: block;
+						margin-top: 15px;
+					}
+					form {
+						display: flex;
+						// flex-direction: column;
+						width: 100%;
+						align-items: center;
+						flex-wrap: wrap;
+						justify-content: center;
+						height: 100%;
+						overflow: auto;
+						margin-top: 0;
+						input {
+							width: 80%;
+							height: 20px;
+						}
+						textarea {
+							width: 80%;
+							margin: 10px 0px;
+							font-size: 14px;
+							padding-left: 10px;
+						}
+						button {
+							border: none;
+							padding: 8px;
+							background-color: #59b256;
+							color: white;
+							font-weight: 500;
+							cursor: pointer;
+							margin: 0 auto;
+							display: block;
+							border-radius: 10%;
+						}
+					}
+				}
+			}
+		}
 	}
-	input {
-		width: 80%;
-		height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.Contact {
+		font-size: 18px;
+		width: 100%;
+		height: 100%;
+		.contact-Wrapper {
+			width: 95%;
+			flex-direction: column;
+			// padding: 10px 50px;
+			height: 100%;
+			.c-Left {
+				height: 40%;
+				width: 100%;
+				overflow: auto;
+				justify-content: space-evenly;
+				.c-title {
+					font-size: 3em;
+					width: 100%;
+					font-weight: 400;
+					text-align: center;
+				}
+				.c-title.LgScreen {
+					display: none;
+				}
+				.c-title.smScreen {
+					display: block;
+				}
+				.c-info {
+					margin: 15px 0;
+					.c-info-item {
+						display: flex;
+						align-items: center;
+						margin: 10px 0;
+						font-weight: 400;
+						width: 100%;
+						font-size: 20px;
+					}
+				}
+			}
+			.c-Right {
+				height: 60%;
+				width: 100%;
+				// overflow: auto;
+				.c-right-wrapper {
+					padding: 0;
+					height: 100%;
+					width: 100%;
+					.c-desc.LgScreen {
+						display: none;
+						.Q-title {
+							display: block;
+							text-align: center;
+						}
+					}
+					.c-desc.SmScreen {
+						display: block;
+						font-size: 1.3em;
+					}
+					form {
+						display: flex;
+						flex-direction: column;
+						width: 90%;
+						align-items: center;
+						flex-wrap: wrap;
+						justify-content: space-evenly;
+						height: 90%;
+						overflow: auto;
+						margin-top: 0;
+						input {
+							width: 80%;
+							height: 40px;
+						}
+						textarea {
+							width: 80%;
+							margin: 10px 0px;
+							font-size: 14px;
+							padding-left: 10px;
+						}
+						button {
+							font-size: 1.2em;
+							border: none;
+							padding: 8px;
+							background-color: #59b256;
+							color: white;
+							font-weight: 500;
+							cursor: pointer;
+							margin: 0 auto;
+							display: block;
+							border-radius: 10%;
+						}
+					}
+				}
+			}
+		}
 	}
-	textarea {
-		width: 80%;
-		margin: 10px 0px;
-		font-size: 14px;
-		padding-left: 10px;
+}
+
+@media screen and (min-width: 992px) {
+	.Contact {
+		font-size: 20px;
+		width: 100%;
+		height: 100%;
+		.contact-Wrapper {
+			width: 95%;
+			flex-direction: column;
+			// padding: 10px 50px;
+			height: 100%;
+			.c-Left {
+				height: 40%;
+				width: 100%;
+				overflow: auto;
+				justify-content: space-evenly;
+				.c-title {
+					font-size: 3em;
+					width: 100%;
+					font-weight: 400;
+					text-align: center;
+				}
+				.c-title.LgScreen {
+					display: none;
+				}
+				.c-title.smScreen {
+					display: block;
+				}
+				.c-info {
+					margin: 15px 0;
+					.c-info-item {
+						display: flex;
+						align-items: center;
+						margin: 10px 0;
+						font-weight: 400;
+						width: 100%;
+						font-size: 20px;
+					}
+				}
+			}
+			.c-Right {
+				height: 60%;
+				width: 100%;
+				// overflow: auto;
+				.c-right-wrapper {
+					padding: 0;
+					height: 100%;
+					width: 100%;
+					.c-desc.LgScreen {
+						display: none;
+						.Q-title {
+							display: block;
+							text-align: center;
+						}
+					}
+					.c-desc.SmScreen {
+						display: block;
+						font-size: 1.1em;
+					}
+					form {
+						display: flex;
+						flex-direction: column;
+						width: 90%;
+						align-items: center;
+						flex-wrap: wrap;
+						justify-content: space-around;
+						height: 100%;
+						overflow: auto;
+						margin-top: 0;
+						input {
+							width: 80%;
+							height: 30px;
+						}
+						textarea {
+							width: 80%;
+							margin: 10px 0px;
+							font-size: 14px;
+							padding-left: 10px;
+						}
+						button {
+							font-size: 1.1em;
+							border: none;
+							padding: 8px;
+							background-color: #59b256;
+							color: white;
+							font-weight: 500;
+							cursor: pointer;
+							margin: 0 auto;
+							display: block;
+							border-radius: 10%;
+						}
+					}
+				}
+			}
+		}
 	}
-	button {
-		border: none;
-		padding: 8px;
-		background-color: #59b256;
-		color: white;
-		font-weight: 500;
-		cursor: pointer;
-		margin: 0 auto;
-		display: block;
-		border-radius: 10%;
+}
+
+@media screen and (min-width: 1200px) {
+	.Contact {
+		font-size: 20px;
+		width: 100%;
+		height: 100%;
+		.contact-Wrapper {
+			width: 95%;
+			flex-direction: row;
+			// padding: 10px 50px;
+			height: 100%;
+			.c-Left {
+				height: 70%;
+				width: 50%;
+				overflow: auto;
+				justify-content: space-evenly;
+
+				.c-title {
+					font-size: 3em;
+					width: 100%;
+					font-weight: 400;
+					text-align: start;
+				}
+				.c-title.LgScreen {
+					display: block;
+				}
+				.c-title.smScreen {
+					display: none;
+				}
+				.c-info {
+					margin: 1.5em 0;
+					.c-info-item {
+						display: flex;
+						align-items: center;
+						margin: 1em 0;
+						font-weight: 400;
+						width: 100%;
+						font-size: 1.2em;
+					}
+				}
+			}
+			.c-Right {
+				height: 100%;
+				width: 50%;
+
+				// overflow: auto;
+				.c-right-wrapper {
+					padding: 0;
+					height: 90%;
+					width: 100%;
+					.c-desc.LgScreen {
+						display: block;
+						.Q-title {
+							display: block;
+							text-align: center;
+						}
+					}
+					.c-desc.SmScreen {
+						display: none;
+						font-size: 1.1em;
+					}
+					form {
+						display: flex;
+						flex-direction: column;
+						width: 90%;
+						align-items: center;
+						flex-wrap: wrap;
+						justify-content: space-evenly;
+						height: 50%;
+						overflow: auto;
+						margin-top: 0;
+						input {
+							width: 80%;
+							height: 30px;
+						}
+						textarea {
+							width: 80%;
+							margin: 10px 0px;
+							font-size: 14px;
+							padding-left: 10px;
+						}
+						button {
+							font-size: 1.1em;
+							border: none;
+							padding: 8px;
+							background-color: #59b256;
+							color: white;
+							font-weight: 500;
+							cursor: pointer;
+							margin: 0 auto;
+							display: block;
+							border-radius: 10%;
+						}
+					}
+				}
+			}
+		}
 	}
 }
