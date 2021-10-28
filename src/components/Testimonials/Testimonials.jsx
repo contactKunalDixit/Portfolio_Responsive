@@ -1,9 +1,24 @@
 import React, { useContext } from 'react';
 import './testimonials.scss';
-
 import { ThemeContext } from '../../context';
+//********************** */
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-function Testimonials() {
+// Import Swiper styles
+
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+
+// import Swiper core and required modules
+import SwiperCore, { Pagination, Navigation } from 'swiper';
+// import 'swiper/scss/navigation';
+
+// install Swiper modules
+SwiperCore.use([Pagination, Navigation]);
+
+// *********************************
+
+const Testimonials = () => {
 	const data = [
 		{
 			key: 1,
@@ -22,7 +37,6 @@ function Testimonials() {
 			img: 'https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
 			icon: 'assets/youtube.png',
 			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ',
-			featured: true,
 		},
 		{
 			key: 3,
@@ -34,8 +48,8 @@ function Testimonials() {
 			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem',
 		},
 		{
-			key: 1,
-			id: 1,
+			key: 4,
+			id: 4,
 			name: 'Tom Durden',
 			title: 'Senior Developer',
 			img: 'https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
@@ -43,8 +57,27 @@ function Testimonials() {
 			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.',
 		},
 		{
-			key: 2,
-			id: 2,
+			key: 5,
+			id: 5,
+			name: 'Alex Kalinski',
+			title: 'Co-Founder of DELKA',
+			img: 'https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+			icon: 'assets/youtube.png',
+			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ',
+		},
+		{
+			key: 6,
+			id: 6,
+			name: 'Alex Kalinski',
+			title: 'Co-Founder of DELKA',
+			img: 'https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+			icon: 'assets/youtube.png',
+			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ',
+			featured: true,
+		},
+		{
+			key: 7,
+			id: 7,
 			name: 'Alex Kalinski',
 			title: 'Co-Founder of DELKA',
 			img: 'https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
@@ -65,31 +98,45 @@ function Testimonials() {
 			<div className='testimonials-wrapper'>
 				<h1 className='testimonials-Title'>Testimonials</h1>
 				<div className='testimonials-container'>
-					{data.map((i) => {
-						return (
-							<div
-								className={i.featured ? 'card featured' : 'card'}
-								key={i.key}
-							>
-								<div className='top'>
-									<img src='assets/right-arrow.png' className='left' alt='' />
-									<img className='user' src={i.img} alt='' />
-									<img className='right' src={i.icon} alt='' />
-								</div>
-								<div className='center'>
-									<p>{i.desc}</p>
-								</div>
-								<div className='bottom'>
-									<h3 className='bottom-userName'>{i.name}</h3>
-									<h4 className='bottom-userTitle'>{i.title} </h4>
-								</div>
-							</div>
-						);
-					})}
+					<Swiper
+						// modules={[Navigation, Pagination]}
+						slidesPerView={3}
+						spaceBetween={20}
+						navigation={true}
+						scrollbar={{ draggable: true }}
+						onSlideChange={() => console.log('slide change')}
+						onSwiper={(swiper) => console.log(swiper)}
+						className='mySwiper'
+					>
+						{data.map((i) => {
+							return (
+								<SwiperSlide>
+									<div className={i.featured ? 'card' : 'card'} key={i.key}>
+										<div className='top'>
+											<img
+												src='assets/right-arrow.png'
+												className='left'
+												alt=''
+											/>
+											<img className='user' src={i.img} alt='' />
+											<img className='right' src={i.icon} alt='' />
+										</div>
+										<div className='center'>
+											<p>{i.desc}</p>
+										</div>
+										<div className='bottom'>
+											<h3 className='bottom-userName'>{i.name}</h3>
+											<h4 className='bottom-userTitle'>{i.title} </h4>
+										</div>
+									</div>
+								</SwiperSlide>
+							);
+						})}
+					</Swiper>
 				</div>
 			</div>
 		</div>
 	);
-}
+};
 
 export default Testimonials;
