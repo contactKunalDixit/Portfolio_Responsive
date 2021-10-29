@@ -1,22 +1,6 @@
 import React, { useContext } from 'react';
 import './testimonials.scss';
 import { ThemeContext } from '../../context';
-//********************** */
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.min.css';
-
-// import Swiper core and required modules
-import SwiperCore, { Pagination, Navigation } from 'swiper';
-// import 'swiper/scss/navigation';
-
-// install Swiper modules
-SwiperCore.use([Pagination, Navigation]);
-
-// *********************************
 
 const Testimonials = () => {
 	const data = [
@@ -98,41 +82,24 @@ const Testimonials = () => {
 			<div className='testimonials-wrapper'>
 				<h1 className='testimonials-Title'>Testimonials</h1>
 				<div className='testimonials-container'>
-					<Swiper
-						// modules={[Navigation, Pagination]}
-						slidesPerView={3}
-						spaceBetween={20}
-						navigation={true}
-						scrollbar={{ draggable: true }}
-						onSlideChange={() => console.log('slide change')}
-						onSwiper={(swiper) => console.log(swiper)}
-						className='mySwiper'
-					>
-						{data.map((i) => {
-							return (
-								<SwiperSlide>
-									<div className={i.featured ? 'card' : 'card'} key={i.key}>
-										<div className='top'>
-											<img
-												src='assets/right-arrow.png'
-												className='left'
-												alt=''
-											/>
-											<img className='user' src={i.img} alt='' />
-											<img className='right' src={i.icon} alt='' />
-										</div>
-										<div className='center'>
-											<p>{i.desc}</p>
-										</div>
-										<div className='bottom'>
-											<h3 className='bottom-userName'>{i.name}</h3>
-											<h4 className='bottom-userTitle'>{i.title} </h4>
-										</div>
-									</div>
-								</SwiperSlide>
-							);
-						})}
-					</Swiper>
+					{data.map((i) => {
+						return (
+							<div className={i.featured ? 'card' : 'card'} key={i.key}>
+								<div className='top'>
+									<img src='assets/right-arrow.png' className='left' alt='' />
+									<img className='user' src={i.img} alt='' />
+									<img className='right' src={i.icon} alt='' />
+								</div>
+								<div className='center'>
+									<p>{i.desc}</p>
+								</div>
+								<div className='bottom'>
+									<h3 className='bottom-userName'>{i.name}</h3>
+									<h4 className='bottom-userTitle'>{i.title} </h4>
+								</div>
+							</div>
+						);
+					})}
 				</div>
 			</div>
 		</div>

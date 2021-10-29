@@ -2,7 +2,7 @@ import Intro from './components/Intro/Intro';
 import About from './components/About/About';
 import ProductList from './components/ProductList/ProductList';
 import Contact from './components/Contact/Contact';
-import Toggle from './components/Toggle/Toggle';
+
 import { useContext } from 'react';
 import { ThemeContext } from './context';
 import Testimonials from './components/Testimonials/Testimonials';
@@ -21,7 +21,7 @@ function App() {
 				color: darkMode && '#ccebff',
 			}}
 		>
-			{/* <Navbar /> */}
+			<Navbar />
 
 			<div className='Sections'>
 				<Intro />
