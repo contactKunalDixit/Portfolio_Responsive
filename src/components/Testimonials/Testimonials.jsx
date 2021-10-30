@@ -50,7 +50,7 @@ const Testimonials = (props) => {
 									<p>{item.desc}</p>
 								</div>
 								<div className='bottom'>
-									<h3 className='bottom-userName'>{props.name}</h3>
+									<h3 className='bottom-userName'>{item.name}</h3>
 									<h4
 										className='bottom-userTitle'
 										style={{
