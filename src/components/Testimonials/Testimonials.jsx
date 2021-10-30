@@ -77,7 +77,7 @@ const Testimonials = () => {
 		<div className='testimonials' id='testimonials'>
 			<div
 				className='contact-bg'
-				style={{ backgroundColor: darkMode ? '#511cb339' : '#ffd6a5' }}
+				style={{ backgroundColor: darkMode ? '#1f005e39' : '#ffd6a5' }}
 			></div>
 			<div className='testimonials-wrapper'>
 				<h1 className='testimonials-Title'>Testimonials</h1>
