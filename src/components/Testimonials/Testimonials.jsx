@@ -3,6 +3,9 @@ import './testimonials.scss';
 import { ThemeContext } from '../../context';
 
 const Testimonials = () => {
+	const theme = useContext(ThemeContext);
+	const darkMode = theme.state.darkMode;
+
 	const data = [
 		{
 			key: 1,
@@ -71,31 +74,58 @@ const Testimonials = () => {
 		},
 	];
 
-	const theme = useContext(ThemeContext);
-	const darkMode = theme.state.darkMode;
 	return (
-		<div className='testimonials' id='testimonials'>
+		<div
+			className='testimonials'
+			id='testimonials'
+			style={{
+				backgroundColor: darkMode ? '#121212' : 'white',
+				color: darkMode && '#ccebff',
+			}}
+		>
 			<div
 				className='testimonial-bg'
-				style={{ backgroundColor: darkMode ? '#1f005e39' : '#ffd6a5' }}
+				style={{
+					backgroundColor: darkMode ? '#641345b8' : '#320c7e39',
+				}}
 			></div>
 			<div className='testimonials-wrapper'>
 				<h1 className='testimonials-Title'>Testimonials</h1>
 				<div className='testimonials-container'>
 					{data.map((i) => {
 						return (
-							<div className='card' key={i.key}>
+							<div
+								className='card'
+								key={i.key}
+								style={{
+									backgroundColor: darkMode ? '#2e1daa50' : '#407a1d39',
+									color: darkMode && '#ccebff',
+								}}
+							>
 								<div className='top'>
 									<img src='assets/right-arrow.png' className='left' alt='' />
 									<img className='user' src={i.img} alt='' />
 									<img className='right' src={i.icon} alt='' />
 								</div>
-								<div className='center'>
+								<div
+									className='center'
+									style={{
+										backgroundColor: darkMode ? '#4a428f' : '#320c7e39',
+										color: darkMode && '#ccebff',
+									}}
+								>
 									<p>{i.desc}</p>
 								</div>
 								<div className='bottom'>
 									<h3 className='bottom-userName'>{i.name}</h3>
-									<h4 className='bottom-userTitle'>{i.title} </h4>
+									<h4
+										className='bottom-userTitle'
+										style={{
+											color: !darkMode && 'black',
+										}}
+									>
+										{i.title}{' '}
+									</h4>
 								</div>
 							</div>
 						);

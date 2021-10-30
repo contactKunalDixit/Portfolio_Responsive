@@ -23,7 +23,13 @@ function App() {
 		>
 			<Navbar />
 
-			<div className='Sections'>
+			<div
+				className='Sections'
+				style={{
+					backgroundColor: darkMode ? '#121212' : 'white',
+					color: darkMode && '#ccebff',
+				}}
+			>
 				<Intro />
 				<About />
 				<ProductList />

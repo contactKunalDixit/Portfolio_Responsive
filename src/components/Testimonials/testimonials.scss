@@ -1,11 +1,12 @@
 .testimonials {
-	width: 100%;
+	width: 100vw;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	height: calc(100vh - 3.75rem);
 
 	.testimonial-bg {
 		clip-path: polygon(69% 0, 100% 0, 100% 100%, 69% 100%);
@@ -18,14 +19,13 @@
 	}
 
 	.testimonials-wrapper {
-		width: 90vw;
+		width: 100%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: space-evenly;
 		justify-content: space-evenly;
 		z-index: 1;
-
 		.testimonials-Title {
 			font-size: 3.5em;
 			font-weight: 400;
@@ -43,7 +43,7 @@
 			-webkit-overflow-scrolling: touch;
 
 			.card {
-				width: 80%;
+				width: 100%;
 				max-width: 500px;
 				margin: 0 10px;
 				height: 80%;
@@ -55,7 +55,6 @@
 				padding: 20px;
 				transition: all 1s ease;
 				flex: 0 0 auto;
-
 				// &.featured {
 
 				// 	// @include mobile {
@@ -296,6 +295,8 @@
 	.testimonials {
 		font-size: 16px;
 		.testimonials-wrapper {
+			width: 95%;
+			height: 100%;
 			.testimonials-container {
 				width: 100%;
 				height: 80%;
