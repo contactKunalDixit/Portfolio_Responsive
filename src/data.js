@@ -112,7 +112,7 @@ export const linkedinData = [
 		title: 'Chrysalis HRD',
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_Responsive/main/src/img/Testimonials/chrysalis.png',
 		icon: 'assets/twitter.png',
-		desc: '"Thanks Kunal for being part of the Best blended"learning project- "Workplace readiness" which was created and delivered as blended journey. The entire work was done virtually and it created a measurable impact. Chrysalis is proud of you! We wish you for your stellar performance in the years to come"',
+		desc: '"We thank Kunal for being part of the Best blended"learning project- "Workplace readiness" which was created and delivered as blended journey. The entire work was done virtually and it created a measurable impact. Chrysalis is proud of you! We wish you for your stellar performance in the years to come"',
 	},
 	{
 		key: 1,
@@ -121,7 +121,7 @@ export const linkedinData = [
 		title: 'AVP, Bank Of America',
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_Responsive/main/src/img/Testimonials/Joby.jpeg',
 		icon: 'assets/twitter.png',
-		desc: '"He is a Subject matter expert , a true mentor and an amazing person to work with! His passion for learning and focus on finding solutions is contagious. He has a solution to every challenge, but does not drive to it himself alone; he ensures he pulls the team together with him towards it. He is the perfect ingredient for a winning team, who lives by the values he holds and never compromises on quality."',
+		desc: '"His passion for learning and focus on finding solutions is contagious. He has a solution to every challenge, but does not drive to it himself alone; he ensures he pulls the team together with him towards it. He is the perfect ingredient for a winning team, who lives by the values he holds and never compromises on quality."',
 	},
 	{
 		key: 2,
@@ -158,7 +158,7 @@ export const linkedinData = [
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_Responsive/main/src/img/Testimonials/pankajKumar.jpeg',
 		icon: 'assets/youtube.png',
 		desc: `"He has this string ability to go to the root cause of the situation and solve it for good rather than a quick fix to solve it for today and let it burn again tomorrow. He has a particularly impressive eye for detail.
-		I was particularly impressed by his ability to handle even the toughest situations - effortlessly. That skill often takes years to develop among customer service professionals, but it seemed to come perfectly naturally to him"`,
+		I was particularly impressed by his ability to handle even the toughest situations - effortlessly."`,
 	},
 	{
 		key: 6,

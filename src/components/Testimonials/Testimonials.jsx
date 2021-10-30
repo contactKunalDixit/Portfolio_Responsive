@@ -36,9 +36,9 @@ const Testimonials = (props) => {
 								}}
 							>
 								<div className='top'>
-									<img src='assets/right-arrow.png' className='left' alt='' />
+									{/* <img src='assets/right-arrow.png' className='left' alt='' /> */}
 									<img className='user' src={item.img} alt='' />
-									<img className='right' src={item.icon} alt='' />
+									{/* <img className='right' src={item.icon} alt='' /> */}
 								</div>
 								<div
 									className='center'

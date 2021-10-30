@@ -118,7 +118,7 @@
 
 @media screen and (min-width: 320px) {
 	.Contact {
-		font-size: 14px;
+		font-size: 12px;
 
 		width: 100%;
 		height: 100%;
@@ -526,6 +526,7 @@
 				}
 				.c-title.LgScreen {
 					display: block;
+					font-weight: 300;
 				}
 				.c-title.smScreen {
 					display: none;
@@ -536,9 +537,9 @@
 						display: flex;
 						align-items: center;
 						margin: 1em 0;
-						font-weight: 400;
+						font-weight: 300;
 						width: 100%;
-						font-size: 1.2em;
+						font-size: 1em;
 					}
 				}
 			}
@@ -553,6 +554,7 @@
 					width: 100%;
 					.c-desc.LgScreen {
 						display: block;
+						font-size: 300;
 						.Q-title {
 							display: block;
 							text-align: center;

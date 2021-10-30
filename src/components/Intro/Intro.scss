@@ -104,7 +104,7 @@
 //1 max-width:480
 @media screen and (max-width: 480px) {
 	.Intro {
-		font-size: 12px;
+		font-size: 10px;
 		flex-direction: column-reverse;
 		.intro-left {
 			height: 100%;
@@ -114,6 +114,9 @@
 				text-align: center;
 				height: 100%;
 				justify-content: space-evenly;
+				.i-name {
+					font-weight: 300;
+				}
 				.intro-desc {
 					display: none;
 				}
@@ -157,7 +160,7 @@
 //4 max-width:1024px
 @media screen and (max-width: 1024px) and (min-width: 769px) {
 	.Intro {
-		font-size: 17px;
+		font-size: 14px;
 		.intro-left {
 			height: 100%;
 			flex: 2;
@@ -207,9 +210,9 @@
 }
 
 //6 max-width: 1200 n MORE n Potrait
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
 	.Intro {
-		font-size: 18px;
+		font-size: 15px;
 		.intro-left {
 			height: 100%;
 			flex: 1;
@@ -219,32 +222,13 @@
 				text-align: center;
 				height: 70%;
 				justify-content: space-evenly;
+				.i-name {
+					font-weight: 300;
+				}
 				.intro-desc {
 					// display: none;
+					font-size: 17px;
 				}
-			}
-		}
-		.intro-right {
-			flex: 1;
-		}
-	}
-}
-
-//7
-@media screen and (min-width: 1450px) {
-	html {
-	}
-	.Intro {
-		font-size: 30px;
-		.intro-left {
-			height: 100%;
-			flex: 1;
-			.intro-Left-Wrapper {
-				padding: 0 50px;
-				align-items: center;
-				text-align: center;
-				height: 80%;
-				justify-content: space-evenly;
 			}
 		}
 		.intro-right {
