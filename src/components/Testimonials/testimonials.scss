@@ -7,11 +7,7 @@
 	justify-content: center;
 	position: relative;
 
-	// @include mobile {
-	// 	justify-content: space-around;
-	// }
-
-	.contact-bg {
+	.testimonial-bg {
 		clip-path: polygon(69% 0, 100% 0, 100% 100%, 69% 100%);
 		background-color: #ffd6a5;
 		width: 100vw;
@@ -283,7 +279,7 @@
 				position: relative;
 				display: flex;
 				// flex-wrap: nowrap;
-				// overflow-x: auto;
+				overflow-x: auto;
 				-webkit-overflow-scrolling: touch;
 				.card {
 					padding: 10px;
