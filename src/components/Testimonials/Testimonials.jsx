@@ -77,14 +77,14 @@ const Testimonials = () => {
 		<div className='testimonials' id='testimonials'>
 			<div
 				className='contact-bg'
-				style={{ backgroundColor: darkMode ? '#ffd6a539' : '#ffd6a5' }}
+				style={{ backgroundColor: darkMode ? '#511cb339' : '#ffd6a5' }}
 			></div>
 			<div className='testimonials-wrapper'>
 				<h1 className='testimonials-Title'>Testimonials</h1>
 				<div className='testimonials-container'>
 					{data.map((i) => {
 						return (
-							<div className={i.featured ? 'card' : 'card'} key={i.key}>
+							<div className='card' key={i.key}>
 								<div className='top'>
 									<img src='assets/right-arrow.png' className='left' alt='' />
 									<img className='user' src={i.img} alt='' />
