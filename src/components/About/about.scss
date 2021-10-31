@@ -116,14 +116,15 @@
 	.About {
 		font-size: 11.5px;
 		flex-direction: column;
-		height: 100vh;
+		height: 100%;
 		width: 100vw;
 		.about-bground {
 			height: 100%;
 		}
 		.about-left {
+			flex: none;
 			height: 35%;
-			width: 90vw;
+			width: 90%;
 			.about-card.shadowBg {
 				position: absolute;
 				top: 10px;
@@ -131,13 +132,17 @@
 			}
 		}
 		.about-right {
-			height: 60%;
+			flex: none;
+			height: 65%;
 			width: 95vw;
 			padding: 0 10px;
 
 			display: flex;
 			justify-content: space-evenly;
 			flex-direction: column;
+			.a-title {
+				font-size: 2.5rem;
+			}
 
 			.a-award {
 				margin-top: 10px;
@@ -178,11 +183,11 @@
 }
 
 //todo	 2# min-width:480px
-@media screen and (min-width: 480px) and (orientation: landscape) {
+@media screen and (min-width: 480px) {
 	.About {
-		font-size: 11.5px;
-		flex-direction: column;
-		height: 100vh;
+		font-size: 11px;
+		flex-direction: row;
+		height: 100%;
 		width: 100vw;
 
 		display: flex;
@@ -192,18 +197,18 @@
 			height: 100%;
 		}
 		.about-left {
-			// height: 35%;
-			// width: 90vw;
-			// .about-card.shadowBg {
-			// 	position: absolute;
-			// 	top: 10px;
-			// 	left: 30px;
-			// }
-			display: none;
+			height: 100%;
+			width: 40%;
+			.about-card.shadowBg {
+				position: absolute;
+				top: 10px;
+				left: 30px;
+			}
+			// display: none;
 		}
 		.about-right {
 			height: 100%;
-			width: 95vw;
+			width: 55%;
 			padding: 0 10px;
 			display: flex;
 			flex-direction: column;
@@ -215,7 +220,7 @@
 
 			.a-title {
 				font-weight: 400;
-				// font-size: ;
+				font-size: 2rem;
 				text-align: center;
 			}
 			.a-sub {
@@ -239,170 +244,180 @@
 //4 min-width:768px
 @media screen and (min-width: 768px) {
 	.About {
-		font-size: 14px;
+		font-size: 12px;
 		flex-direction: column;
+		height: 100%;
+		width: 100vw;
+
+		display: flex;
+		justify-content: center;
+
+		.about-bground {
+			height: 100%;
+		}
 		.about-left {
-			.about-card {
-				width: 80%;
+			height: 40%;
+			width: 100%;
+			.about-card.shadowBg {
+				position: absolute;
+				top: 10px;
+				left: 30px;
 			}
+			// display: none;
 		}
 		.about-right {
-			padding: 0 30px 0 10px;
+			height: 60%;
+			width: 90%;
+			padding: 0 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+
 			.a-title {
-				font-weight: 400;
-				// font-size: 2.625rem;
+				font-weight: 300;
+				font-size: 3rem;
 				text-align: center;
 			}
 			.a-sub {
 				margin: 0px 0px;
 				text-align: center;
-				font-size: 1.2em;
+				font-size: 1.4rem;
 			}
 			.a-desc {
 				text-align: center;
-				font-size: 1.2em;
+				font-size: 1.3rem;
+			}
+			.a-desc.LgScreen {
+				display: none;
+			}
+			.a-desc.smScreen {
+				display: block;
+				padding: 0 10px;
 			}
 			.a-award {
-				display: visible;
+				display: flex;
+				font-size: 1.3rem;
 			}
 		}
 	}
 }
 
 //5 min-width: 992px
-@media screen and (min-width: 992px) and (orientation: landscape) {
+@media screen and (min-width: 992px) {
 	.About {
-		font-size: 14px;
-
-		.about-right {
-			padding: 0 30px 0 10px;
-			display: visible;
-			.a-title {
-				font-weight: 400;
-				// font-size: 2.625rem;
-				text-align: center;
-			}
-			.a-sub {
-				margin: 0px 0px;
-				text-align: center;
-				font-size: 1.4em;
-			}
-			.a-desc {
-				text-align: center;
-				font-size: 1.4em;
-			}
-		}
-	}
-}
-
-//6 min-width: 1024px
-@media screen and (min-width: 1024px) {
-	.About {
-		font-size: 14px;
-		.about-left {
-			.about-card {
-				width: 80%;
-				// height: 100%;
-			}
-		}
-		.about-right {
-			padding: 0 30px 0 10px;
-			.a-title {
-				font-weight: 400;
-				text-align: center;
-				// font-size: 1.9em;
-			}
-			.a-sub {
-				margin: 0px 0px;
-				text-align: center;
-				font-size: 1.9em;
-			}
-			.a-desc {
-				text-align: center;
-				font-size: 1.5em;
-			}
-			.a-award {
-				display: visible;
-				font-size: 1.5em;
-			}
-		}
-	}
-}
-
-//7 min-width: 1200
-@media screen and (min-width: 1200px) {
-	.About {
-		font-size: 18px;
+		font-size: 12px;
 		flex-direction: row;
-		.about-left {
-			height: 90%;
-			display: flex;
-			width: 50%;
+		height: 100%;
+		width: 100vw;
 
-			.about-card {
-				width: 80%;
-				height: 80%;
+		display: flex;
+		justify-content: center;
+
+		.about-bground {
+			height: 100%;
+		}
+		.about-left {
+			height: 100%;
+			width: 45%;
+			.about-card.shadowBg {
+				position: absolute;
+				top: 10px;
+				left: 30px;
 			}
+			// display: none;
 		}
 		.about-right {
-			padding: 0 30px 0 10px;
-			.a-title {
-				font-weight: 400;
-				text-align: center;
-				// font-size: 1.9em;
-			}
-			.a-sub {
-				margin: 0px 0px;
-				text-align: center;
-				font-size: 1.9em;
-			}
-			.a-desc {
-				text-align: center;
-				font-size: 1.5em;
-			}
-			.a-award {
-				display: visible;
-				font-size: 1.5em;
-			}
-		}
-	}
-}
-
-//7min-width: 1440
-@media screen and (min-width: 1440px) {
-	.About {
-		font-size: 14px;
-		font-weight: 300;
-		flex-direction: row;
-		.about-left {
-			height: 90%;
-			display: flex;
+			height: 100%;
 			width: 50%;
+			// padding: 0 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
 
-			.about-card {
-				width: 80%;
-				height: 80%;
-			}
-		}
-		.about-right {
-			padding: 0 30px 0 10px;
 			.a-title {
 				font-weight: 300;
+				font-size: 3rem;
 				text-align: center;
-				// font-size: 1.9em;
 			}
 			.a-sub {
 				margin: 0px 0px;
 				text-align: center;
-				font-size: 1.25em;
+				font-size: 1.2rem;
 			}
 			.a-desc {
 				text-align: center;
-				font-size: 1.15em;
+				font-size: 1.1rem;
+			}
+			.a-desc.LgScreen {
+				display: none;
+			}
+			.a-desc.smScreen {
+				display: block;
+				padding: 0 10px;
 			}
 			.a-award {
+				display: flex;
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.About {
+		font-size: 12px;
+		flex-direction: row;
+		height: 100%;
+		width: 100vw;
+
+		display: flex;
+		justify-content: center;
+
+		.about-bground {
+			height: 100%;
+		}
+		.about-left {
+			height: 100%;
+			width: 45%;
+			.about-card.shadowBg {
+				position: absolute;
+				top: 10px;
+				left: 30px;
+			}
+			// display: none;
+		}
+		.about-right {
+			height: 100%;
+			width: 50%;
+			padding: 0 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+
+			.a-title {
+				font-weight: 300;
+				font-size: 3rem;
+				text-align: center;
+			}
+			.a-sub {
+				margin: 0px 0px;
+				text-align: center;
+				font-size: 1.2rem;
+			}
+			.a-desc {
+				text-align: center;
+				font-size: 1.1rem;
+			}
+			.a-desc.LgScreen {
 				display: block;
-				font-size: 1.2em;
+				text-align: start;
+			}
+			.a-desc.smScreen {
+				display: none;
+				padding: 0 10px;
+			}
+			.a-award {
+				display: flex;
+				font-size: 1.1rem;
 			}
 		}
 	}
