@@ -57,25 +57,26 @@ const Intro = () => {
 						specializing in creating stylish, modern and responsive websites,
 						web services and online stores
 					</p>
+
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						height='30px'
+						viewBox='0 0 24 24'
+						width='30px'
+						fill={darkMode ? 'white' : '#313191'}
+						className='DownArrow'
+						style={{
+							// position: 'absolute',
+							width: '3.125rem',
+							height: '3.125rem',
+							// bottom: '0',
+							color: darkMode ? 'white' : '#313191',
+						}}
+					>
+						<path d='M0 0h24v24H0V0z' fill='none' />
+						<path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z' />
+					</svg>
 				</div>
-				<svg
-					xmlns='http://www.w3.org/2000/svg'
-					height='30px'
-					viewBox='0 0 24 24'
-					width='30px'
-					fill={darkMode ? 'white' : '#313191'}
-					className='DownArrow'
-					style={{
-						position: 'absolute',
-						width: '3.125rem',
-						height: '3.125rem',
-						bottom: '0',
-						color: darkMode ? 'white' : '#313191',
-					}}
-				>
-					<path d='M0 0h24v24H0V0z' fill='none' />
-					<path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z' />
-				</svg>
 			</div>
 			<div className='intro-right'>
 				<img src={Me} alt='A Mans Pic' className='intro-img' />
