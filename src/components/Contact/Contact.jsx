@@ -77,10 +77,8 @@ const Contact = () => {
 							project comes along
 						</p>
 						<p className='c-desc SmScreen'>
-							<b>
-								<span id='Q-title'>What's your story ? </span>
-								Get in touch..
-							</b>
+							<span className='Q-title'>What's your story ? </span>
+							Get in touch..
 						</p>
 						<form ref={formRef} onSubmit={handleSubmit}>
 							<input

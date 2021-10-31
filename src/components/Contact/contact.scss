@@ -119,7 +119,6 @@
 @media screen and (min-width: 320px) {
 	.Contact {
 		font-size: 12px;
-
 		width: 100%;
 		height: 100%;
 		.contact-Wrapper {
@@ -127,14 +126,18 @@
 			flex-direction: column;
 			// padding: 10px 50px;
 			height: 100%;
+			justify-content: space-evenly;
 			.c-Left {
-				height: 40%;
+				height: 35%;
 				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
 				// overflow: auto;
 				.c-title {
-					font-size: 2.625em;
+					font-size: 1.8rem;
 					width: 100%;
-					font-weight: 400;
+					font-weight: 300;
 					text-align: center;
 				}
 				.c-title.LgScreen {
@@ -144,19 +147,25 @@
 					display: block;
 				}
 				.c-info {
-					margin: 15px 0;
+					margin: 0;
+					// margin-top: 15px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-evenly;
 					.c-info-item {
 						display: flex;
 						align-items: center;
+						// margin: 0;
 						margin: 10px 0;
-						font-weight: 400;
+						font-weight: 300;
 						width: 100%;
-						font-size: 14px;
+						font-size: 0.75rem;
 					}
 				}
 			}
 			.c-Right {
-				height: 60%;
+				height: 55%;
 				width: 100%;
 				// overflow: auto;
 				.c-right-wrapper {
@@ -166,32 +175,39 @@
 					.c-desc.LgScreen {
 						display: none;
 						.Q-title {
-							display: block;
+							display: initial;
 							text-align: center;
+							font-weight: 300;
 						}
 					}
 					.c-desc.SmScreen {
-						display: block;
-						margin-top: 15px;
+						display: inline-block;
+						margin-top: 0;
+						font-size: 12px;
+						font-weight: 300;
+						.Q-title {
+							text-align: center;
+							font-weight: 600;
+						}
 					}
 					form {
 						display: flex;
-						// flex-direction: column;
+						flex-direction: column;
 						width: 100%;
 						align-items: center;
-						flex-wrap: wrap;
+						// flex-wrap: wrap;
 						justify-content: center;
 						height: 100%;
-						// overflow: auto;
+						overflow: auto;
 						margin-top: 0;
 						input {
 							width: 80%;
-							height: 20px;
+							height: 18px;
 						}
 						textarea {
 							width: 80%;
 							margin: 10px 0px;
-							font-size: 14px;
+							font-size: 12px;
 							padding-left: 10px;
 						}
 						button {
@@ -199,7 +215,7 @@
 							padding: 8px;
 							background-color: #59b256;
 							color: white;
-							font-weight: 500;
+							font-weight: 300;
 							cursor: pointer;
 							margin: 0 auto;
 							display: block;
@@ -214,7 +230,7 @@
 
 @media screen and (min-width: 480px) {
 	.Contact {
-		font-size: 14px;
+		font-size: 12px;
 
 		width: 100%;
 		height: 100%;
@@ -226,7 +242,7 @@
 			.c-Left {
 				height: 100%;
 				width: 50%;
-				// overflow: auto;
+				overflow: hidden;
 				.c-title {
 					font-size: 2.625em;
 					width: 100%;
@@ -259,16 +275,25 @@
 					padding: 0;
 					height: 100%;
 					width: 100%;
+
 					.c-desc.LgScreen {
 						display: none;
 						.Q-title {
-							display: block;
+							display: initial;
 							text-align: center;
+							font-weight: 300;
 						}
 					}
 					.c-desc.SmScreen {
-						display: block;
-						margin-top: 15px;
+						display: inline-block;
+						margin-top: 0;
+						font-size: 12px;
+						font-weight: 300;
+						display: none;
+						.Q-title {
+							text-align: center;
+							font-weight: 600;
+						}
 					}
 					form {
 						display: flex;
@@ -461,16 +486,16 @@
 					}
 					.c-desc.SmScreen {
 						display: block;
-						font-size: 1.1em;
+						font-size: 1.2rem;
 					}
 					form {
 						display: flex;
 						flex-direction: column;
 						width: 90%;
 						align-items: center;
-						flex-wrap: wrap;
+						// flex-wrap: wrap;
 						justify-content: space-around;
-						height: 100%;
+						height: 85%;
 						// overflow: auto;
 						margin-top: 0;
 						input {
