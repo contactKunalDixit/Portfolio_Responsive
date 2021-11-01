@@ -63,7 +63,7 @@ const Contact = () => {
 						</div>
 						<div className='c-info-item'>
 							<img src={Address} alt='' className='c-icon' />
-							Unit-1459 #3, Bedok Reservoir Road, Singapore - 470138
+							1459 #3, Bedok Reservoir Road, Singapore - 470138
 						</div>
 					</div>
 				</div>
@@ -97,7 +97,7 @@ const Contact = () => {
 								onChange={(e) => setSubjectValue(e.target.value)}
 							/>
 							<input
-								type='text'
+								type='email'
 								placeholder='Email'
 								name='user_email'
 								value={emailValue}

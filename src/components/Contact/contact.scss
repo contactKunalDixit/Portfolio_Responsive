@@ -63,6 +63,7 @@
 			// flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			overflow-y: hidden;
 			.c-right-wrapper {
 				padding: 0.625rem;
 				width: 80%;
@@ -85,7 +86,7 @@
 					justify-content: space-between;
 					width: 100%;
 					height: 80%;
-					overflow: auto;
+					// overflow: auto;
 					input {
 						width: 50%;
 						height: 3.125rem;
@@ -125,18 +126,25 @@
 		.contact-Wrapper {
 			width: 95%;
 			flex-direction: column;
+			// overflow-y: auto //Test
 			// padding: 10px 50px;
 			height: 100%;
-			justify-content: space-evenly;
+
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			position: relative;
 			.c-Left {
 				height: 35%;
+				height: auto;
 				width: 100%;
 				display: flex;
 				flex-direction: column;
-				justify-content: space-evenly;
+				justify-content: space-around;
+				align-items: center;
 				// overflow: auto;
 				.c-title {
-					font-size: 1.8rem;
+					font-size: 2.3rem;
 					width: 100%;
 					font-weight: 300;
 					text-align: center;
@@ -145,7 +153,9 @@
 					display: none;
 				}
 				.c-title.smScreen {
-					display: block;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 				}
 				.c-info {
 					margin: 0;
@@ -154,25 +164,35 @@
 					flex-direction: column;
 					align-items: center;
 					justify-content: space-evenly;
+					margin-top: 20px;
 					.c-info-item {
 						display: flex;
 						align-items: center;
 						// margin: 0;
 						margin: 10px 0;
-						font-weight: 300;
+						font-weight: 400;
 						width: 100%;
-						font-size: 0.95rem;
+						font-size: 0.9rem;
 					}
 				}
 			}
 			.c-Right {
-				height: 55%;
+				z-index: 100;
+				// height: 55%;
+				height: auto;
 				width: 100%;
-				// overflow: auto;
+				overflow: auto;
+				background-color: rgb(14, 15, 77);
+
+				position: absolute;
+				left: 0%;
+				bottom: 0px;
 				.c-right-wrapper {
-					padding: 0;
+					color: white;
+					padding: 10px;
 					height: 100%;
 					width: 100%;
+					overflow-y: auto;
 					.c-desc.LgScreen {
 						display: none;
 						.Q-title {
@@ -183,8 +203,8 @@
 					}
 					.c-desc.SmScreen {
 						display: inline-block;
-						margin-top: 0;
-						font-size: 12px;
+						margin-bottom: 10px;
+						font-size: 14px;
 						font-weight: 300;
 						.Q-title {
 							text-align: center;
@@ -196,20 +216,20 @@
 						flex-direction: column;
 						width: 100%;
 						align-items: center;
-						flex-wrap: wrap;
+						flex-wrap: nowrap;
 						justify-content: center;
 						height: 100%;
-						overflow: auto;
+						overflow-y: hidden;
 						margin-top: 0;
 						input {
 							width: 80%;
-							height: 20px;
-							font-size: 12px;
+							height: 1.3rem;
+							font-size: 0.9rem;
 						}
 						textarea {
 							width: 80%;
 							margin: 10px 0px;
-							font-size: 12px;
+							font-size: 14px;
 							padding-left: 10px;
 						}
 						button {
@@ -272,6 +292,7 @@
 			.c-Right {
 				height: 100%;
 				width: 50%;
+				overflow-y: auto;
 				// overflow: auto;
 				.c-right-wrapper {
 					padding: 0;
@@ -302,7 +323,7 @@
 						// flex-direction: column;
 						width: 100%;
 						align-items: center;
-						flex-wrap: wrap;
+						flex-wrap: nowrap;
 						justify-content: center;
 						height: 100%;
 						overflow: auto;
@@ -398,7 +419,7 @@
 						flex-direction: column;
 						width: 90%;
 						align-items: center;
-						flex-wrap: wrap;
+						flex-wrap: nowrap;
 						justify-content: space-evenly;
 						height: 90%;
 						overflow: auto;
@@ -495,7 +516,7 @@
 						flex-direction: column;
 						width: 90%;
 						align-items: center;
-						flex-wrap: wrap;
+						flex-wrap: nowrap;
 						justify-content: space-around;
 						height: 85%;
 						overflow: auto;
@@ -511,7 +532,7 @@
 							padding-left: 10px;
 						}
 						button {
-							font-size: 1.1em;
+							font-size: 1em;
 							border: none;
 							padding: 8px;
 							background-color: #59b256;
@@ -571,17 +592,19 @@
 				}
 			}
 			.c-Right {
-				height: 100%;
+				height: 80%;
 				width: 50%;
-
+				background-color: transparent;
+				position: relative;
 				// overflow: auto;
 				.c-right-wrapper {
+					color: black;
 					padding: 0;
 					height: 90%;
 					width: 100%;
 					.c-desc.LgScreen {
 						display: block;
-						font-size: 300;
+						font-weight: 300;
 						.Q-title {
 							display: block;
 							text-align: center;
@@ -596,10 +619,10 @@
 						flex-direction: column;
 						width: 90%;
 						align-items: center;
-						flex-wrap: wrap;
+						flex-wrap: nowrap;
 						justify-content: space-evenly;
-						height: 50%;
-						overflow: auto;
+						height: 60%;
+						// overflow: auto;
 						margin-top: 0;
 						input {
 							width: 80%;
