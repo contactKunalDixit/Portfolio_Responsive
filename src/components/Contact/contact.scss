@@ -85,7 +85,7 @@
 					align-items: flex-start;
 					justify-content: space-between;
 					width: 100%;
-					height: 80%;
+					height: 100%;
 					// overflow: auto;
 					input {
 						width: 50%;
@@ -581,13 +581,15 @@
 				}
 				.c-info {
 					margin: 1.5em 0;
+					width: 100%;
 					.c-info-item {
 						display: flex;
 						align-items: center;
+						justify-content: flex-start;
 						margin: 1em 0;
 						font-weight: 300;
 						width: 100%;
-						font-size: 1em;
+						font-size: 1rem;
 					}
 				}
 			}
@@ -605,9 +607,12 @@
 					.c-desc.LgScreen {
 						display: block;
 						font-weight: 300;
+						padding: 0 20px;
+						font-size: 16px;
 						.Q-title {
 							display: block;
 							text-align: center;
+							font-weight: 600;
 						}
 					}
 					.c-desc.SmScreen {
@@ -621,7 +626,7 @@
 						align-items: center;
 						flex-wrap: nowrap;
 						justify-content: space-evenly;
-						height: 60%;
+						height: 80%;
 						// overflow: auto;
 						margin-top: 0;
 						input {
@@ -635,9 +640,9 @@
 							padding-left: 10px;
 						}
 						button {
-							font-size: 1rem;
+							font-size: 16px;
 							border: none;
-							padding: 8px;
+							padding: 0 8px;
 							background-color: #59b256;
 							color: white;
 							font-weight: 500;
