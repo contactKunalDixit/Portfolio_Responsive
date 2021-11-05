@@ -71,7 +71,7 @@ const Contact = () => {
 					<div className='c-right-wrapper'>
 						<p
 							className='c-desc LgScreen'
-							style={{ color: !darkMode && 'black' }}
+							style={{ color: darkMode ? 'rgb(204, 235, 255)' : 'black' }}
 						>
 							<b>
 								<span className='Q-title'>What's your story ? </span>

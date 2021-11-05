@@ -421,7 +421,7 @@
 					.navbar-li {
 						text-decoration: none;
 						cursor: pointer;
-						transition: all 0.5s ease;
+						// transition: all 0.5s ease;
 
 						.navbar-li-a {
 							text-decoration: none;
@@ -480,10 +480,10 @@
 						text-decoration: none;
 						color: black;
 						font-size: 1.25em;
-						transition: all 0.5s ease;
-						&:hover {
-							transform: scale(1.2, 1.2);
-						}
+						// transition: all 0.5s ease;
+						// &:hover {
+						// 	transform: scale(1.2, 1.2);
+						// }
 
 						.nav-logoTitle {
 							display: block;
@@ -512,10 +512,6 @@
 					.navbar-li {
 						text-decoration: none;
 						cursor: pointer;
-						transition: all 0.5s ease;
-						&:hover {
-							transform: scale(1.2, 1.2);
-						}
 
 						.navbar-li-a {
 							text-decoration: none;
