@@ -502,6 +502,7 @@
 					width: 100%;
 					.c-desc.LgScreen {
 						display: none;
+						color: white;
 						.Q-title {
 							display: block;
 							text-align: center;
@@ -607,8 +608,12 @@
 					.c-desc.LgScreen {
 						display: block;
 						font-weight: 300;
+
+						color: white;
+
 						padding: 0 20px;
 						font-size: 16px;
+
 						.Q-title {
 							display: block;
 							text-align: center;
