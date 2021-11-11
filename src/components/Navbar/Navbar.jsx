@@ -23,7 +23,16 @@ const Navbar = () => {
 									color: darkMode ? '#a2a2ca' : '#313191',
 								}}
 							></MdImportantDevices>
-							<div className='nav-logoTitle'>Kunal D.</div>
+							<div
+								className='nav-logoTitle'
+								style={{
+									fontSize: '24px',
+									margin: '0px 10px',
+									color: darkMode ? '#a2a2ca' : '#313191',
+								}}
+							>
+								Kunal D.
+							</div>
 						</a>
 					</div>
 				</div>
