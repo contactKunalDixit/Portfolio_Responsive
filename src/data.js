@@ -31,8 +31,8 @@ export const productsData = [
 	},
 	{
 		id: 7,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-onlineShopping.png',
-		link: 'http://buybee.webdevkunal.com/',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_Responsive/main/src/img/screencapture-carcare.png',
+		link: 'http://carcare.webdevkunal.com/',
 	},
 	{
 		id: 8,
