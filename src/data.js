@@ -1,7 +1,7 @@
 export const productsData = [
 	{
 		id: 1,
-		img: 'https://drive.google.com/file/d/1ZX0KFZW78qIi15MSBIurLA_dAnQ3JmLQ/view?usp=sharing',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-douxbakery-webdevkunal.png',
 		link: 'http://foodorderplacingapp.webdevkunal.com/',
 	},
 	{
