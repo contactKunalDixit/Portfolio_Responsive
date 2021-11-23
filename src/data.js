@@ -2,7 +2,7 @@ export const productsData = [
 	{
 		id: 1,
 		img: 'https://github.com/contactKunalDixit/Portfolio_Responsive/blob/main/src/img/screenShot_FoodOrderPlacingApp.png?raw=true',
-		link: 'http://buybee.webdevkunal.com/',
+		link: 'http://foodorderplacingapp.webdevkunal.com/',
 	},
 	{
 		id: 2,
