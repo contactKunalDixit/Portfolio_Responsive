@@ -1,7 +1,7 @@
 export const productsData = [
 	{
 		id: 1,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-douxbakery-webdevkunal.png',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/PROJECTS_React/main/Portfolio_FireItems/FoodOrder-Placing_App/food-order-app/src/Img/04519d10-cfe5-11eb-bff8-46671950cebd.png',
 		link: 'http://foodorderplacingapp.webdevkunal.com/',
 	},
 	{
