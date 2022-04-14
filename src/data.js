@@ -1,41 +1,46 @@
 export const productsData = [
 	{
 		id: 1,
+		img: 'https://github.com/contactKunalDixit/PROJECTS_React/blob/main/Portfolio_FireItems/ECommerce_JS_native/Images/screencapture-nikeshoes-webdevkunal-2022-04-14-21_01_21.png?raw=true',
+		link: 'http://nikeshoes.webdevkunal.com/',
+	},
+	{
+		id: 2,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/PROJECTS_React/main/Portfolio_FireItems/FoodOrder-Placing_App/food-order-app/src/Img/04519d10-cfe5-11eb-bff8-46671950cebd.png',
 		link: 'http://foodorderplacingapp.webdevkunal.com/',
 	},
 	{
-		id: 2,
+		id: 3,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-onlineShopping.png',
 		link: 'http://buybee.webdevkunal.com/',
 	},
 	{
-		id: 3,
+		id: 4,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
 		link: 'http://spa-website.webdevkunal.com/',
 	},
 	{
-		id: 4,
+		id: 5,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SmartAnalytics-AdminDashboard.png',
 		link: 'http://admin-dashboard.webdevkunal.com/',
 	},
 	{
-		id: 5,
+		id: 6,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-rellax-Page.png',
 		link: 'http://rellaxpage.webdevkunal.com/',
 	},
 	{
-		id: 6,
+		id: 7,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-douxbakery-webdevkunal.png',
 		link: 'http://douxbakery.webdevkunal.com/',
 	},
 	{
-		id: 7,
+		id: 8,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-ExpenseTracker.png',
 		link: 'http://expensetracker.webdevkunal.com/',
 	},
 	{
-		id: 8,
+		id: 9,
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_Responsive/main/src/img/screencapture-carcare.png',
 		link: 'http://carcare.webdevkunal.com/',
 	},
