@@ -9,14 +9,47 @@
 	.intro-bground {
 		clip-path: polygon(72% 0, 100% 0, 100% 100%, 33% 100%);
 
-		background-color: #9bf6ff;
+		// background-color: #9bf6ff;
+
+		//  Gradient settings start
+background: linear-gradient(56deg, #181e78, #181e78, #222774, #171b6b, #23266c, #6e71aa, #194f74, #191d74, #191d74, #191d74);
+    background-size: 2000% 2000%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+
+		//  Gradient settings end
 		width: 100vw;
 		height: 100%;
 		position: absolute;
 		top: 0rem;
 		right: 0rem;
-		// height: calc(100vh - 60px); /*Test*/
 	}
+
 	.intro-left {
 		flex: 1;
 		display: flex;
@@ -25,63 +58,94 @@
 		align-items: center;
 		position: relative;
 		height: 100%;
+
 		.intro-Left-Wrapper {
 			padding: 3.125rem;
-			height: 50%;
+			height: 85%;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			align-items: center;
+
 			.i-intro {
 				font-weight: 300;
-				font-size: 1.875em;
+				font-size: 3rem;
 			}
-			.i-name {
-				font-weight: 500;
-				font-size: 3.75em;
-			}
-			.i-title {
-				height: 3.125rem;
-				overflow: hidden;
-				.i-title-Wrapper {
-					/* This Wrapper has just been used for adding Animation effect*/
-					overflow: visible;
-					height: 100%;
-					animation: move 10s ease-in-out infinite alternate;
 
-					@keyframes move {
-						25% {
-							transform: translateY(-3.125rem);
-						}
-						50% {
-							transform: translateY(-6.25rem);
-						}
-						75% {
-							transform: translateY(-9.375rem);
-						}
-						100% {
-							transform: translateY(-12.5rem);
-						}
-					}
-					/* Since we have 4 elements in 'i-title-Item' which'll be animated, Leaving the 1st one intact, we are bifurcating the rest in 4 parts in terms of percentage*/
+			.i-work {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
 
-					.i-title-Item {
-						height: 3.125rem;
-						font-size: 1.875em;
-						font-weight: 500;
-						color: rgb(49, 49, 145);
-						display: flex;
-						align-items: center;
-						text-align: center;
-						justify-content: center;
+				.i-name {
+					font-weight: 300;
+					font-size: 1.4rem;
+					margin-right: 0.8rem;
+				}
+
+				.i-title {
+					height: 2rem;
+					overflow: hidden;
+
+					.i-title-Wrapper {
+						/* This Wrapper has just been used for adding Animation effect*/
+						overflow: visible;
+						height: 100%;
+						animation: move 10s ease-in-out infinite alternate;
+
+						@keyframes move {
+							33.333% {
+								transform: translateY(-2.125rem);
+							}
+
+							66.6666% {
+								transform: translateY(-4.25rem);
+							}
+
+							100% {
+								transform: translateY(-6.375rem);
+							}
+
+						}
+
+						/* Since we have 4 elements in 'i-title-Item' which'll be animated, Leaving the 1st one intact, we are bifurcating the rest in 4 parts in terms of percentage*/
+
+						.i-title-Item {
+							height: 2.125rem;
+							font-size: 1.4rem;
+							font-weight: 300;
+							color: rgb(49, 49, 145);
+							display: flex;
+							align-items: center;
+							text-align: center;
+							justify-content: flex-start;
+						}
 					}
 				}
 			}
+
 			.intro-desc {
 				text-align: center;
+				font-weight: 300;
+				font-size: 1.3rem;
+			}
+
+			.intro-ul {
+				padding: 0;
+				list-style-type: none;
+
+				li {
+					font-size: 1.2rem;
+					margin: 0.5rem 0;
+					font-weight: 300;
+					display: flex;
+					justify-content: center;
+				}
 			}
 		}
 	}
+
 	.intro-right {
 		flex: 1;
 		position: relative;
@@ -89,6 +153,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
 		.intro-img {
 			width: 80%;
 			height: 100%;
@@ -99,197 +164,236 @@
 	}
 }
 
-// ******Media Queries ******
+// // ******Media Queries ******
 
-@media screen and (min-width: 320px) {
-	.Intro {
-		font-size: 10px;
-		flex-direction: column-reverse;
-		.intro-left {
-			flex: initial;
-			flex: none;
-			height: 55%;
-			.intro-Left-Wrapper {
-				padding: 0 10px;
-				align-items: center;
-				text-align: center;
-				height: 100%;
-				justify-content: space-evenly;
-				.i-intro {
-					font-weight: 400;
-				}
-				.i-name {
-					font-weight: 300;
-				}
-				.intro-desc {
-					display: none;
-				}
-			}
-		}
-		.intro-right {
-			height: 35%;
-			flex: none;
-		}
-	}
-}
+// @media screen and (min-width: 320px) {
+// 	.Intro {
+// 		font-size: 10px;
+// 		flex-direction: column-reverse;
 
-@media screen and (min-width: 480px) {
-	.Intro {
-		font-size: 12px;
-		flex-direction: column-reverse;
-		flex-direction: row;
-		.intro-left {
-			height: 60%;
-			height: 100%;
-			width: 50%;
-			flex: none;
-			.intro-Left-Wrapper {
-				padding: 0 10px;
-				align-items: center;
-				text-align: center;
-				height: 100%;
-				justify-content: space-evenly;
-				.i-intro {
-					font-size: 1rem;
-				}
-				.i-name {
-					font-size: 1.8rem;
-				}
-				.intro-desc {
-					display: none;
-				}
-				.i-title {
-					font-size: 0.6rem;
-				}
-			}
-		}
-		.intro-right {
-			flex: none;
-			height: 40%;
-			height: 100%;
-			width: 50%;
-		}
-	}
-}
+// 		.intro-left {
+// 			flex: initial;
+// 			flex: none;
+// 			height: 55%;
 
-//3
-@media screen and (min-width: 768px) {
-	.Intro {
-		font-size: 14px;
-		flex-direction: column-reverse;
-		// flex-direction: row;
-		.intro-left {
-			height: 60%;
-			// height: 100%;
-			width: 50%;
-			width: 100%;
-			flex: none;
-			.intro-Left-Wrapper {
-				padding: 0 10px;
-				align-items: center;
-				text-align: center;
-				height: 100%;
-				justify-content: space-evenly;
-				.i-intro {
-					font-size: 1.5rem;
-				}
-				.i-name {
-					font-size: 2.7rem;
-				}
-				.intro-desc {
-					// display: none;
-					display: block;
-					font-size: 1rem;
-				}
-				.i-title {
-					font-size: 0.7rem;
-				}
-			}
-		}
-		.intro-right {
-			flex: none;
-			height: 40%;
-			// height: 100%;
-			// width: 50%;
-			width: 100%;
-		}
-	}
-}
+// 			.intro-Left-Wrapper {
+// 				padding: 0 10px;
+// 				align-items: center;
+// 				text-align: center;
+// 				height: 100%;
+// 				justify-content: space-evenly;
 
-@media screen and (min-width: 992px) {
-	.Intro {
-		font-size: 14px;
-		flex-direction: row;
-		// flex-direction: row;
-		.intro-left {
-			// height: 60%;
-			height: 100%;
-			width: 50%;
-			// width: 100%;
-			flex: none;
-			.intro-Left-Wrapper {
-				padding: 0 10px;
-				align-items: center;
-				text-align: center;
-				height: 80%;
-				justify-content: space-evenly;
-				.i-intro {
-					font-size: 1.5rem;
-				}
-				.i-name {
-					font-size: 2.7rem;
-				}
-				.intro-desc {
-					// display: none;
-					display: block;
-					font-size: 1rem;
-				}
-				.i-title {
-					font-size: 0.7rem;
-				}
-				.DownArrow {
-					position: absolute;
-					bottom: 20px;
-				}
-			}
-		}
-		.intro-right {
-			flex: none;
-			// height: 40%;
-			height: 100%;
-			width: 50%;
-			// width: 100%;
-		}
-	}
-}
+// 				.i-intro {
+// 					font-weight: 400;
+// 				}
 
-@media screen and (min-width: 1200px) {
-	.Intro {
-		font-size: 15px;
-		.intro-left {
-			height: 100%;
-			flex: none;
-			.intro-Left-Wrapper {
-				padding: 0 50px;
-				align-items: center;
-				text-align: center;
-				height: 80%;
-				justify-content: space-evenly;
-				.i-name {
-					font-weight: 300;
-				}
-				.intro-desc {
-					// display: none;
-					font-size: 17px;
-				}
-				.DownArrow {
-					position: absolute;
-					bottom: 20px;
-				}
-			}
-		}
-		.intro-right {
-			flex: none;
-		}
-	}
-}
+// 				.i-name {
+// 					font-weight: 300;
+// 				}
+
+// 				.intro-desc {
+// 					display: none;
+// 				}
+// 			}
+// 		}
+
+// 		.intro-right {
+// 			height: 35%;
+// 			flex: none;
+// 		}
+// 	}
+// }
+
+// @media screen and (min-width: 480px) {
+// 	.Intro {
+// 		font-size: 12px;
+// 		flex-direction: column-reverse;
+// 		flex-direction: row;
+
+// 		.intro-left {
+// 			height: 60%;
+// 			height: 100%;
+// 			width: 50%;
+// 			flex: none;
+
+// 			.intro-Left-Wrapper {
+// 				padding: 0 10px;
+// 				align-items: center;
+// 				text-align: center;
+// 				height: 100%;
+// 				justify-content: space-evenly;
+
+// 				.i-intro {
+// 					font-size: 1rem;
+// 				}
+
+// 				.i-name {
+// 					font-size: 1.8rem;
+// 				}
+
+// 				.intro-desc {
+// 					display: none;
+// 				}
+
+// 				.i-title {
+// 					font-size: 0.6rem;
+// 				}
+// 			}
+// 		}
+
+// 		.intro-right {
+// 			flex: none;
+// 			height: 40%;
+// 			height: 100%;
+// 			width: 50%;
+// 		}
+// 	}
+// }
+
+// //3
+// @media screen and (min-width: 768px) {
+// 	.Intro {
+// 		font-size: 14px;
+// 		flex-direction: column-reverse;
+
+// 		// flex-direction: row;
+// 		.intro-left {
+// 			height: 60%;
+// 			// height: 100%;
+// 			width: 50%;
+// 			width: 100%;
+// 			flex: none;
+
+// 			.intro-Left-Wrapper {
+// 				padding: 0 10px;
+// 				align-items: center;
+// 				text-align: center;
+// 				height: 100%;
+// 				justify-content: space-evenly;
+
+// 				.i-intro {
+// 					font-size: 1.5rem;
+// 				}
+
+// 				.i-name {
+// 					font-size: 2.7rem;
+// 				}
+
+// 				.intro-desc {
+// 					// display: none;
+// 					display: block;
+// 					font-size: 1rem;
+// 				}
+
+// 				.i-title {
+// 					font-size: 0.7rem;
+// 				}
+// 			}
+// 		}
+
+// 		.intro-right {
+// 			flex: none;
+// 			height: 40%;
+// 			// height: 100%;
+// 			// width: 50%;
+// 			width: 100%;
+// 		}
+// 	}
+// }
+
+// @media screen and (min-width: 992px) {
+// 	.Intro {
+// 		font-size: 0.875rem;
+// 		flex-direction: row;
+
+// 		// flex-direction: row;
+// 		.intro-left {
+// 			// height: 60%;
+// 			height: 100%;
+// 			width: 50%;
+// 			// width: 100%;
+// 			flex: none;
+
+// 			.intro-Left-Wrapper {
+// 				padding: 0 10px;
+// 				align-items: center;
+// 				text-align: center;
+// 				height: 80%;
+// 				justify-content: space-evenly;
+
+// 				.i-intro {
+// 					font-size: 2.5rem;
+// 					font-weight: 400;
+// 				}
+
+// 				.i-work {
+// 					.i-name {
+// 						font-size: 2rem;
+// 						font-weight: 300;
+// 					}
+
+// 					.i-title {
+// 						font-size: 2rem;
+// 					}
+// 				}
+
+// 				.intro-desc {
+// 					// display: none;
+// 					display: block;
+// 					font-size: 2.6rem;
+// 				}
+
+// 				.DownArrow {
+// 					position: absolute;
+// 					bottom: 20px;
+// 				}
+// 			}
+// 		}
+
+// 		.intro-right {
+// 			flex: none;
+// 			// height: 40%;
+// 			height: 100%;
+// 			width: 50%;
+// 			// width: 100%;
+// 		}
+// 	}
+// }
+
+// @media screen and (min-width: 1200px) {
+// 	.Intro {
+// 		font-size: 1rem;
+
+// 		.intro-left {
+// 			height: 100%;
+// 			flex: none;
+
+// 			.intro-Left-Wrapper {
+// 				padding: 0 50px;
+// 				align-items: center;
+// 				text-align: center;
+// 				height: 80%;
+// 				justify-content: space-evenly;
+
+// 				.i-name {
+// 					font-weight: 300;
+// 				}
+
+// 				.intro-desc {
+// 					// display: none;
+// 					font-size: 1.5rem;
+// 				}
+
+// 				.DownArrow {
+// 					position: absolute;
+// 					bottom: 20px;
+// 				}
+// 			}
+// 		}
+
+// 		.intro-right {
+// 			flex: none;
+// 		}
+// 	}
+// }
+// //

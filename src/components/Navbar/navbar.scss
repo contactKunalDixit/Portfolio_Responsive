@@ -1,8 +1,6 @@
 .navbar {
 	width: 100vw;
 	height: 3.75rem;
-	background-color: rgb(221, 219, 215);
-
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -11,7 +9,44 @@
 	align-items: center;
 	z-index: 100;
 	overflow: hidden;
-	.navbar-wrapper {
+
+ 
+//  Gradient settings start
+
+
+    
+        background: linear-gradient(56deg, #181e78, #181e78, #222774, #171b6b, #23266c, #6e71aa, #194f74, #191d74, #191d74, #191d74);
+    background-size: 2000% 2000%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}	
+//  Gradient settings end
+
+.navbar-wrapper {
 		width: 95%;
 		padding: 0 0.625rem;
 		display: flex;
@@ -28,20 +63,18 @@
 				width: 100%;
 				align-items: center;
 				justify-content: flex-start;
+				font-size: 1.25rem;
 				a {
-					// font-size: 24px;
 					margin-right: 1.25rem;
 					display: flex;
 					align-items: center;
 					text-decoration: none;
-					color: black;
-					font-size: 1.25em;
+
 					transition: all 0.5s ease;
-					&:hover {
-						// transform: scale(1.2, 1.2);
-					}
+
 					.nav-logoTitle {
-						font-size: 1.3em;
+						font-size: 1.2rem;
+						margin: 0px 10px;
 					}
 				}
 			}
@@ -52,25 +85,38 @@
 			justify-content: center;
 			align-items: center;
 			.navbar-ul {
-				padding: 0;
+				// padding: 0;
 				width: 100%;
 				display: flex;
 				align-items: center;
-				justify-content: space-evenly;
-				list-style-type: none;
+				justify-content: center;
 
 				.navbar-li {
 					text-decoration: none;
 					cursor: pointer;
-					transition: all 0.5s ease;
-					font-size: 1.3em;
-					// &:hover {
-					// 	transform: scale(1.2, 1.2);
-					// }
+					// transition: all 0.5s ease;
+					font-size: 2rem;
+					display: flex;
+					justify-content: center;align-items: center;
 
+					// &:hover {
+					// 	transform: scale(1.05);
+					// 	color: white;
+					// }
 					.navbar-li-a {
 						text-decoration: none;
-						color: black;
+						color: rgb(175, 168, 168);
+						border-bottom: 2px solid transparent;
+						transition: border-bottom 1s;
+						
+						font-size:1rem;
+
+						
+						
+					}
+					.navbar-li-a:hover{
+						border-color:orange;
+						color:white;
 					}
 				}
 			}
@@ -82,7 +128,7 @@
 			align-items: center;
 		}
 	}
-}
+
 
 @media screen and (min-width: 320px) {
 	.navbar {

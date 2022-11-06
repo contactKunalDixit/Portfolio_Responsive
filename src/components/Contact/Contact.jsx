@@ -1,11 +1,12 @@
 import React, { useState, useRef } from 'react';
-import './contact.scss';
+import styles from './contact.module.css';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import Address from '../../img/address.png';
 import emailjs from 'emailjs-com';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
 	const [nameValue, setNameValue] = useState('');
@@ -44,86 +45,96 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='Contact' id='contact'>
-			<div
-				className='contact-bg'
-				style={{ backgroundColor: darkMode ? '#ffd6a539' : '#a0c4ff' }}
-			></div>
-			<div className='contact-Wrapper'>
-				<div className='c-Left'>
-					<h1 className='c-title LgScreen'>Let's discuss your Project</h1>
-					<h1 className='c-title smScreen'>Let's Connect</h1>
-					<div className='c-info'>
-						<div className='c-info-item'>
-							<img src={Phone} alt='' className='c-icon' /> +65 90301206
+		<>
+			<div className={styles.Contact} id='contact'>
+				<div
+					className={styles.contact_bg}
+					// style={{ backgroundColor: darkMode ? '#ffd6a539' : '#a0c4ff' }}
+				></div>
+				<div className={styles.contact_Wrapper}>
+					<div className={styles.contactTop}>
+						<div className={styles.c_Left}>
+							<div className={styles.c_Left_Title}>
+								<h1 className={`${styles.c_title} ${styles.LgScreen}`}>
+									Let's get started
+								</h1>
+								<h1 className={`${styles.c_title} ${styles.smScreen}`}>
+									Let's Connect
+								</h1>
+								<p className={styles.c_Left_Desc}>
+									Like what you see? Let's connect and build something great,
+									together!
+								</p>
+							</div>
+							<div className={styles.cLeftFormSec}>
+								<form ref={formRef} onSubmit={handleSubmit}>
+									<div className={styles.userName}>
+										<label htmlFor='userName'>Name:</label>
+										<input
+											id='userName'
+											type='text'
+											name='user_name'
+											value={nameValue}
+											onChange={(e) => setNameValue(e.target.value)}
+											onClick={(e) => setDone(false)}
+										/>
+									</div>
+
+									<div className={styles.userEmail}>
+										<label htmlFor='userEmail'>Email:</label>
+										<input
+											id='userEmail'
+											type='email'
+											name='user_email'
+											value={emailValue}
+											onChange={(e) => setEmailValue(e.target.value)}
+										/>
+									</div>
+									<div className={styles.userMessage}>
+										<label htmlFor='userMessage'>Message:</label>
+										<textarea
+											id='userMessage'
+											name='message'
+											value={messageValue}
+											rows='3'
+											onChange={(e) => setMessageValue(e.target.value)}
+										></textarea>
+									</div>
+
+									<button className={styles.cLeftSecSubmitButton}>
+										Submit
+									</button>
+									{done && (
+										<p style={{ marginTop: '20px' }}>
+											Thank you! We'll be in touch soon.
+										</p>
+									)}
+								</form>
+							</div>
 						</div>
-						<div className='c-info-item'>
-							<img src={Email} alt='' className='c-icon' />
-							contactdixitkunal@gmail.com
-						</div>
-						<div className='c-info-item'>
-							<img src={Address} alt='' className='c-icon' />
-							1459 #3, Bedok Reservoir Road, Singapore - 470138
+						<div className={styles.c_Right}>
+							<div className={styles.c_right_wrapper}>
+								<div className={styles.c_info}>
+									<div className={styles.c_info_item}>
+										<img src={Phone} alt='' className={styles.c_icon} /> +65
+										90301206
+									</div>
+									<div className={styles.c_info_item}>
+										<img src={Email} alt='' className={styles.c_icon} />
+										contactkunaldixit@gmail.com
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className='c-Right'>
-					<div className='c-right-wrapper'>
-						<p
-							className='c-desc LgScreen'
-							style={{ color: darkMode ? 'rgb(204, 235, 255)' : 'black' }}
-						>
-							<b>
-								<span className='Q-title'>What's your story ? </span>
-							</b>
-							Get in touch. Always available for freelancing if the right
-							project comes along
-						</p>
-						<p className='c-desc SmScreen'>
-							<span className='Q-title'>What's your story ? </span>
-							Get in touch..
-						</p>
-						<form ref={formRef} onSubmit={handleSubmit}>
-							<input
-								type='text'
-								placeholder='Name'
-								name='user_name'
-								value={nameValue}
-								onChange={(e) => setNameValue(e.target.value)}
-								onClick={(e) => setDone(false)}
-							/>
-							<input
-								type='text'
-								placeholder='Subject'
-								name='user_subject'
-								value={subjectValue}
-								onChange={(e) => setSubjectValue(e.target.value)}
-							/>
-							<input
-								type='email'
-								placeholder='Email'
-								name='user_email'
-								value={emailValue}
-								onChange={(e) => setEmailValue(e.target.value)}
-							/>
-							<textarea
-								placeholder='Message'
-								name='message'
-								value={messageValue}
-								rows='3'
-								onChange={(e) => setMessageValue(e.target.value)}
-							></textarea>
-							<button>Submit</button>
-							{done && (
-								<p style={{ marginTop: '20px' }}>
-									Thank you! We'll be in touch soon.
-								</p>
-							)}
-						</form>
+
+					<div className={styles.contactBottom}>
+						{' '}
+						<Footer></Footer>
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

@@ -13,48 +13,48 @@ const Testimonials = (props) => {
 			id='testimonials'
 			style={{
 				backgroundColor: darkMode ? '#121212' : 'white',
-				color: darkMode && '#ccebff',
+				color: darkMode && '#a70aa2',
 			}}
 		>
-			<div
-				className='testimonial-bg'
-				style={{
-					backgroundColor: darkMode ? '#641345b8' : '#320c7e39',
-				}}
-			></div>
 			<div className='testimonials-wrapper'>
-				<h1 className='testimonials-Title'>Testimonials</h1>
 				<div className='testimonials-container'>
 					{linkedinData.map((item) => {
 						return (
 							<div
 								className='card'
 								key={item.key}
-								style={{
-									backgroundColor: darkMode ? '#2e1daa50' : '#407a1d39',
-									color: darkMode && '#ccebff',
-								}}
+								style={
+									{
+										// backgroundColor: darkMode ? '#161b63' : '#0a0e45',
+										// color: darkMode && '#ccebff',
+									}
+								}
 							>
 								<div className='top'>
-									{/* <img src='assets/right-arrow.png' className='left' alt='' /> */}
-									<img className='user' src={item.img} alt='' />
-									{/* <img className='right' src={item.icon} alt='' /> */}
-								</div>
-								<div
-									className='center'
-									style={{
-										backgroundColor: darkMode ? '#4a428f' : '#320c7e39',
-										color: darkMode && '#ccebff',
-									}}
-								>
-									<p>{item.desc}</p>
+									<div className='topStart'>
+										<img className='user' src={item.img} alt='' />
+									</div>
+									<div
+										className='topEnd'
+										style={{
+											backgroundColor: darkMode ? '#0c0830' : 'transparent',
+											color: darkMode && '#87afc9',
+										}}
+									>
+										<p>{item.desc}</p>
+									</div>
 								</div>
 								<div className='bottom'>
-									<h3 className='bottom-userName'>{item.name}</h3>
+									<h3
+										className='bottom-userName'
+										style={{ color: !darkMode && 'rgb(66, 59, 59)' }}
+									>
+										{item.name}
+									</h3>
 									<h4
 										className='bottom-userTitle'
 										style={{
-											color: !darkMode && 'black',
+											color: !darkMode && 'rgb(35, 31, 31);',
 										}}
 									>
 										{item.title}{' '}

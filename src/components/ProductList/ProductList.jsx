@@ -18,9 +18,9 @@ const ProductList = () => {
 			<div className='pl-wrapper'>
 				<div className='pl-text'>
 					<h1 className='pl-title'>Work</h1>
-					<p className='pl-desc'>
+					{/* <p className='pl-desc'>
 						Here is a glimpse of few of the projects that I've worked on...
-					</p>
+					</p> */}
 				</div>
 				<div className='pl-List'>
 					{productsData.map((item) => (

@@ -10,7 +10,7 @@ const Navbar = () => {
 	return (
 		<div
 			className='navbar'
-			style={{ backgroundColor: darkMode ? '#090f6850' : '#a0c4ff' }}
+			// style={{ backgroundColor: darkMode ? '#090f6850' : 'rgb(49,36,79)' }}
 		>
 			<div className='navbar-wrapper'>
 				<div className='navbar-left'>
@@ -18,17 +18,14 @@ const Navbar = () => {
 						<a href='#intro'>
 							<MdImportantDevices
 								style={{
-									fontSize: '24px',
 									margin: '0px 10px',
-									color: darkMode ? '#a2a2ca' : '#313191',
+									color: darkMode ? '#a2a2ca' : '#d8d8fa',
 								}}
 							></MdImportantDevices>
 							<div
 								className='nav-logoTitle'
 								style={{
-									fontSize: '24px',
-									margin: '0px 10px',
-									color: darkMode ? '#a2a2ca' : '#313191',
+									color: darkMode ? '#a2a2ca' : '#d8d8fa',
 								}}
 							>
 								Kunal D.
@@ -38,7 +35,7 @@ const Navbar = () => {
 				</div>
 				<div className='navbar-center'>
 					<div className='header-smallScreen'>
-						<p style={{ color: darkMode ? '#a2a2ca' : '#313191' }}>
+						<p style={{ color: darkMode ? '#a2a2ca' : '#d8d8fa' }}>
 							contactkunaldixit@gmail.com
 						</p>
 					</div>
@@ -47,45 +44,59 @@ const Navbar = () => {
 							<a
 								className='navbar-li-a'
 								href='#intro'
-								style={{ color: darkMode ? '#a2a2ca' : '#313191' }}
+								// style={{
+								// 	color: darkMode ? '#a2a2ca' : '#d8d8fa',
+								// }}
 							>
-								Home
+								WELCOME
 							</a>
 						</li>
+
 						<li className='navbar-li'>
 							<a
 								className='navbar-li-a'
 								href='#about'
-								style={{ color: darkMode ? '#a2a2ca' : '#313191' }}
+								// style={{ color: darkMode ? '#a2a2ca' : '#d8d8fa' }}
 							>
-								About Me
+								SERVICES
 							</a>
 						</li>
+						{/* <li className='navbar-li'>
+							<a
+								className='navbar-li-a'
+								href='#work'
+								style={{ color: darkMode ? '#a2a2ca' : '#d8d8fa' }}
+							>
+								SERVICES(new Section)
+							</a>
+						</li> */}
+
 						<li className='navbar-li'>
 							<a
 								className='navbar-li-a'
 								href='#work'
-								style={{ color: darkMode ? '#a2a2ca' : '#313191' }}
+								// style={{ color: darkMode ? '#a2a2ca' : '#d8d8fa' }}
 							>
-								Products
+								MY WORK
 							</a>
 						</li>
-						<li className='navbar-li'>
+						{/* //! TO BE DELETED, Testimonials have been merged with About me info */}
+						{/* <li className='navbar-li'>
 							<a
 								className='navbar-li-a'
 								href='#testimonials'
-								style={{ color: darkMode ? '#a2a2ca' : '#313191' }}
+								style={{ color: darkMode ? '#a2a2ca' : '#d8d8fa' }}
 							>
 								Testimonials
 							</a>
-						</li>
+						</li> */}
 						<li className='navbar-li'>
 							<a
 								className='navbar-li-a'
 								href='#contact'
-								style={{ color: darkMode ? '#a2a2ca' : '#313191' }}
+								// style={{ color: darkMode ? '#a2a2ca' : '#d8d8fa' }}
 							>
-								Contact Me
+								CONTACT
 							</a>
 						</li>
 					</ul>

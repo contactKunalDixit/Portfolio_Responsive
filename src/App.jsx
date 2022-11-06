@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import Intro from './components/Intro/Intro';
+// eslint-disable-next-line no-unused-vars
 import About from './components/About/About';
 import ProductList from './components/ProductList/ProductList';
 import Contact from './components/Contact/Contact';
@@ -33,7 +35,6 @@ function App() {
 				<Intro />
 				<About />
 				<ProductList />
-				<Testimonials />
 				<Contact />
 			</div>
 		</div>

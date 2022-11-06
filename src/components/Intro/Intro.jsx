@@ -16,47 +16,57 @@ const Intro = () => {
 			></div>
 			<div className='intro-left'>
 				<div className='intro-Left-Wrapper'>
-					<h2 className='i-intro'>Hello, My name is</h2>
-					<h1 className='i-name'>Kunal Dixit</h1>
-					<div className='i-title'>
-						<div className='i-title-Wrapper'>
-							<div
-								className='i-title-Item'
-								style={{ color: darkMode ? '#edeb80' : '#313191' }}
-							>
-								Web Developer
-							</div>
-							<div
-								className='i-title-Item'
-								style={{ color: darkMode ? '#edeb80' : '#313191' }}
-							>
-								UI/UX Designer
-							</div>
-							<div
-								className='i-title-Item'
-								style={{ color: darkMode ? '#edeb80' : '#313191' }}
-							>
-								Content Creator
-							</div>
-							<div
-								className='i-title-Item'
-								style={{ color: darkMode ? '#edeb80' : '#313191' }}
-							>
-								Trainer
-							</div>
-							<div
-								className='i-title-Item'
-								style={{ color: darkMode ? '#edeb80' : '#313191' }}
-							>
-								Facilitator
+					<h1 className='i-intro'>Hi, I'm Kunal</h1>
+					<div className='i-work'>
+						<h1 className='i-name'>I do</h1>
+						<div className='i-title'>
+							<div className='i-title-Wrapper'>
+								<div
+									className='i-title-Item'
+									style={{ color: darkMode ? '#edeb80' : '#313191' }}
+								>
+									Front-end Development
+								</div>
+								<div
+									className='i-title-Item'
+									style={{ color: darkMode ? '#edeb80' : '#313191' }}
+								>
+									Back-end Development
+								</div>
+								<div
+									className='i-title-Item'
+									style={{ color: darkMode ? '#edeb80' : '#313191' }}
+								>
+									UI Desiging
+								</div>
+								{/* <div
+									className='i-title-Item'
+									style={{ color: darkMode ? '#edeb80' : '#313191' }}
+								>
+									Content Creation
+								</div> */}
+								<div
+									className='i-title-Item'
+									style={{ color: darkMode ? '#edeb80' : '#313191' }}
+								>
+									Training and Facilitation
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<p className='intro-desc'>
-						I design and develop services for customers of all sizes,
-						specializing in creating stylish, modern and responsive websites,
-						web services and online stores
+						I create Full Stack web applications and UIs using:
 					</p>
+					<ul className='intro-ul'>
+						<li>ReactJS</li>
+						<li>JavaScript</li>
+						<li>NodeJS and Express</li>
+						<li>PHP</li>
+						<li>SQL/ MongoDB</li>
+						<li>HTML</li>
+						<li>CSS</li>
+					</ul>
 
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
