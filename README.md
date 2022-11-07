@@ -1,3 +1,5 @@
+# Project Paused  - Side Project Travel Booking App started - Should resume after the side project completion
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
