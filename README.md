@@ -1,4 +1,4 @@
-# Project Paused  - Side Project Travel Booking App started - Should resume after the side project completion
+# Project Paused  - - Should resume after the side project completion
 # Project 1 : Booking App : LamaDev
 # Project 2 : HR_Unified App
 # Project 3 : JavaScript Mastery
