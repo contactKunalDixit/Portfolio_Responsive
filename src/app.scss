@@ -1,11 +1,24 @@
 .App {
-	width: 100vw;
-	height: 100vh;
+	width: min(100%,2560px);
+	margin-inline: auto;
+	height:100vh;
+	height: 100svh;
+	position:relative;
 
+
+	.Navbar{
+		position:absolute;
+		inset:auto 0 0 ;
+		top:0;
+		// background-color: red;
+		height: 3.75rem;
+
+	}
 	.Sections {
-		width: 100vw;
+		width: 100%;
 		position: relative;
 		height: calc(100vh - 3.75rem);
+		height: calc(100svh - 3.75rem);
 		top: 3.75rem;
 		scroll-behavior: smooth;
 		scroll-snap-type: y mandatory;
@@ -14,8 +27,9 @@
 			display: none;
 		}
 		> * {
-			width: 100vw;
+			
 			height: calc(100vh - 3.75rem);
+			height: calc(100svh - 3.75rem);
 			scroll-snap-align: start;
 		}
 	}

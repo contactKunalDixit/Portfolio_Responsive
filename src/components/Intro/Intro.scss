@@ -1,10 +1,12 @@
 .Intro {
 	margin: 0rem;
-	padding: 0rem;
+	// padding: 2rem;
 	display: flex;
 	position: relative;
-	width: 100vw;
+	// width: 98%;
+	margin-inline: auto;
 	height: calc(100vh - 3.75rem);
+	height: calc(100svh - 3.75rem);
 
 	.intro-bground {
 		clip-path: polygon(72% 0, 100% 0, 100% 100%, 33% 100%);
@@ -12,156 +14,238 @@
 		// background-color: #9bf6ff;
 
 		//  Gradient settings start
-background: linear-gradient(56deg, #181e78, #181e78, #222774, #171b6b, #23266c, #6e71aa, #194f74, #191d74, #191d74, #191d74);
-    background-size: 2000% 2000%;
+		background: linear-gradient(56deg, #181e78, #181e78, #222774, #171b6b, #23266c, #6e71aa, #194f74, #191d74, #191d74, #191d74);
+		background-size: 2000% 2000%;
 
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    -o-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+		-webkit-animation: AnimationName 10s ease infinite;
+		-moz-animation: AnimationName 10s ease infinite;
+		-o-animation: AnimationName 10s ease infinite;
+		animation: AnimationName 10s ease infinite;
 
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:71% 0%}
-    50%{background-position:30% 100%}
-    100%{background-position:71% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:71% 0%}
-    50%{background-position:30% 100%}
-    100%{background-position:71% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:71% 0%}
-    50%{background-position:30% 100%}
-    100%{background-position:71% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:71% 0%}
-    50%{background-position:30% 100%}
-    100%{background-position:71% 0%}
-}
+		@-webkit-keyframes AnimationName {
+			0% {
+				background-position: 71% 0%
+			}
+
+			50% {
+				background-position: 30% 100%
+			}
+
+			100% {
+				background-position: 71% 0%
+			}
+		}
+
+		@-moz-keyframes AnimationName {
+			0% {
+				background-position: 71% 0%
+			}
+
+			50% {
+				background-position: 30% 100%
+			}
+
+			100% {
+				background-position: 71% 0%
+			}
+		}
+
+		@-o-keyframes AnimationName {
+			0% {
+				background-position: 71% 0%
+			}
+
+			50% {
+				background-position: 30% 100%
+			}
+
+			100% {
+				background-position: 71% 0%
+			}
+		}
+
+		@keyframes AnimationName {
+			0% {
+				background-position: 71% 0%
+			}
+
+			50% {
+				background-position: 30% 100%
+			}
+
+			100% {
+				background-position: 71% 0%
+			}
+		}
 
 		//  Gradient settings end
-		width: 100vw;
+		width: 100%;
 		height: 100%;
 		position: absolute;
 		top: 0rem;
 		right: 0rem;
 	}
 
+	.intro-wrapper {
+		width: 100%;
+		display: flex;
+		padding: 2rem;
+	}
+
 	.intro-left {
 		flex: 1;
 		display: flex;
-		// flex-direction: column;
+		
 		justify-content: center;
 		align-items: center;
 		position: relative;
 		height: 100%;
 
 		.intro-Left-Wrapper {
-			padding: 3.125rem;
-			height: 85%;
+			
+			width: 100%;
+			height: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
+			background-color: transparent;
 
 			.i-intro {
-				font-weight: 300;
-				font-size: 3rem;
-			}
-
-			.i-work {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-
-				.i-name {
+				.salutation_1 {
 					font-weight: 300;
-					font-size: 1.4rem;
-					margin-right: 0.8rem;
+					font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
+					display: flex;
+					align-items: center;
+					justify-content: center;
 				}
 
-				.i-title {
-					height: 2rem;
-					overflow: hidden;
+				.salutation_2 {
+					font-weight: 300;
+					font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
 
-					.i-title-Wrapper {
-						/* This Wrapper has just been used for adding Animation effect*/
-						overflow: visible;
-						height: 100%;
-						animation: move 10s ease-in-out infinite alternate;
+			}
 
-						@keyframes move {
-							33.333% {
-								transform: translateY(-2.125rem);
-							}
+		}
 
-							66.6666% {
-								transform: translateY(-4.25rem);
-							}
+		.i-work {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
 
-							100% {
-								transform: translateY(-6.375rem);
-							}
+			.i-name {
+				font-weight: 300;
+				font-size: 1.4rem;
+				margin-right: 0.8rem;
+			}
 
+			.i-title {
+				height: 2rem;
+				overflow: hidden;
+
+				.i-title-Wrapper {
+					/* This Wrapper has just been used for adding Animation effect*/
+					overflow: visible;
+					height: 100%;
+					animation: move 10s ease-in-out infinite alternate;
+
+					@keyframes move {
+						33.333% {
+							transform: translateY(-2.125rem);
 						}
 
-						/* Since we have 4 elements in 'i-title-Item' which'll be animated, Leaving the 1st one intact, we are bifurcating the rest in 4 parts in terms of percentage*/
-
-						.i-title-Item {
-							height: 2.125rem;
-							font-size: 1.4rem;
-							font-weight: 300;
-							color: rgb(49, 49, 145);
-							display: flex;
-							align-items: center;
-							text-align: center;
-							justify-content: flex-start;
+						66.6666% {
+							transform: translateY(-4.25rem);
 						}
+
+						100% {
+							transform: translateY(-6.375rem);
+						}
+
+					}
+
+					/* Since we have 4 elements in 'i-title-Item' which'll be animated, Leaving the 1st one intact, we are bifurcating the rest in 4 parts in terms of percentage*/
+
+					.i-title-Item {
+						height: 2.125rem;
+						font-size: 1.4rem;
+						font-weight: 500;
+						color: rgb(49, 49, 145);
+						display: flex;
+						align-items: center;
+						text-align: center;
+						justify-content: flex-start;
 					}
 				}
 			}
+		}
 
-			.intro-desc {
-				text-align: center;
+		.intro-desc {
+			text-align: center;
+			font-weight: 300;
+			font-size: 1.3rem;
+			font-size: clamp(0.8rem, 0.5219rem + 1.0596vw, 1.2rem);
+		}
+
+		.intro-ul {
+			padding: 0;
+			list-style-type: none;
+
+			li {
+				font-size: 1.2rem;
+				font-size: clamp(0.8rem, 0.5219rem + 1.0596vw, 1.2rem);
+
+				margin: 0.5rem 0;
 				font-weight: 300;
-				font-size: 1.3rem;
-			}
+				display: flex;
+				justify-content: start;
+				align-items: center;
 
-			.intro-ul {
-				padding: 0;
-				list-style-type: none;
-
-				li {
-					font-size: 1.2rem;
-					margin: 0.5rem 0;
-					font-weight: 300;
-					display: flex;
-					justify-content: center;
+				.boldHeader {
+					font-weight: 500;
+					font-size: clamp(1rem, 0.9215rem + 0.2991vw, 1.1rem);
+					margin-right: 1rem;
 				}
 			}
 		}
-	}
 
-	.intro-right {
-		flex: 1;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		.downArrow {
+			font-size: clamp(1rem, 0.3046rem + 2.649vw, 2rem);
+			font-weight: light;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-		.intro-img {
-			width: 80%;
-			height: 100%;
-			object-fit: contain;
-			position: absolute;
-			z-index: 1;
 		}
 	}
+}
+
+.intro-right {
+	flex: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+
+	.intro-img {
+		max-width: 80%;
+		// height: 100%;
+		height: auto;
+		object-fit: contain;
+		position: absolute;
+		bottom: 0px;
+		z-index: 1;
+	}
+
 }
 
 // // ******Media Queries ******

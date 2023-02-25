@@ -3,6 +3,10 @@ import './Intro.scss';
 import Me from '../../img/guylaptop.png';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
+// import { FaAngleDown } from 'react-icons/fa';
+import { AiOutlineDown } from 'react-icons/ai';
+import handWave from './../../img/hiIconSVG.png';
+
 const Intro = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
@@ -14,83 +18,101 @@ const Intro = () => {
 					backgroundColor: darkMode ? '#18a0ac6f' : '#9bf6ff',
 				}}
 			></div>
-			<div className='intro-left'>
-				<div className='intro-Left-Wrapper'>
-					<h1 className='i-intro'>Hi, I'm Kunal</h1>
-					<div className='i-work'>
-						<h1 className='i-name'>I do</h1>
-						<div className='i-title'>
-							<div className='i-title-Wrapper'>
-								<div
-									className='i-title-Item'
-									style={{ color: darkMode ? '#edeb80' : '#313191' }}
-								>
-									Front-end Development
-								</div>
-								<div
-									className='i-title-Item'
-									style={{ color: darkMode ? '#edeb80' : '#313191' }}
-								>
-									Back-end Development
-								</div>
-								<div
-									className='i-title-Item'
-									style={{ color: darkMode ? '#edeb80' : '#313191' }}
-								>
-									UI Desiging
-								</div>
-								{/* <div
+			<div className='intro-wrapper'>
+				<div className='intro-left'>
+					<div className='intro-Left-Wrapper'>
+						<div className='i-intro'>
+							<h1 className='salutation_1'>Hello </h1>
+
+							<h1 className='salutation_2'>I am Kunal</h1>
+						</div>
+						<div className='i-work'>
+							<h1 className='i-name'>I do</h1>
+							<div className='i-title'>
+								<div className='i-title-Wrapper'>
+									<div
+										className='i-title-Item'
+										style={{ color: darkMode ? '#edeb80' : '#313191' }}
+									>
+										Front-end Development
+									</div>
+									<div
+										className='i-title-Item'
+										style={{ color: darkMode ? '#edeb80' : '#313191' }}
+									>
+										Back-end Development
+									</div>
+									<div
+										className='i-title-Item'
+										style={{ color: darkMode ? '#edeb80' : '#313191' }}
+									>
+										UI Desiging
+									</div>
+									{/* <div
 									className='i-title-Item'
 									style={{ color: darkMode ? '#edeb80' : '#313191' }}
 								>
 									Content Creation
 								</div> */}
-								<div
-									className='i-title-Item'
-									style={{ color: darkMode ? '#edeb80' : '#313191' }}
-								>
-									Training and Facilitation
+									<div
+										className='i-title-Item'
+										style={{ color: darkMode ? '#edeb80' : '#313191' }}
+									>
+										Training and Facilitation
+									</div>
 								</div>
 							</div>
 						</div>
+						<p className='intro-desc'>
+							I create Full Stack web applications and UIs using:
+						</p>
+						<ul className='intro-ul'>
+							<li>
+								<span className='boldHeader'>Front-End:</span> ReactJS, Vanilla
+								JavaScript, HTML, CSS
+							</li>
+
+							<li>
+								<span className='boldHeader'>Back-End:</span> NodeJS, ExpressJS,
+								PHP
+							</li>
+							<li>
+								<span className='boldHeader'>DataBase:</span> SQL, MongoDB
+							</li>
+							<li>
+								<span className='boldHeader'>Operating Systems:</span> Unix,
+								Windows, MacOS
+							</li>
+							{/* <li>ReactJS</li>
+							<li>JavaScript</li>
+							<li>NodeJS and Express</li>
+							<li>PHP</li>
+							<li>SQL/ MongoDB</li>
+							<li>HTML</li>
+							<li>CSS</li> */}
+						</ul>
+						<div className='downArrow'>
+							<AiOutlineDown></AiOutlineDown>
+						</div>
 					</div>
-
-					<p className='intro-desc'>
-						I create Full Stack web applications and UIs using:
-					</p>
-					<ul className='intro-ul'>
-						<li>ReactJS</li>
-						<li>JavaScript</li>
-						<li>NodeJS and Express</li>
-						<li>PHP</li>
-						<li>SQL/ MongoDB</li>
-						<li>HTML</li>
-						<li>CSS</li>
-					</ul>
-
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						height='30px'
-						viewBox='0 0 24 24'
-						width='30px'
-						fill={darkMode ? 'white' : '#313191'}
-						className='DownArrow'
-						style={{
-							// position: 'absolute',
-							width: '3.125rem',
-							height: '3.125rem',
-							// bottom: '0',
-							color: darkMode ? 'white' : '#313191',
-						}}
-					>
-						<path d='M0 0h24v24H0V0z' fill='none' />
-						<path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z' />
-					</svg>
+				</div>
+				<div className='intro-right'>
+					<img src={Me} alt='A Mans Pic' className='intro-img' />
+					{/* <div className='hiIcon'>
+						<img
+							src={handWave}
+							alt=''
+							className='hiIconImage'
+							style={{ color: 'white' }}
+						/>
+					</div> */}
 				</div>
 			</div>
-			<div className='intro-right'>
-				<img src={Me} alt='A Mans Pic' className='intro-img' />
-			</div>
+			{/* <div>
+				Icon made from{' '}
+				<a href='http://www.onlinewebfonts.com/icon'>Icon Fonts</a> is licensed
+				by CC BY 3.0
+			</div> */}
 		</div>
 	);
 };

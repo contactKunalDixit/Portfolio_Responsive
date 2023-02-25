@@ -23,8 +23,9 @@ function App() {
 				color: darkMode && '#ccebff',
 			}}
 		>
-			<Navbar />
-
+			<div className='Navbar'>
+				<Navbar />
+			</div>
 			<div
 				className='Sections'
 				style={{

@@ -1,218 +1,174 @@
 .About {
 	margin: 0rem;
-	padding: 0rem;
-	width: 100vw;
+	display: flex;
+	position: relative;
+	margin-inline: auto;
 	height: calc(100vh - 3.75rem);
-	display: flex;
-	align-items: center;
-	overflow: hidden;
-	position: relative;
+	height: calc(100svh - 3.75rem);
 
-	.about-bground {
-		clip-path: polygon(0 0%, 33% 0, 33% 100%, 0% 100%);
+	// .about-bground {
+	// 	clip-path: polygon(0 0%, 33% 0, 33% 100%, 0% 100%);
 
-		background-color: #caffbf;
-		width: 100vw;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		background: linear-gradient(56deg,
-				#181e78,
-				#181e78,
-				#222774,
-				#171b6b,
-				#23266c,
-				#6e71aa,
-				#194f74,
-				#191d74,
-				#191d74,
-				#191d74);
-		background-size: 2000% 2000%;
+	// 	// background-color: #caffbf;
+	// 	width: 100vw;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	background: linear-gradient(56deg,
+	// 			#181e78,
+	// 			#181e78,
+	// 			#222774,
+	// 			#171b6b,
+	// 			#23266c,
+	// 			#6e71aa,
+	// 			#194f74,
+	// 			#191d74,
+	// 			#191d74,
+	// 			#191d74);
+	// 	background-size: 2000% 2000%;
 
-		-webkit-animation: AnimationName 10s ease infinite;
-		-moz-animation: AnimationName 10s ease infinite;
-		-o-animation: AnimationName 10s ease infinite;
-		animation: AnimationName 10s ease infinite;
-	}
+	// 	-webkit-animation: AnimationName 10s ease infinite;
+	// 	-moz-animation: AnimationName 10s ease infinite;
+	// 	-o-animation: AnimationName 10s ease infinite;
+	// 	animation: AnimationName 10s ease infinite;
 
-	@-webkit-keyframes AnimationName {
-		0% {
-			background-position: 71% 0%;
-		}
 
-		50% {
-			background-position: 30% 100%;
-		}
+	// 	@-webkit-keyframes AnimationName {
+	// 		0% {
+	// 			background-position: 71% 0%;
+	// 		}
 
-		100% {
-			background-position: 71% 0%;
-		}
-	}
+	// 		50% {
+	// 			background-position: 30% 100%;
+	// 		}
 
-	@-moz-keyframes AnimationName {
-		0% {
-			background-position: 71% 0%;
-		}
+	// 		100% {
+	// 			background-position: 71% 0%;
+	// 		}
+	// 	}
 
-		50% {
-			background-position: 30% 100%;
-		}
+	// 	@-moz-keyframes AnimationName {
+	// 		0% {
+	// 			background-position: 71% 0%;
+	// 		}
 
-		100% {
-			background-position: 71% 0%;
-		}
-	}
+	// 		50% {
+	// 			background-position: 30% 100%;
+	// 		}
 
-	@-o-keyframes AnimationName {
-		0% {
-			background-position: 71% 0%;
-		}
+	// 		100% {
+	// 			background-position: 71% 0%;
+	// 		}
+	// 	}
 
-		50% {
-			background-position: 30% 100%;
-		}
+	// 	@-o-keyframes AnimationName {
+	// 		0% {
+	// 			background-position: 71% 0%;
+	// 		}
 
-		100% {
-			background-position: 71% 0%;
-		}
-	}
+	// 		50% {
+	// 			background-position: 30% 100%;
+	// 		}
 
-	@keyframes AnimationName {
-		0% {
-			background-position: 71% 0%;
-		}
+	// 		100% {
+	// 			background-position: 71% 0%;
+	// 		}
+	// 	}
 
-		50% {
-			background-position: 30% 100%;
-		}
+	// 	@keyframes AnimationName {
+	// 		0% {
+	// 			background-position: 71% 0%;
+	// 		}
 
-		100% {
-			background-position: 71% 0%;
-		}
-	}
-}
+	// 		50% {
+	// 			background-position: 30% 100%;
+	// 		}
 
-.about-left {
-	flex: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	position: relative;
-	z-index: 1;
-	width: 100%;
-	color: white;
-	font-weight: 300;
-	letter-spacing: 0.05rem;
+	// 		100% {
+	// 			background-position: 71% 0%;
+	// 		}
+	// 	}
 
-	.about-card {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	top: 0rem;
+	// 	right: 0rem;
+
+	// }
+
+	.about-Wrapper {
 		width: 100%;
-		height: 100%;
-		padding: 0 1.5rem;
-		position: relative;
-		overflow: hidden;
 		display: flex;
+		padding: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: auto;
 
-
-		.selfDesc {
+		.pageTitleSec {
 			display: flex;
-			flex-direction: column;
-			justify-content: start;
-			
-
-			// justify-content:space-evenly;
-			.a-title {
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: auto;
+			margin-bottom:1rem;
+			.pageTitle {
 				font-weight: 300;
-				font-size: 3rem;
-				text-align: center;
-				margin: 1rem;
-				margin-bottom: 2rem;
+				font-size: clamp(1rem, -1.0861rem + 7.947vw, 3.5rem);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				// height: 100%;
 			}
+		}
 
-			.highlightsList {
-				color: white;
-				font-size: 1.10rem;
-				// padding:1rem;
-				// margin: 2rem 0;
+		.about_info_Sec {
+			height: 100%;
+			display: flex;
+			.about-left {
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				height: 100%;
+				padding: 1rem;
 
-				p {
-					margin: 1rem 0;
-				}
-			}
+				.about-card {
+					height: 100%;
 
-			.desc_Summary {
-				width: 100%;
-
-				.a-award {
-					margin: 2rem 0;
-					width: 100%;
-					display: flex;
-					justify-content: space-evenly;
-
-					.a-award-img {
-						flex: 1;
-						border-radius: 1rem;
-						;
-					}
-
-					.a-award-texts {
-						flex: 3;
-						margin-left: 1rem;
-					}
-
-					.a-award-title {
-						color: white;
-						font-weight: 500;
-						font-size: 1.2rem;
-
-
-					}
-
-					.a-award-desc {
-						font-size: 1rem;
-
-						.category-desc {
-							font-weight: 500
+					.selfDesc {
+						.a-title {
+							font-weight: 300;
+							font-size: 2rem;
+							font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
+							display: flex;
+							align-items: center;
+							justify-content: center;
 						}
 					}
 				}
+
+			}
+
+			.about-right {
+				flex: 2.5;
+				display: flex;
+
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				height: 100%;
 			}
 		}
 
 	}
+
 }
 
-
-.about-right {
-	flex: 2;
-	// padding: 0 1.5rem;
-	// z-index: 1;
-	width: 100%;
-	height: 100%;
-	font-weight: 300;
-	letter-spacing: 0.05rem;
-	.about-card{
-		width: 100%;
-		height: 100%;
-	}
-
-	.a-title {
-		font-weight: 300;
-		font-size: 3rem;
-		text-align: center;
-		margin: 1rem;
-		margin-bottom: 2rem;
-	}
-
-	
-
-	.a-desc.smScreen {
-		display: none;
-	}
-
-	
-}
 
 // // ******Media Queries ******
 
