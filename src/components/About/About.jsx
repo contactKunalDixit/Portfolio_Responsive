@@ -24,17 +24,42 @@ const About = () => {
 							<div className='selfDesc'>
 								<div className='highlightsList'>
 									<p>
-										I provide online presence to companies and individuals
-										looking to reach the right people in the best way possible.
+										As the world becomes increasingly digital, having a strong
+										online presence has never been more critical for businesses
+										and individuals alike. Whether you're trying to establish
+										yourself as an industry leader, promote a new product, or
+										simply connect with your audience, having an effective web
+										presence is essential. And that's where I come in.
 									</p>
+									<br />
 									<p>
-										Web presence is the first point of contact your audience
-										will have with you, and it's also the most essential.
-										Without it, you cannot move forward.
+										With my expertise in digital marketing and web development,
+										I help companies and individuals create an online presence
+										that resonates with their target audience. From designing a
+										beautiful and user-friendly website to developing a
+										comprehensive digital marketing strategy, I provide the
+										tools and guidance needed to reach the right people in the
+										best way possible.
 									</p>
-									<p> Let me help you get there.</p>
+									<br />
+									<p>
+										Whether you're a small startup or a large corporation, I
+										understand that every client has unique goals and needs.
+										That's why I work closely with my clients to understand
+										their vision and tailor my approach accordingly. By
+										combining my technical expertise with a deep understanding
+										of your audience, I can create a web presence that not only
+										looks great but also drives results.
+									</p>
+									<br />
+									<p>
+										So if you're looking to establish or enhance your online
+										presence, let me help you get there. Together, we can create
+										a digital strategy that sets you apart from the competition
+										and connects you with the people who matter most.
+									</p>
 								</div>
-								<div className='desc_Summary'>
+								{/* <div className='desc_Summary'>
 									<div className='a-award'>
 										<img src={Award} alt='' className='a-award-img' />
 										<div className='a-award-texts'>
@@ -46,7 +71,7 @@ const About = () => {
 											</h4>
 											<p className='a-award-desc'>
 												<span className='category-desc'>Category</span> : Best
-												Blended Learning and, Operational Excellence
+												Blended Learning
 											</p>
 											<p className='a-award-desc'>
 												<span className='category-desc'>Project</span>: Axis
@@ -61,7 +86,7 @@ const About = () => {
 												className='a-award-title'
 												style={{ color: darkMode ? '#fdffb6' : '#ebe5e5' }}
 											>
-												Most Impactful Facilitator
+												Most Impactful Facilitator 2022
 											</h4>
 											<p className='a-award-desc'>
 												<span className='category-desc'>Category</span>:
@@ -73,14 +98,14 @@ const About = () => {
 											</p>
 										</div>
 									</div>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
 					<div className='about-right'>
 						<div className='about-card'>
 							<h1 className='a-title'>Testimonials</h1>
-							{/* <Testimonials></Testimonials> */}
+							<Testimonials></Testimonials>
 						</div>
 					</div>
 				</div>
