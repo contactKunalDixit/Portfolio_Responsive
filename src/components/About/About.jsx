@@ -5,6 +5,7 @@ import Award from '../../img/Brandon-Hall-Excellence-Awards.jpeg';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
 import Testimonials from '../Testimonials/Testimonials';
+import ProductList from '../ProductList/ProductList';
 const About = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
@@ -46,10 +47,13 @@ const About = () => {
 										Whether you're a small startup or a large corporation, I
 										understand that every client has unique goals and needs.
 										That's why I work closely with my clients to understand
-										their vision and tailor my approach accordingly. By
-										combining my technical expertise with a deep understanding
-										of your audience, I can create a web presence that not only
-										looks great but also drives results.
+										their vision and tailor my approach accordingly.
+									</p>
+									<br />
+									<p>
+										By combining my technical expertise with a deep
+										understanding of your audience, I can create a web presence
+										that not only looks great but also drives results.
 									</p>
 									<br />
 									<p>
@@ -104,8 +108,14 @@ const About = () => {
 					</div>
 					<div className='about-right'>
 						<div className='about-card'>
-							<h1 className='a-title'>Testimonials</h1>
-							<Testimonials></Testimonials>
+							<div className='testimonial_Title'>
+								<h1 className='testimonial_Title_Text'>
+									Here are few of my work samples...
+								</h1>
+							</div>
+
+							{/* <Testimonials></Testimonials> */}
+							<ProductList></ProductList>
 						</div>
 					</div>
 				</div>

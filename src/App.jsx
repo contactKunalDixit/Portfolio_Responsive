@@ -35,7 +35,7 @@ function App() {
 			>
 				<Intro />
 				<About />
-				<ProductList />
+				{/* <ProductList /> */}
 				<Contact />
 			</div>
 		</div>

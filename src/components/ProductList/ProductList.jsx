@@ -11,10 +11,10 @@ const ProductList = () => {
 	const darkMode = theme.state.darkMode;
 	return (
 		<div className='pl' id='work'>
-			<div
+			{/* <div
 				className='pl-bground'
 				style={{ backgroundColor: darkMode ? '#023d8a9d' : '#fdffb6' }}
-			></div>
+			></div> */}
 			<div className='pl-wrapper'>
 				<div className='pl-text'>
 					<h1 className='pl-title'>Work</h1>
