@@ -3,7 +3,6 @@ import styles from './contact.module.css';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import linkedin from '../../img/linkedin.png';
-import Address from '../../img/address.png';
 import emailjs from 'emailjs-com';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
