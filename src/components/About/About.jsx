@@ -16,9 +16,6 @@ const About = () => {
 				style={{ backgroundColor: darkMode ? '#26491a42' : '#caffbf' }}
 			></div>
 			<div className='about-Wrapper'>
-				<div className='pageTitleSec'>
-					<h1 className='pageTitle'>What I Do</h1>
-				</div>
 				<div className='about_info_Sec'>
 					<div className='about-left'>
 						<div className='about-card'>
@@ -108,10 +105,8 @@ const About = () => {
 					</div>
 					<div className='about-right'>
 						<div className='about-card'>
-							<div className='testimonial_Title'>
-								<h1 className='testimonial_Title_Text'>
-									Here are few of my work samples...
-								</h1>
+							<div className='pageTitleSec'>
+								<h1 className='pageTitle'>What I Do</h1>
 							</div>
 
 							{/* <Testimonials></Testimonials> */}
