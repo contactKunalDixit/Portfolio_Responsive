@@ -8,6 +8,7 @@
 
 	.about-bground {
 		clip-path: polygon(0 0%, 33% 0, 33% 100%, 0% 100%);
+		// clip-path: polygon(33% 0%, 100% 0, 100% 100%, 76% 100%);
 
 		// background-color: #caffbf;
 		width: 100vw;
@@ -198,13 +199,12 @@
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						width: 99%;
+						width: 100%;
 						margin-bottom: 1rem;
 
 
 						.pageTitle {
 							font-weight: 300;
-							font-size: clamp(1rem, -1.0861rem + 7.947vw, 3.5rem);
 							font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
 							display: flex;
 							align-items: center;

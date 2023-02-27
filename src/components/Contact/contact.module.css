@@ -1,258 +1,16 @@
 .Contact {
-	width: 100vw;
+	margin: 0rem;
+	display: flex;
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-}
-
-.contact_Wrapper {
-	display: flex;
-	z-index: 1;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 90%;
-	height: 100%;
-}
-
-.contactTop {
-	flex: 4;
-	width: 100%;
-	display: flex;
-}
-
-.contactBottom {
-	flex: 1;
-	width: 100%;
-}
-
-.userEmail {
-	width: 90%;
-	display: flex;
-	flex-direction: column;
-}
-
-.userMessage {
-	/* margin: 1.5rem 0; */
-	width: 90%;
-	display: flex;
-	flex-direction: column;
-}
-
-.cLeftSecSubmitButton {
-	width: 10rem;
-	margin: 2rem 0;
-}
-
-.c_Left_Title {
-	flex: 1;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 2rem;
-}
-
-.LgScreen {
-	/* font-size: 2rem; */
-	width: 80%;
-	font-weight: 500;
-	font-size: 2.5rem;
-	font-weight: 400;
-}
-
-.c_title.smScreen {
-	display: none;
-}
-
-.c_Left_Desc {
-	font-size: 1.3rem;
-	margin-top: 0.5rem;
-	font-weight: 300;
-	padding: 1rem 0;
-}
-
-.userName {
-	width: 90%;
-	display: flex;
-	flex-direction: column;
-	/* margin: 2rem 0;  */
-}
-
-label {
-	font-size: 1.1rem;
-	font-weight: 300;
-	padding: 0.5rem 0;
-}
-
-.c_Left {
-	/* // flex: 1; */
-	width: 60%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.cLeftFormSec {
-	width: 100%;
-	flex: 3;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.c_icon {
-	width: 1.875rem;
-	height: 1.875rem;
-	margin-right: 1.25rem;
-}
-
-.c_info_item {
-	display: flex;
-	align-items: center;
-	padding: 2.125rem 1rem;
-	font-weight: 300;
-	width: 100%;
-	font-size: 1.3rem;
-	letter-spacing: 0.1rem;
-}
-
-.c_Right {
-	/* // flex: 1; */
-
-	width: 40%;
-	height: 100%;
-	display: flex;
-	/* // flex-direction: column; */
-	align-items: center;
-	justify-content: center;
-	overflow-y: hidden;
-}
-
-.c_right_wrapper {
-	padding: 0.625rem;
-	width: 80%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	color: white;
-}
-
-.c_desc {
-	font-weight: 400;
-}
-
-.c_desc.SmScreen {
-	display: none;
-}
-
-form {
-	margin-top: 1.25rem;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	/* // overflow: auto; */
-}
-
-input {
-	width: 50%;
-	height: 3.125rem;
-	border: none;
-	border-bottom: 1px solid black;
-	margin: 0.625rem 0px;
-	font-size: 0.875em;
-	padding-left: 0.625rem;
-}
-
-textarea {
-	width: 70%;
-	margin: 0/625rem 0;
-	font-size: 0.875em;
-	padding-left: 0.625rem;
-	border: 0px transparent;
-	border-bottom: 1px solid black;
-}
-
-button {
-	border: none;
-	padding: 0.938rem;
-	background-color: #59b256;
-	color: white;
-	font-weight: 500;
-	font-size: 1rem;
-	cursor: pointer;
-	margin-top: 20px;
-	border-radius: 10px;
-}
-
-button:hover {
-	background: linear-gradient(230deg, #a531f3, #1b11ac, #d06d35);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 10s ease infinite;
-	-moz-animation: AnimationName 10s ease infinite;
-	animation: AnimationName 10s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-	0% {
-		background-position: 0% 51%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 51%;
-	}
-}
-@-moz-keyframes AnimationName {
-	0% {
-		background-position: 0% 51%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 51%;
-	}
-}
-@keyframes AnimationName {
-	0% {
-		background-position: 0% 51%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 51%;
-	}
-}
-
-/*  */
-
-form {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	margin-inline: auto;
+	height: calc(100vh - 3.75rem);
+	height: calc(100svh - 3.75rem);
 }
 
 .contact_bg {
-	clip-path: polygon(69% 0, 100% 0, 100% 100%, 33% 100%);
-	width: 100vw;
+	clip-path: polygon(33% 0, 100% 0, 100% 100%, 72% 100%);
+
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -324,6 +82,291 @@ form {
 	100% {
 		background-position: 71% 0%;
 	}
+}
+.contact_Wrapper {
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	/* height: 100%; */
+}
+
+.contactTop {
+	/* flex: 8; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+}
+
+.contactBottom {
+	/* flex: 0.7;
+	 */
+	height: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.userEmail {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+.userMessage {
+	/* margin: 1.5rem 0; */
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+.c_Left,
+.c_Right {
+	flex: 1;
+	padding: 1rem;
+	z-index: 100;
+}
+
+.c-Left {
+	flex: 1;
+}
+
+.c_Right {
+	flex: 1.5;
+	width: 58%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin: 0 1rem;
+}
+.c_Left_Title {
+	/* flex: 1; */
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* padding-top: 2rem; */
+}
+
+.LgScreen {
+	/* font-size: 2rem; */
+	width: 100%;
+	font-weight: 300;
+	font-size: clamp(1rem, -1.0861rem + 7.947vw, 3.5rem);
+}
+
+.c_title.smScreen {
+	display: none;
+}
+
+.c_Left_Desc {
+	font-weight: 300;
+	padding: 1rem 0;
+	font-size: clamp(1rem, -1.0861rem + 7.947vw, 1.2rem);
+	/* width: 50%; */
+	display: flex;
+	justify-content: start;
+	/* filter: invert(100%); */
+	text-align: left;
+	/* width: 70%; */
+}
+.cLeftFormSec {
+	width: 100%;
+	/* flex: 3; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.userName {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	/* margin: 2rem 0;  */
+}
+
+label {
+	font-size: 1.1rem;
+	font-weight: 300;
+	padding: 0.5rem 0 0.5rem 1rem;
+}
+
+/* .c_Left {
+	width: 60%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} */
+
+.c_icon {
+	width: 1.875rem;
+	height: 1.875rem;
+	margin-right: 1.25rem;
+}
+
+.c_info_item {
+	display: flex;
+	align-items: center;
+	padding: 2.125rem 1rem;
+	font-weight: 300;
+	width: 100%;
+	font-size: 1.3rem;
+	letter-spacing: 0.1rem;
+	margin: 1rem 0;
+}
+.c_info_item > a {
+	text-decoration: none;
+	color: white;
+}
+/* .c_Right {
+	width: 40%;
+	height: 100%;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	overflow-y: hidden;
+} */
+
+.c_right_wrapper {
+	padding: 0.625rem;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+}
+
+.c_desc {
+	font-weight: 400;
+}
+
+.c_desc.SmScreen {
+	display: none;
+}
+
+form {
+	margin-top: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	/* // overflow: auto; */
+}
+
+input {
+	width: 90%;
+	height: 2.125rem;
+	border: none;
+	border-bottom: 1px solid black;
+	margin: 0.625rem 0px;
+	font-size: 0.875em;
+	padding-left: 0.625rem 0 0.625rem 1rem;
+}
+
+textarea {
+	width: 90%;
+	margin: 0/625rem 0;
+	font-size: 0.875rem;
+	padding-left: 0.625rem;
+	border: 0px transparent;
+	border-bottom: 1px solid black;
+}
+
+button {
+	border: none;
+	padding: 0.938rem;
+	background-color: #59b256;
+	color: white;
+	font-weight: 500;
+	font-size: 1rem;
+	cursor: pointer;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.cLeftSecSubmitButton {
+	width: 10rem;
+	/* margin: 2rem 0; */
+}
+
+.submitButton {
+	/* background-color: red; */
+	/* padding: 1rem; */
+	/* margin: 0 auto; */
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+button:hover {
+	background: linear-gradient(230deg, #a531f3, #1b11ac, #d06d35);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 10s ease infinite;
+	-moz-animation: AnimationName 10s ease infinite;
+	animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0% {
+		background-position: 0% 51%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 51%;
+	}
+}
+@-moz-keyframes AnimationName {
+	0% {
+		background-position: 0% 51%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 51%;
+	}
+}
+@keyframes AnimationName {
+	0% {
+		background-position: 0% 51%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 51%;
+	}
+}
+
+/*  */
+
+form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /*   Gradient settings end} */

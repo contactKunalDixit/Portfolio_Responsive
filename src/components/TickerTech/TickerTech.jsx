@@ -8,6 +8,8 @@ const TickerTech = () => {
 		<div>
 			<Ticker
 				speed={8}
+				// mode={`await`}
+				// move={false}
 				move={true}
 				offset={'run-in'}
 				style={{

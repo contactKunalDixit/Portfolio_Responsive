@@ -57,7 +57,7 @@ const Navbar = () => {
 							</a>
 						</li>
 
-						<li className='navbar-li'>
+						{/* <li className='navbar-li'>
 							<a
 								className='navbar-li-a'
 								href='#work'
@@ -65,7 +65,7 @@ const Navbar = () => {
 							>
 								MY WORK
 							</a>
-						</li>
+						</li> */}
 
 						<li className='navbar-li'>
 							<a

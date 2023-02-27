@@ -11,4 +11,5 @@
 
 .footerText {
 	padding: 1rem;
+	font-size: clamp(0.8rem, -1.0861rem + 7.947vw, 1rem);
 }

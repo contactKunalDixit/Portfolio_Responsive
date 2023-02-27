@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import styles from './contact.module.css';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
+import linkedin from '../../img/linkedin.png';
 import Address from '../../img/address.png';
 import emailjs from 'emailjs-com';
 import { useContext } from 'react';
@@ -56,14 +57,13 @@ const Contact = () => {
 						<div className={styles.c_Left}>
 							<div className={styles.c_Left_Title}>
 								<h1 className={`${styles.c_title} ${styles.LgScreen}`}>
-									Let's get started
-								</h1>
-								<h1 className={`${styles.c_title} ${styles.smScreen}`}>
 									Let's Connect
 								</h1>
+								<h1 className={`${styles.c_title} ${styles.smScreen}`}></h1>
 								<p className={styles.c_Left_Desc}>
-									Like what you see? Let's connect and build something great,
-									together!
+									I'd love to hear from you! If you have any questions,
+									comments, or just want to say hello, please fill out the form
+									below or use the contact information provided.
 								</p>
 							</div>
 							<div className={styles.cLeftFormSec}>
@@ -100,10 +100,12 @@ const Contact = () => {
 											onChange={(e) => setMessageValue(e.target.value)}
 										></textarea>
 									</div>
+									<div className={styles.submitButton}>
+										<button className={styles.cLeftSecSubmitButton}>
+											Submit
+										</button>
+									</div>
 
-									<button className={styles.cLeftSecSubmitButton}>
-										Submit
-									</button>
 									{done && (
 										<p style={{ marginTop: '20px' }}>
 											Thank you! We'll be in touch soon.
@@ -123,13 +125,21 @@ const Contact = () => {
 										<img src={Email} alt='' className={styles.c_icon} />
 										contactkunaldixit@gmail.com
 									</div>
+									<div className={styles.c_info_item}>
+										<img src={linkedin} alt='' className={styles.c_icon} />
+										<a
+											target='_blank'
+											href='https://www.linkedin.com/in/contactkunaldixit'
+										>
+											LinkIn Profile
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div className={styles.contactBottom}>
-						{' '}
 						<Footer></Footer>
 					</div>
 				</div>
