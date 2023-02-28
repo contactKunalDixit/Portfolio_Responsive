@@ -10,17 +10,20 @@
 
 	.intro-bground {
 		clip-path: polygon(72% 0, 100% 0, 100% 100%, 33% 100%);
+//  Gradient settings start
+		background: linear-gradient(45deg, #0e0768
+		,#0d0856,
+		 #3d98ee, 
+		 #0d0856,
+		 #0e0768);
+    background-size: 600% 600%;
 
-		// background-color: #9bf6ff;
-
-		//  Gradient settings start
-		background: linear-gradient(56deg, #181e78, #181e78, #222774, #171b6b, #23266c, #6e71aa, #194f74, #191d74, #191d74, #191d74);
-		background-size: 2000% 2000%;
-
-		-webkit-animation: AnimationName 10s ease infinite;
-		-moz-animation: AnimationName 10s ease infinite;
-		-o-animation: AnimationName 10s ease infinite;
-		animation: AnimationName 10s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite ;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+	  
+	  
 
 
 		@-webkit-keyframes AnimationName {

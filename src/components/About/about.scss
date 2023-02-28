@@ -16,24 +16,18 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		background: linear-gradient(56deg,
-				#181e78,
-				#181e78,
-				#222774,
-				#171b6b,
-				#23266c,
-				#6e71aa,
-				#194f74,
-				#191d74,
-				#191d74,
-				#191d74);
-		background-size: 2000% 2000%;
+background: linear-gradient(45deg, #0e0768
+		,#0d0856,
+		 #3d98ee, 
+		 #0d0856,
+		 #0e0768);
+    background-size: 600% 600%;
 
-		-webkit-animation: AnimationName 10s ease infinite;
-		-moz-animation: AnimationName 10s ease infinite;
-		-o-animation: AnimationName 10s ease infinite;
-		animation: AnimationName 10s ease infinite;
-
+    -webkit-animation: AnimationName 10s ease infinite ;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+	  
 
 		@-webkit-keyframes AnimationName {
 			0% {
