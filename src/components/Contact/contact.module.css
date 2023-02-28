@@ -205,8 +205,8 @@ label {
 } */
 
 .c_icon {
-	width: 1.875rem;
-	height: 1.875rem;
+	width: 3rem;
+	height: auto;
 	margin-right: 1.25rem;
 }
 
