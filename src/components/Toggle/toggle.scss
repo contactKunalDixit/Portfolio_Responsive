@@ -12,13 +12,10 @@
 	align-items: center;
 	justify-content: space-around;
 	position: relative;
-}
-
-.toggle-icon {
+	.toggle-icon {
 	width: 0.938rem;
 	height: 0.938rem;
 }
-
 .toggle-button {
 	width: 1.25rem;
 	height: 1.25rem;
@@ -28,4 +25,21 @@
 	cursor: pointer;
 	border: 2px;
 	border: 2px solid rgb(150, 134, 134);
+}
+}
+
+
+@media screen and (min-width: 2000px){
+.toggle{
+	width: 4.1rem;
+	height:3rem;
+	border: 3px solid rgb(97, 92, 92);
+	.toggle-icon {
+	width: 1.5rem;
+	height: 1.5rem;}
+	.toggle-button{
+		width: 2rem;
+		height: 2rem;
+	}
+}
 }

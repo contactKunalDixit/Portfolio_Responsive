@@ -31,11 +31,11 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className='navbar-center'>
-					<div className='header-smallScreen'>
+					{/* <div className='header-smallScreen'>
 						<p style={{ color: darkMode ? '#ffffff' : '#ffffff' }}>
 							contactkunaldixit@gmail.com
 						</p>
-					</div>
+					</div> */}
 					<ul className='navbar-ul'>
 						<li className='navbar-li'>
 							<a
