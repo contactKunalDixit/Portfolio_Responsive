@@ -114,6 +114,7 @@
 					.nav-logoTitle {
 						font-size: 1.2rem;
 						margin: 0px 10px;
+						letter-spacing: 1px;;
 					}
 				}
 			}
@@ -140,6 +141,7 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					
 
 
 					.navbar-li-a {
@@ -150,7 +152,7 @@
 
 						font-size: 1rem;
 						color: white;
-
+						letter-spacing: 1px;;
 
 
 					}
@@ -193,7 +195,6 @@
 			.navbar-center{
 				.navbar-ul{
 					.navbar-li{
-						// font-size: clamp(2rem, 0.3rem + 1.2vw, 3.5rem); ;
 						.navbar-li-a{
 							font-size: clamp(2rem, 0.1rem + 0.8vw, 3rem);
 							
@@ -209,4 +210,48 @@
 	}
 
 
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+	// No Need
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.navbar {
+		height: 3rem;
+
+		.navbar-wrapper {
+			.navbar-left {
+				.nav-logo {
+					
+					font-size: clamp(1rem, -0.7144rem + 3.5717vw, 1.5rem);
+					
+
+					a {
+						.nav-logoTitle {
+						font-size: clamp(1rem, 0.6571rem + 0.7143vw, 1.1rem);
+						font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+						}
+					}
+				}
+			}
+
+			.navbar-center{
+				.navbar-ul{
+					justify-content: space-around;
+					.navbar-li{
+						.navbar-li-a{
+							
+							font-size: clamp(1rem, 0.6571rem + 0.7143vw, 1.1rem);
+							
+						}
+					}
+				}
+			}
+
+			.navbar-right{}
+
+		}
+
+	}	
 }

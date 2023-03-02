@@ -37,6 +37,7 @@
 	}
 }
 
+//! min-width: 2000px
 @media screen and (min-width: 2000px){
 	.App{
 		.Navbar{
@@ -49,6 +50,52 @@
 			> * {
 				height: calc(100vh - 5rem);
 				height: calc(100svh - 5rem);
+			}
+		}
+	}
+}
+
+
+//! min-width:1200px and max-width:1439.98px - NOT NEEDED - Section already rendering correctly
+
+//! min-width: 992px AND max-width 1199.98px - rendering correctly
+
+//! min-width:768px AND max-width:991.98px
+@media (min-width: 768px) and (max-width: 991.98px) {
+.App{
+		.Navbar{
+			height: 3rem;
+		}
+		.Sections{
+			height: calc(100vh - 3rem);
+			height: calc(100svh - 3rem);
+
+			top:3rem;
+
+			> * {
+				height: calc(100vh - 3rem);
+				height: calc(100svh - 3rem);
+			}
+		}
+	}
+
+}
+
+//!	min-width:576px AND max-width:767.98px
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.App{
+		.Navbar{
+			height: 3rem;
+		}
+		.Sections{
+			height: calc(100vh - 3rem);
+			height: calc(100svh - 3rem);
+
+			top:3rem;
+
+			> * {
+				height: calc(100vh - 3rem);
+				height: calc(100svh - 3rem);
 			}
 		}
 	}

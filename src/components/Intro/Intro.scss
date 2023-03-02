@@ -242,6 +242,8 @@
 		}
 	}
 }
+
+//! min-width: 2000px
 @media screen and (min-width: 2000px) {
 	.Intro {
 		height: calc(100vh - 5rem);
@@ -332,6 +334,218 @@
 					max-width: 100%;
 					width:100%;
 					bottom:unset;
+				}
+			}
+		}
+	}
+}
+//! min-width:1200px and max-width:1439.98px - NOT NEEDED - Section already rendering correctly
+
+//! min-width: 992px AND max-width 1199.98px
+@media (min-width: 992px) and (max-width: 1199.98px) {
+		.Intro {
+		height: calc(100vh - 3.75rem);
+		height: calc(100svh - 3.75rem);
+		.intro-wrapper {
+			
+			.intro-left {
+				.intro-Left-Wrapper {
+					align-items: normal;
+					.i-intro {
+						.salutation_1,
+						.salutation_2 {
+							
+							font-size: clamp(3rem, -4.1545rem + 11.5396vw, 4.5rem);
+						}
+					}
+					.i-work {
+						.i-name {
+							font-size: 1.4rem;
+							margin-right: 0.8rem;
+						}
+						.i-title{
+							
+							height: 2rem;
+
+							.i-title-Wrapper{
+
+								@keyframes move {
+								33.333% {
+									transform: translateY(-2.125rem);
+								}
+
+								66.6666% {
+									transform: translateY(-4.25rem);
+								}
+
+								100% {
+									transform: translateY(-6.375rem);
+								}
+							}
+							.i-title-Item {
+								height: 2.125rem;
+								font-size: 1.4rem;
+								font-weight: 500;
+								
+							}
+							}
+							
+							}
+						}
+
+
+					
+
+					.intro-desc{
+					font-size: clamp(0.8rem, 0.5219rem + 1.0596vw, 1.2rem);
+					}
+					.intro-ul{
+						
+						// padding-right:2rem;
+						display: flex;
+						justify-content: center;align-items: start;
+						flex-direction: column;
+
+						li{
+						font-size: clamp(0.8rem, 0.5219rem + 1.0596vw, 1.2rem); 
+							margin: 0.5rem 0;
+							
+							font-size: clamp(1rem, 0.523rem + 0.7693vw, 1.1rem);
+								
+							// margin-left:0;
+							.boldHeader {
+								font-size: clamp(1rem, 0.523rem + 0.7693vw, 1.1rem);
+							}
+						}
+						li:first-child{
+							flex-wrap: wrap;
+						}
+						li:last-child{
+							flex-wrap: wrap;
+						}
+					}
+
+					.downArrow{
+						font-size: clamp(1rem, 0.3046rem + 2.649vw, 2rem);
+							
+					}
+
+				}
+			}
+
+			.intro-right{
+				.intro-img{
+					max-width: 100%;
+					width:100%;
+					bottom:unset;
+				}
+			}
+		}
+	}
+}
+
+//! min-width:768px AND max-width:991.98px
+@media (min-width: 768px) and (max-width: 991.98px) {
+		.Intro {
+		height: calc(100vh - 3rem);
+		height: calc(100svh - 3rem);
+		
+		.intro-wrapper {
+			padding:1.5rem;
+			.intro-left {
+				.intro-Left-Wrapper {
+					align-items: normal;
+					.i-intro {
+						.salutation_1,
+						.salutation_2 {
+							
+							// font-size: clamp(3rem, -2.1433rem + 10.7152vw, 4.5rem);
+							font-size: clamp(2.5rem, -2.6433rem + 10.7152vw, 4rem);
+						}
+					}
+					.i-work {
+						.i-name {
+							font-size: 1.4rem;
+							margin-right: 0.8rem;
+						}
+						.i-title{
+							
+							height: 2rem;
+
+							.i-title-Wrapper{
+
+								@keyframes move {
+								33.333% {
+									transform: translateY(-2.125rem);
+								}
+
+								66.6666% {
+									transform: translateY(-4.25rem);
+								}
+
+								100% {
+									transform: translateY(-6.375rem);
+								}
+							}
+							.i-title-Item {
+								height: 2.125rem;
+								font-size: 1.4rem;
+								font-weight: 500;
+								
+							}
+							}
+							
+							}
+						}
+
+
+					
+
+					.intro-desc{
+					
+					font-size: clamp(1rem, 0.3142rem + 1.4287vw, 1.2rem);
+					}
+					.intro-ul{
+						
+						// padding-right:2rem;
+						display: flex;
+						justify-content: center;align-items: start;
+						flex-direction: column;
+
+						li{
+						font-size: clamp(1rem, 0.6571rem + 0.7143vw, 1.1rem);
+							// margin-left:0;
+							.boldHeader {
+								
+								font-size: clamp(1rem, 0.6571rem + 0.7143vw, 1.1rem);
+							}
+						}
+						li:first-child{
+							flex-wrap: wrap;
+						}
+						li:last-child{
+							flex-wrap: wrap;
+						}
+					}
+
+					.downArrow{
+						font-size: clamp(1rem, 0.3046rem + 2.649vw, 2rem);
+							
+					}
+
+				}
+			}
+
+			.intro-right{
+				.intro-img{
+					
+					max-width: 100%;
+					width:100%;
+					
+					bottom:unset;
+					height: 70vh;
+					object-fit:cover;
+					
 				}
 			}
 		}
