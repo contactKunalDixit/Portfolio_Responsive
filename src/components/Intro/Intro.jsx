@@ -68,7 +68,7 @@ const Intro = () => {
 						</p>
 						<ul className='intro-ul'>
 							<li>
-								<span className='boldHeader'>Front-End:</span> ReactJS, Vanilla
+								<span className='boldHeader'>Front-End:</span> ReactJS,
 								JavaScript, HTML, CSS, BootStrap
 							</li>
 
