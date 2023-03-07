@@ -31,12 +31,18 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className='navbar-center'>
-					{/* <div className='header-smallScreen'>
-						<p style={{ color: darkMode ? '#ffffff' : '#ffffff' }}>
+					<div className='header-smallScreen'>
+						<p
+							style={{
+								color: darkMode ? '#ffffff' : '#ffffff',
+								fontSize: '0.9rem',
+							}}
+						>
 							contactkunaldixit@gmail.com
 						</p>
-					</div> */}
-					<ul className='navbar-ul'>
+					</div>
+
+					<ul className='navbar-ul header-normalScreen'>
 						<li className='navbar-li'>
 							<a
 								className='navbar-li-a'
