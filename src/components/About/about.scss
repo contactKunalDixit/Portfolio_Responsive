@@ -143,10 +143,19 @@ background: linear-gradient(45deg, #0e0768
 							padding-right: 1rem;
 							display: flex;
 							flex-direction: column;
-							align-items:start;
-							justify-content: center;
+							align-items: center;
+							justify-content:space-evenly;
 							// background-color: pink;
 							height: 90%;
+							>p{
+							font-size: clamp(0.8rem, 0.05rem + 1vw, 1.3rem);
+							letter-spacing: 0.3px;
+							}
+							
+							
+						}
+						.smallScreen{
+							display:none;
 						}
 
 						.desc_Summary {
@@ -198,11 +207,12 @@ background: linear-gradient(45deg, #0e0768
 
 
 						.pageTitle {
-							font-weight: 300;
-							font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
-							display: flex;
-							align-items: center;
-							justify-content: center;
+						font-weight: 300;
+						font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						letter-spacing: 1px;
 
 						}
 					}
@@ -217,317 +227,168 @@ background: linear-gradient(45deg, #0e0768
 
 }
 
+//! min-width: 2000px
+@media screen and (min-width: 2000px) {
+	.About{
+		.about-Wrapper{
+			.about_info_Sec{
+				.about-right{
+					.about-card{
+						display: flex;
+						justify-content:center;
+						align-items: center;
+						flex-direction: column;
+						.pageTitleSec{
+							flex:auto;
+							.pageTitle{
+								font-size: clamp(7rem, 6rem + 0.8vw, 8rem);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
-// // ******Media Queries ******
+//! min-width:1200px and max-width:1439.98px - NOT NEEDED - Section already rendering correctly
 
-// // Todo 1#	min-width:320px
-// @media screen and (min-width: 320px) {
-// 	.About {
-// 		font-size: 11.5px;
-// 		flex-direction: column;
-// 		height: 100%;
-// 		width: 100vw;
-// 		.about-bground {
-// 			height: 100%;
-// 		}
-// 		.about-left {
-// 			flex: none;
-// 			height: 30%;
-// 			width: 90%;
-// 			.about-card.shadowBg {
-// 				position: absolute;
-// 				top: 10px;
-// 				left: 30px;
-// 			}
-// 		}
-// 		.about-right {
-// 			flex: none;
-// 			height: 65%;
-// 			width: 95vw;
-// 			padding: 0 10px;
+//! min-width: 992px AND max-width 1199.98px
 
-// 			display: flex;
-// 			justify-content: space-evenly;
-// 			flex-direction: column;
-// 			.a-title {
-// 				font-size: 2.5rem;
-// 			}
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
-// 			.a-award {
-// 				margin-top: 10px;
-// 				justify-content: space-evenly;
-// 				.a-award-img {
-// 					width: 60px;
-// 					height: 60px;
-// 					border-radius: 10px;
-// 					.a-award-texts {
-// 						width: 70%;
-// 						// font-size: 3rem;
-// 					}
-// 				}
-// 			}
-// 			.a-title {
-// 				font-weight: 300;
-// 				// font-size: 2.625rem;
-// 				text-align: center;
-// 			}
-// 			.a-sub {
-// 				margin: 0px 0px;
-// 				text-align: center;
-// 				// font-size: 1.1em;
-// 			}
-// 			.a-desc {
-// 				text-align: center;
-// 				// font-size: 1.1em;
-// 			}
-// 			.a-desc.LgScreen {
-// 				display: none;
-// 			}
-// 			.a-desc.smScreen {
-// 				display: block;
-// 				padding: 0 10px;
-// 			}
-// 		}
-// 	}
-// }
+	.About{
+		.about-Wrapper{
+			.about_info_Sec{
+				.about-right{
+					.about-card{
+						.pageTitleSec{
+							margin-bottom: 0px;;
+							.pageTitle{
+								font-size: clamp(3rem, -4.1545rem + 11.5396vw, 4.5rem);	
+							}
+						}
+					}
+				}
+			}
 
-// //todo	 2# min-width:480px
-// @media screen and (min-width: 480px) {
-// 	.About {
-// 		font-size: 11px;
-// 		flex-direction: row;
-// 		height: 100%;
-// 		width: 100vw;
+		}
+	}
+		
+}
 
-// 		display: flex;
-// 		justify-content: center;
+// !min-width:768px AND max-width:991.98px
+@media (min-width: 768px) and (max-width: 991.98px){
 
-// 		.about-bground {
-// 			height: 100%;
-// 		}
-// 		.about-left {
-// 			height: 100%;
-// 			width: 40%;
-// 			.about-card.shadowBg {
-// 				position: absolute;
-// 				top: 10px;
-// 				left: 30px;
-// 			}
-// 			// display: none;
-// 		}
-// 		.about-right {
-// 			height: 100%;
-// 			width: 55%;
-// 			padding: 0 10px;
-// 			display: flex;
-// 			flex-direction: column;
-// 			justify-content: space-evenly;
+	.About{
+		.about-Wrapper{
+			.about_info_Sec{
+				.about-left{
+					.about-card{
+						.selfDesc{
+							.highlightsList>p{
+							letter-spacing: 0.3px;
+								font-size: clamp(0.8rem, -0.0572rem + 1.7859vw, 1.05rem);
+							
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
-// 			.a-award {
-// 				display: none;
-// 			}
+ // !min-width:370px AND max-width:767.98px
+@media (min-width:370px) and (max-width: 767.98px){
+.About{
+	.about-bground{
+		display: none;;
+	}
+	.about-Wrapper{
+			padding:0.5rem;
+		.about_info_Sec{
+			position:relative;
+			flex-direction:column;
+			.about-left{
+				// display:none; 
+				position:absolute;
+				z-index: 200;
+				width: 100%;;
+				padding:0px;
+				inset: 4rem auto  ;
+				top:3rem;
+				height: unset;
+				
 
-// 			.a-title {
-// 				font-weight: 400;
-// 				font-size: 2rem;
-// 				text-align: center;
-// 			}
-// 			.a-sub {
-// 				margin: 0px 0px;
-// 				text-align: center;
-// 			}
-// 			.a-desc {
-// 				text-align: center;
-// 			}
-// 			.a-desc.LgScreen {
-// 				display: none;
-// 			}
-// 			.a-desc.smScreen {
-// 				display: block;
-// 				padding: 0 10px;
-// 			}
-// 		}
-// 	}
-// }
+				
+				.about-card{
+					.selfDesc{
+						width: 100%;
+						.highlightsList{
+							height: auto;;
+							width: 100%;
+							display: inline-flex;
+							justify-content: center;align-items: center;
+							position:relative;
+							padding-right:0px;
+						}
+						.largeScreen{
+							display:none;
+						}
+						.smallScreen{
+							width: 90%;
+							display:flex;
+							color:black;
+							
+							justify-content: center;
+							align-items: center;
+							padding:0.4rem;
+							position:absolute;
+							inset:auto auto;
+							top:3rem;
+							top:2.5rem;
+							top:2rem;
+							> p {
+								 font-size: clamp(1rem, 0.907rem + 0.402vw, 1.1rem);
+								//  font-size: clamp(0.8rem, 0.5211rem + 1.2061vw, 1.1rem);
+							font-weight: 400;
+							letter-spacing: 1.3px;;
+								text-align: center;
+							}
+							
+							
+						}
+					}
+				}
+			}
+			.about-right{
+				height: 100%;
+				.about-card{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					.pageTitleSec{
+						height: auto;
+						flex:unset;
+						 	
+						.pageTitle{
+							font-size: clamp(2.5rem, 2.1479rem + 2.817vw, 3.5rem);
+							// 
 
-// //4 min-width:768px
-// @media screen and (min-width: 768px) {
-// 	.About {
-// 		font-size: 12px;
-// 		flex-direction: column;
-// 		height: 100%;
-// 		width: 100vw;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
-// 		display: flex;
-// 		justify-content: center;
+}
 
-// 		.about-bground {
-// 			height: 100%;
-// 		}
-// 		.about-left {
-// 			height: 40%;
-// 			width: 100%;
-// 			.about-card.shadowBg {
-// 				position: absolute;
-// 				top: 10px;
-// 				left: 30px;
-// 			}
-// 			// display: none;
-// 		}
-// 		.about-right {
-// 			height: 60%;
-// 			width: 90%;
-// 			padding: 0 10px;
-// 			display: flex;
-// 			flex-direction: column;
-// 			justify-content: space-evenly;
 
-// 			.a-title {
-// 				font-weight: 300;
-// 				font-size: 3rem;
-// 				text-align: center;
-// 			}
-// 			.a-sub {
-// 				margin: 0px 0px;
-// 				text-align: center;
-// 				font-size: 1.4rem;
-// 			}
-// 			.a-desc {
-// 				text-align: center;
-// 				font-size: 1.3rem;
-// 			}
-// 			.a-desc.LgScreen {
-// 				display: none;
-// 			}
-// 			.a-desc.smScreen {
-// 				display: block;
-// 				padding: 0 10px;
-// 			}
-// 			.a-award {
-// 				display: flex;
-// 				font-size: 1.3rem;
-// 			}
-// 		}
-// 	}
-// }
 
-// //5 min-width: 992px
-// @media screen and (min-width: 992px) {
-// 	.About {
-// 		font-size: 12px;
-// 		flex-direction: row;
-// 		height: 100%;
-// 		width: 100vw;
+@media(min-width:321px) and (max-width:369.98px){}
 
-// 		display: flex;
-// 		justify-content: center;
-
-// 		.about-bground {
-// 			height: 100%;
-// 		}
-// 		.about-left {
-// 			height: 100%;
-// 			width: 45%;
-// 			.about-card.shadowBg {
-// 				position: absolute;
-// 				top: 10px;
-// 				left: 30px;
-// 			}
-// 			// display: none;
-// 		}
-// 		.about-right {
-// 			height: 100%;
-// 			width: 50%;
-// 			// padding: 0 10px;
-// 			display: flex;
-// 			flex-direction: column;
-// 			justify-content: space-evenly;
-
-// 			.a-title {
-// 				font-weight: 300;
-// 				font-size: 3rem;
-// 				text-align: center;
-// 			}
-// 			.a-sub {
-// 				margin: 0px 0px;
-// 				text-align: center;
-// 				font-size: 1.2rem;
-// 			}
-// 			.a-desc {
-// 				text-align: center;
-// 				font-size: 1.1rem;
-// 			}
-// 			.a-desc.LgScreen {
-// 				display: none;
-// 			}
-// 			.a-desc.smScreen {
-// 				display: block;
-// 				padding: 0 10px;
-// 			}
-// 			.a-award {
-// 				display: flex;
-// 				font-size: 1.1rem;
-// 			}
-// 		}
-// 	}
-// }
-// @media screen and (min-width: 1200px) {
-// 	.About {
-// 		font-size: 12px;
-// 		flex-direction: row;
-// 		height: 100%;
-// 		width: 100vw;
-
-// 		display: flex;
-// 		justify-content: center;
-
-// 		.about-bground {
-// 			height: 100%;
-// 		}
-// 		.about-left {
-// 			height: 100%;
-// 			width: 45%;
-// 			.about-card.shadowBg {
-// 				position: absolute;
-// 				top: 10px;
-// 				left: 30px;
-// 			}
-// 			// display: none;
-// 		}
-// 		.about-right {
-// 			height: 100%;
-// 			width: 50%;
-// 			padding: 0 0px;
-// 			display: flex;
-// 			flex-direction: column;
-// 			justify-content: space-evenly;
-
-// 			.a-title {
-// 				font-weight: 300;
-// 				font-size: 3rem;
-// 				text-align: center;
-// 			}
-// 			.a-sub {
-// 				margin: 0px 0px;
-// 				text-align: center;
-// 				font-size: 1.2rem;
-// 			}
-// 			.a-desc {
-// 				text-align: center;
-// 				font-size: 1.1rem;
-// 			}
-// 			.a-desc.LgScreen {
-// 				display: block;
-// 				text-align: start;
-// 			}
-// 			.a-desc.smScreen {
-// 				display: none;
-// 				padding: 0 10px;
-// 			}
-// 			.a-award {
-// 				display: flex;
-// 				font-size: 1.1rem;
-// 			}
-// 		}
-// 	}
-// }
+@media screen and (max-width: 320.98px){}
