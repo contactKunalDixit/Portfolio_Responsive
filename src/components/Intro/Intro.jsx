@@ -22,10 +22,13 @@ const Intro = () => {
 				<div className='intro-left'>
 					<div className='intro-Left-Wrapper'>
 						<div className='i-intro'>
-							<h1 className='salutation_1'>Hello </h1>
-
-							<h1 className='salutation_2'>I am Kunal</h1>
+							<h1 className='salutation_1'>Hello, I am Kunal</h1>
 						</div>
+						<p className='Title-desc small-Screen'>
+							Seasoned professional with expertise in Application and Systems
+							Knowledge management, product implementation, and driving product
+							adoption initiatives in IT-enabled and cloud-based ecosystems
+						</p>
 						<div className='i-work'>
 							<h1 className='i-name'>I do</h1>
 							<div className='i-title'>
@@ -63,33 +66,26 @@ const Intro = () => {
 								</div>
 							</div>
 						</div>
+
 						<p className='intro-desc'>
 							I create Full Stack web applications and UIs using:
 						</p>
 						<ul className='intro-ul'>
 							<li>
-								<span className='boldHeader'>Front-End:</span> ReactJS,
-								JavaScript, HTML, CSS, BootStrap
+								<div className='boldHeader'>Client_Side:</div>
+								<div className='normalDesc'>
+									ReactJS, JavaScript, HTML, CSS, BootStrap
+								</div>
 							</li>
 
 							<li>
-								<span className='boldHeader'>Back-End:</span> NodeJS, ExpressJS,
-								PHP
+								<div className='boldHeader'>Server_Side:</div>
+								<div className='normalDesc'>NodeJS, ExpressJS, PHP</div>
 							</li>
 							<li>
-								<span className='boldHeader'>DataBase:</span> SQL, MongoDB
+								<div className='boldHeader'>DataBase:</div>
+								<div className='normalDesc'>SQL, MongoDB</div>
 							</li>
-							<li>
-								<span className='boldHeader'>Operating Systems:</span> Unix,
-								Windows, MacOS
-							</li>
-							{/* <li>ReactJS</li>
-							<li>JavaScript</li>
-							<li>NodeJS and Express</li>
-							<li>PHP</li>
-							<li>SQL/ MongoDB</li>
-							<li>HTML</li>
-							<li>CSS</li> */}
 						</ul>
 						<div className='downArrow'>
 							<AiOutlineDown></AiOutlineDown>
