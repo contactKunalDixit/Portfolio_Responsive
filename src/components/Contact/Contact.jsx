@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
-import styles from './contact.module.css';
+
+import './contact.scss';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import linkedin from '../../img/linkedin.png';
@@ -46,63 +47,62 @@ const Contact = () => {
 
 	return (
 		<>
-			<div className={styles.Contact} id='contact'>
+			<div className='Contact' id='contact'>
 				<div
-					className={styles.contact_bg}
+					className='contact_bg'
 					// style={{ backgroundColor: darkMode ? '#ffd6a539' : '#a0c4ff' }}
 				></div>
-				<div className={styles.contact_Wrapper}>
-					<div className={styles.contactTop}>
-						<div className={styles.c_Left}>
-							<div className={styles.c_Left_Title}>
-								<h1 className={`${styles.c_title} ${styles.LgScreen}`}>
-									Let's Connect
-								</h1>
-								<h1 className={`${styles.c_title} ${styles.smScreen}`}></h1>
-								<p className={styles.c_Left_Desc}>
+				<div className='contact_Wrapper'>
+					<div className='contactTop'>
+						<div className='c_Left'>
+							<div className='c_Left_Title'>
+								<h1 className='c_title LgScreen'>Let's Connect</h1>
+
+								<p className='c_Left_Desc'>
 									I'd love to hear from you! If you have any questions,
 									comments, or just want to say hello, please fill out the form
 									below or use the contact information provided.
 								</p>
 							</div>
-							<div className={styles.cLeftFormSec}>
+							<div className='cLeftFormSec'>
 								<form ref={formRef} onSubmit={handleSubmit}>
-									<div className={styles.userName}>
-										<label htmlFor='userName'>Name:</label>
-										<input
-											id='userName'
-											type='text'
-											name='user_name'
-											value={nameValue}
-											onChange={(e) => setNameValue(e.target.value)}
-											onClick={(e) => setDone(false)}
-										/>
+									<div className='formSectionBox'>
+										<div className='userName'>
+											<label htmlFor='userName'>Name:</label>
+											<input
+												id='userName'
+												type='text'
+												name='user_name'
+												value={nameValue}
+												onChange={(e) => setNameValue(e.target.value)}
+												onClick={(e) => setDone(false)}
+											/>
+										</div>
+
+										<div className='userEmail'>
+											<label htmlFor='userEmail'>Email:</label>
+											<input
+												id='userEmail'
+												type='email'
+												name='user_email'
+												value={emailValue}
+												onChange={(e) => setEmailValue(e.target.value)}
+											/>
+										</div>
+										<div className='userMessage'>
+											<label htmlFor='userMessage'>Message:</label>
+											<textarea
+												id='userMessage'
+												name='message'
+												value={messageValue}
+												rows='3'
+												onChange={(e) => setMessageValue(e.target.value)}
+											></textarea>
+										</div>
 									</div>
 
-									<div className={styles.userEmail}>
-										<label htmlFor='userEmail'>Email:</label>
-										<input
-											id='userEmail'
-											type='email'
-											name='user_email'
-											value={emailValue}
-											onChange={(e) => setEmailValue(e.target.value)}
-										/>
-									</div>
-									<div className={styles.userMessage}>
-										<label htmlFor='userMessage'>Message:</label>
-										<textarea
-											id='userMessage'
-											name='message'
-											value={messageValue}
-											rows='3'
-											onChange={(e) => setMessageValue(e.target.value)}
-										></textarea>
-									</div>
-									<div className={styles.submitButton}>
-										<button className={styles.cLeftSecSubmitButton}>
-											Submit
-										</button>
+									<div className='submitButton'>
+										<button className='cLeftSecSubmitButton'>Submit</button>
 									</div>
 
 									{done && (
@@ -113,24 +113,23 @@ const Contact = () => {
 								</form>
 							</div>
 						</div>
-						<div className={styles.c_Right}>
-							<div className={styles.c_right_wrapper}>
-								<div className={styles.c_info}>
-									<div className={styles.c_info_item}>
-										<img src={Phone} alt='' className={styles.c_icon} /> +65
-										90301206
+						<div className='c_Right'>
+							<div className='c_right_wrapper'>
+								<div className='c_info'>
+									<div className='c_info_item'>
+										<img src={Phone} alt='' className='c_icon' /> +65 90301206
 									</div>
-									<div className={styles.c_info_item}>
-										<img src={Email} alt='' className={styles.c_icon} />
+									<div className='c_info_item'>
+										<img src={Email} alt='' className='c_icon' />
 										contactkunaldixit@gmail.com
 									</div>
-									<div className={styles.c_info_item}>
-										<img src={linkedin} alt='' className={styles.c_icon} />
+									<div className='c_info_item'>
+										<img src={linkedin} alt='' className='c_icon' />
 										<a
 											target='_blank'
 											href='https://www.linkedin.com/in/contactkunaldixit'
 										>
-											LinkIn Profile
+											LinkedIn Profile
 										</a>
 									</div>
 								</div>
@@ -138,7 +137,7 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className={styles.contactBottom}>
+					<div className='contactBottom'>
 						<Footer></Footer>
 					</div>
 				</div>

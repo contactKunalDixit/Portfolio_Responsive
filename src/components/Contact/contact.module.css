@@ -1,13 +1,13 @@
-.Contact {
+/* .Contact {
 	margin: 0rem;
 	display: flex;
 	position: relative;
 	margin-inline: auto;
 	height: calc(100vh - 3.75rem);
 	height: calc(100svh - 3.75rem);
-}
+} */
 
-.contact_bg {
+/* .contact_bg {
 	clip-path: polygon(33% 0, 100% 0, 100% 100%, 72% 100%);
 
 	width: 100%;
@@ -16,7 +16,7 @@
 	top: 0;
 	right: 0;
 
-	/* Gradient settings start */
+	
 
 	background: linear-gradient(
 		45deg,
@@ -33,9 +33,9 @@
 	-o-animation: AnimationName 10s ease infinite;
 	animation: AnimationName 10s ease infinite;
 	animation-direction: reverse;
-}
+} */
 
-@-webkit-keyframes AnimationName {
+/* @-webkit-keyframes AnimationName {
 	0% {
 		background-position: 71% 0%;
 	}
@@ -78,139 +78,134 @@
 	100% {
 		background-position: 71% 0%;
 	}
-}
-.contact_Wrapper {
+} */
+/* .contact_Wrapper {
 	width: 100%;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	/* height: 100%; */
-}
+	
+} */
 
-.contactTop {
-	/* flex: 8; */
+/* .contactTop {
+	
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 90%;
-}
+} */
 
-.contactBottom {
-	/* flex: 0.7;
-	 */
-	height: 10%;
+/* .contactBottom {
+	
+
+	height: 7%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+}  */
 
-.userEmail {
+/* .userEmail {
 	width: 90%;
 	display: flex;
 	flex-direction: column;
-}
+} */
 
-.userMessage {
-	/* margin: 1.5rem 0; */
+/* .userMessage {
+	
 	width: 90%;
 	display: flex;
 	flex-direction: column;
-}
+} */
 
-.c_Left,
-.c_Right {
+/* .c_Left {
 	flex: 1;
-	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 1rem;
 	z-index: 100;
-}
+	height: 100%;
+} */
 
-.c-Left {
-	flex: 1;
-}
-
-.c_Right {
+/* .c_Right {
 	flex: 1.5;
 	width: 58%;
 	display: flex;
 	justify-content: end;
 	align-items: center;
 	margin: 0 1rem;
-}
-.c_Left_Title {
-	/* flex: 1; */
+	padding: 0 1rem;
+	z-index: 100;
+	height: 100%;
+} */
+/* .c_Left_Title {
+	
 	width: 100%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* padding-top: 2rem; */
-}
+	 
+} */
 
-.LgScreen {
-	/* font-size: 2rem; */
+/* .LgScreen {
+	
 	width: 100%;
 	font-weight: 300;
 	font-size: clamp(1rem, -1.0861rem + 7.947vw, 3.5rem);
-}
+	font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
+} */
 
-.c_title.smScreen {
+/* .c_title.smScreen {
 	display: none;
-}
+} */
 
-.c_Left_Desc {
+/* .c_Left_Desc {
 	font-weight: 300;
 	padding: 1rem 0;
 	font-size: clamp(1rem, -1.0861rem + 7.947vw, 1.2rem);
-	/* width: 50%; */
+	
 	display: flex;
 	justify-content: start;
-	/* filter: invert(100%); */
+	
 	text-align: left;
-	/* width: 70%; */
-}
-.cLeftFormSec {
+	width: 70%;
+} */
+/* .cLeftFormSec {
 	width: 100%;
-	/* flex: 3; */
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
+} */
 
-.userName {
+/* .userName {
 	width: 90%;
 	display: flex;
 	flex-direction: column;
-	/* margin: 2rem 0;  */
-}
+	
+} */
 
-label {
+/* label {
 	font-size: 1.1rem;
 	font-weight: 300;
 	padding: 0.5rem 0 0.5rem 1rem;
-}
-
-/* .c_Left {
-	width: 60%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 } */
 
-.c_icon {
+/* .c_icon {
 	width: 3rem;
 	height: auto;
 	margin-right: 1.25rem;
-}
+} */
 
-.c_info_item {
+/* .c_info_item {
 	display: flex;
 	align-items: center;
 	padding: 2.125rem 1rem;
@@ -220,11 +215,11 @@ label {
 	letter-spacing: 0.1rem;
 	margin: 1rem 0;
 	font-size: clamp(1rem, -1.0861rem + 7.947vw, 1.4rem);
-}
-.c_info_item > a {
+} */
+/* .c_info_item > a {
 	text-decoration: none;
 	color: white;
-}
+} */
 /* .c_Right {
 	width: 40%;
 	height: 100%;
@@ -235,37 +230,38 @@ label {
 	overflow-y: hidden;
 } */
 
-.c_right_wrapper {
+/* .c_right_wrapper {
 	padding: 0.625rem;
 	width: 80%;
-	height: 100%;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 	color: white;
-}
+} */
 
-.c_desc {
-	font-weight: 400;
-}
-
-.c_desc.SmScreen {
-	display: none;
-}
-
-form {
+/* form {
 	margin-top: 1.25rem;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+
+	align-items: center;
 	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
-	/* // overflow: auto; */
-}
+	// overflow: auto;
+} */
 
-input {
+/* .formSectionBox {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} */
+
+/* input {
 	width: 90%;
 	height: 2.125rem;
 	border: none;
@@ -273,18 +269,18 @@ input {
 	margin: 0.625rem 0px;
 	font-size: 0.875em;
 	padding-left: 0.625rem 0 0.625rem 1rem;
-}
+} */
 
-textarea {
+/* textarea {
 	width: 90%;
 	margin: 0/625rem 0;
 	font-size: 0.875rem;
 	padding-left: 0.625rem;
 	border: 0px transparent;
 	border-bottom: 1px solid black;
-}
+} */
 
-button {
+/* button {
 	border: none;
 	padding: 0.938rem;
 	background-color: #59b256;
@@ -292,27 +288,26 @@ button {
 	font-weight: 500;
 	font-size: 1rem;
 	cursor: pointer;
-	margin-top: 20px;
+	margin-top: 2rem;
 	border-radius: 10px;
-}
+} */
 
-.cLeftSecSubmitButton {
+/* .cLeftSecSubmitButton {
 	width: 10rem;
-	/* margin: 2rem 0; */
-}
+	
+} */
 
-.submitButton {
-	/* background-color: red; */
-	/* padding: 1rem; */
-	/* margin: 0 auto; */
+/* .submitButton {
+	
 	display: flex;
 	justify-content: center;
 	align-items: end;
+	align-items: center;
 	width: 100%;
-	margin-top: 2rem;
-}
+	 
+} */
 
-button:hover {
+/* button:hover {
 	background: linear-gradient(230deg, #a531f3, #1b11ac, #d06d35);
 	background-size: 600% 600%;
 
@@ -353,563 +348,79 @@ button:hover {
 	100% {
 		background-position: 0% 51%;
 	}
-}
+} */
 
 /*  */
 
-form {
+/* form {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+} */
+
+/* ! min-width: 2000px */
+@media screen and (min-width: 2000px) {
+	.LgScreen {
+		font-size: clamp(7rem, 6rem + 0.8vw, 8rem);
+	}
+
+	.c_Left_Title {
+		text-align: unset;
+	}
+
+	.c_Left_Desc {
+		font-size: clamp(2rem, 0.5rem + 1.2vw, 3.5rem);
+		text-align: center;
+	}
+
+	.cLeftFormSec {
+		font-size: clamp(0.9rem, 0rem + 1.2vw, 1.5rem);
+	}
+
+	label {
+		font-size: clamp(0.9rem, 0rem + 1.2vw, 1.5rem);
+	}
+	input {
+		font-size: clamp(0.9rem, 0rem + 1.2vw, 1.5rem);
+	}
+
+	button {
+		font-size: clamp(0.9rem, 0rem + 1.2vw, 1.5rem);
+	}
+
+	.c_info_item {
+		font-size: clamp(2rem, 0.5rem + 1.2vw, 3.5rem);
+	}
 }
 
-/*   Gradient settings end} */
+/* ! min-width:1440px and max-width: 1999.98px - DEFAULT */
 
-/* 
-// @media screen and (min-width: 320px) {
-// 	.Contact {
-// 		font-size: 12px;
-// 		width: 100%;
-// 		height: 100%;
-// 		.contact-Wrapper {
-// 			width: 95%;
-// 			flex-direction: column;
-// 			// overflow-y: auto //Test
-// 			// padding: 10px 50px;
-// 			height: 100%;
+/* ! min-width:1200px and max-width:1439.98px */
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+	.LgScreen {
+		font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
+		font-size: clamp(1rem, -16.5015rem + 23.3353vw, 4.5rem);
+	}
+}
+/* ! min-width: 992px AND max-width 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
 
-// 			display: flex;
-// 			justify-content: flex-start;
-// 			align-items: center;
-// 			position: relative;
-// 			.c-Left {
-// 				height: 35%;
-// 				height: auto;
-// 				width: 100%;
-// 				display: flex;
-// 				flex-direction: column;
-// 				justify-content: space-around;
-// 				align-items: center;
-// 				// overflow: auto;
-// 				.c-title {
-// 					font-size: 2.3rem;
-// 					width: 100%;
-// 					font-weight: 300;
-// 					text-align: center;
-// 				}
-// 				.c-title.LgScreen {
-// 					display: none;
-// 				}
-// 				.c-title.smScreen {
-// 					display: flex;
-// 					justify-content: center;
-// 					align-items: center;
-// 				}
-// 				.c-info {
-// 					margin: 0;
-// 					// margin-top: 15px;
-// 					display: flex;
-// 					flex-direction: column;
-// 					align-items: center;
-// 					justify-content: space-evenly;
-// 					margin-top: 20px;
-// 					.c-info-item {
-// 						display: flex;
-// 						align-items: center;
-// 						// margin: 0;
-// 						margin: 10px 0;
-// 						font-weight: 400;
-// 						width: 100%;
-// 						font-size: 0.9rem;
-// 					}
-// 				}
-// 			}
-// 			.c-Right {
-// 				z-index: 100;
-// 				// height: 55%;
-// 				height: auto;
-// 				width: 100%;
-// 				overflow: auto;
-// 				background-color: rgb(14, 15, 77);
+/* !min-width:768px AND max-width:991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
 
-// 				position: absolute;
-// 				left: 0%;
-// 				bottom: 0px;
-// 				.c-right-wrapper {
-// 					color: white;
-// 					padding: 10px;
-// 					height: 100%;
-// 					width: 100%;
-// 					overflow-y: auto;
-// 					.c-desc.LgScreen {
-// 						display: none;
-// 						.Q-title {
-// 							display: initial;
-// 							text-align: center;
-// 							font-weight: 300;
-// 						}
-// 					}
-// 					.c-desc.SmScreen {
-// 						display: inline-block;
-// 						margin-bottom: 10px;
-// 						font-size: 14px;
-// 						font-weight: 300;
-// 						.Q-title {
-// 							text-align: center;
-// 							font-weight: 600;
-// 						}
-// 					}
-// 					form {
-// 						display: flex;
-// 						flex-direction: column;
-// 						width: 100%;
-// 						align-items: center;
-// 						flex-wrap: nowrap;
-// 						justify-content: center;
-// 						height: 100%;
-// 						overflow-y: hidden;
-// 						margin-top: 0;
-// 						input {
-// 							width: 80%;
-// 							height: 1.3rem;
-// 							font-size: 0.9rem;
-// 						}
-// 						textarea {
-// 							width: 80%;
-// 							margin: 10px 0px;
-// 							font-size: 14px;
-// 							padding-left: 10px;
-// 						}
-// 						button {
-// 							border: none;
-// 							padding: 8px;
-// 							background-color: #59b256;
-// 							color: white;
-// 							font-weight: 300;
-// 							cursor: pointer;
-// 							margin: 0 auto;
-// 							display: block;
-// 							border-radius: 10%;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+/* !min-width:370px AND max-width:767.98px */
+@media (min-width: 370px) and (max-width: 767.98px) {
+}
 
-// @media screen and (min-width: 480px) {
-// 	.Contact {
-// 		font-size: 12px;
+/* !min-width:321px AND max-width:369.98px */
+@media (min-width: 321px) and (max-width: 369.98px) {
+}
 
-// 		width: 100%;
-// 		height: 100%;
-// 		.contact-Wrapper {
-// 			width: 95%;
-// 			flex-direction: row;
-// 			// padding: 10px 50px;
-// 			height: 100%;
-// 			.c-Left {
-// 				height: 100%;
-// 				width: 50%;
-// 				overflow: hidden;
-// 				.c-title {
-// 					font-size: 2.625em;
-// 					width: 100%;
-// 					font-weight: 400;
-// 					text-align: center;
-// 				}
-// 				.c-title.LgScreen {
-// 					display: none;
-// 				}
-// 				.c-title.smScreen {
-// 					display: block;
-// 				}
-// 				.c-info {
-// 					margin: 15px 0;
-// 					.c-info-item {
-// 						display: flex;
-// 						align-items: center;
-// 						margin: 10px 0;
-// 						font-weight: 400;
-// 						width: 100%;
-// 						font-size: 14px;
-// 					}
-// 				}
-// 			}
-// 			.c-Right {
-// 				height: 100%;
-// 				width: 50%;
-// 				overflow-y: auto;
-// 				// overflow: auto;
-// 				.c-right-wrapper {
-// 					padding: 0;
-// 					height: 100%;
-// 					width: 100%;
-
-// 					.c-desc.LgScreen {
-// 						display: none;
-// 						.Q-title {
-// 							display: initial;
-// 							text-align: center;
-// 							font-weight: 300;
-// 						}
-// 					}
-// 					.c-desc.SmScreen {
-// 						display: inline-block;
-// 						margin-top: 0;
-// 						font-size: 12px;
-// 						font-weight: 300;
-// 						display: none;
-// 						.Q-title {
-// 							text-align: center;
-// 							font-weight: 600;
-// 						}
-// 					}
-// 					form {
-// 						display: flex;
-// 						// flex-direction: column;
-// 						width: 100%;
-// 						align-items: center;
-// 						flex-wrap: nowrap;
-// 						justify-content: center;
-// 						height: 100%;
-// 						overflow: auto;
-// 						margin-top: 0;
-// 						input {
-// 							width: 80%;
-// 							height: 20px;
-// 						}
-// 						textarea {
-// 							width: 80%;
-// 							margin: 10px 0px;
-// 							font-size: 14px;
-// 							padding-left: 10px;
-// 						}
-// 						button {
-// 							border: none;
-// 							padding: 8px;
-// 							background-color: #59b256;
-// 							color: white;
-// 							font-weight: 500;
-// 							cursor: pointer;
-// 							margin: 0 auto;
-// 							display: block;
-// 							border-radius: 10%;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// @media screen and (min-width: 768px) {
-// 	.Contact {
-// 		font-size: 18px;
-// 		width: 100%;
-// 		height: 100%;
-// 		.contact-Wrapper {
-// 			width: 95%;
-// 			flex-direction: column;
-// 			// padding: 10px 50px;
-// 			height: 100%;
-// 			.c-Left {
-// 				height: 40%;
-// 				width: 100%;
-// 				// overflow: auto;
-// 				justify-content: space-evenly;
-// 				.c-title {
-// 					font-size: 3em;
-// 					width: 100%;
-// 					font-weight: 400;
-// 					text-align: center;
-// 				}
-// 				.c-title.LgScreen {
-// 					display: none;
-// 				}
-// 				.c-title.smScreen {
-// 					display: block;
-// 				}
-// 				.c-info {
-// 					margin: 15px 0;
-// 					.c-info-item {
-// 						display: flex;
-// 						align-items: center;
-// 						margin: 10px 0;
-// 						font-weight: 400;
-// 						width: 100%;
-// 						font-size: 20px;
-// 					}
-// 				}
-// 			}
-// 			.c-Right {
-// 				height: 60%;
-// 				width: 100%;
-// 				// overflow: auto;
-// 				.c-right-wrapper {
-// 					padding: 0;
-// 					height: 100%;
-// 					width: 100%;
-// 					.c-desc.LgScreen {
-// 						display: none;
-// 						.Q-title {
-// 							display: block;
-// 							text-align: center;
-// 						}
-// 					}
-// 					.c-desc.SmScreen {
-// 						display: block;
-// 						font-size: 1.3em;
-// 					}
-// 					form {
-// 						display: flex;
-// 						flex-direction: column;
-// 						width: 90%;
-// 						align-items: center;
-// 						flex-wrap: nowrap;
-// 						justify-content: space-evenly;
-// 						height: 90%;
-// 						overflow: auto;
-// 						margin-top: 0;
-// 						input {
-// 							width: 80%;
-// 							height: 40px;
-// 						}
-// 						textarea {
-// 							width: 80%;
-// 							margin: 10px 0px;
-// 							font-size: 14px;
-// 							padding-left: 10px;
-// 						}
-// 						button {
-// 							font-size: 1.2em;
-// 							border: none;
-// 							padding: 8px;
-// 							background-color: #59b256;
-// 							color: white;
-// 							font-weight: 500;
-// 							cursor: pointer;
-// 							margin: 0 auto;
-// 							display: block;
-// 							border-radius: 10%;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// @media screen and (min-width: 992px) {
-// 	.Contact {
-// 		font-size: 20px;
-// 		width: 100%;
-// 		height: 100%;
-// 		.contact-Wrapper {
-// 			width: 95%;
-// 			flex-direction: column;
-// 			// padding: 10px 50px;
-// 			height: 100%;
-// 			.c-Left {
-// 				height: 40%;
-// 				width: 100%;
-// 				// overflow: auto;
-// 				justify-content: space-evenly;
-// 				.c-title {
-// 					font-size: 3em;
-// 					width: 100%;
-// 					font-weight: 400;
-// 					text-align: center;
-// 				}
-// 				.c-title.LgScreen {
-// 					display: none;
-// 				}
-// 				.c-title.smScreen {
-// 					display: block;
-// 				}
-// 				.c-info {
-// 					margin: 15px 0;
-// 					.c-info-item {
-// 						display: flex;
-// 						align-items: center;
-// 						margin: 10px 0;
-// 						font-weight: 400;
-// 						width: 100%;
-// 						font-size: 20px;
-// 					}
-// 				}
-// 			}
-// 			.c-Right {
-// 				height: 60%;
-// 				width: 100%;
-// 				// overflow: auto;
-// 				.c-right-wrapper {
-// 					padding: 0;
-// 					height: 100%;
-// 					width: 100%;
-// 					.c-desc.LgScreen {
-// 						display: none;
-// 						color: white;
-// 						.Q-title {
-// 							display: block;
-// 							text-align: center;
-// 						}
-// 					}
-// 					.c-desc.SmScreen {
-// 						display: block;
-// 						font-size: 1.2rem;
-// 					}
-// 					form {
-// 						display: flex;
-// 						flex-direction: column;
-// 						width: 90%;
-// 						align-items: center;
-// 						flex-wrap: nowrap;
-// 						justify-content: space-around;
-// 						height: 85%;
-// 						overflow: auto;
-// 						margin-top: 0;
-// 						input {
-// 							width: 80%;
-// 							height: 30px;
-// 						}
-// 						textarea {
-// 							width: 80%;
-// 							margin: 10px 0px;
-// 							font-size: 14px;
-// 							padding-left: 10px;
-// 						}
-// 						button {
-// 							font-size: 1em;
-// 							border: none;
-// 							padding: 8px;
-// 							background-color: #59b256;
-// 							color: white;
-// 							font-weight: 500;
-// 							cursor: pointer;
-// 							margin: 0 auto;
-// 							display: block;
-// 							border-radius: 10%;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// @media screen and (min-width: 1200px) {
-// 	.Contact {
-// 		font-size: 20px;
-// 		width: 100%;
-// 		height: 100%;
-// 		.contact-Wrapper {
-// 			width: 95%;
-// 			flex-direction: row;
-// 			// padding: 10px 50px;
-// 			height: 100%;
-// 			.c-Left {
-// 				height: 100%;
-// 				width: 50%;
-// 				// overflow: auto;
-// 				justify-content: space-evenly;
-
-// 				.c-title {
-// 					font-size: 3em;
-// 					width: 100%;
-// 					font-weight: 400;
-// 					text-align: start;
-// 				}
-// 				.c-title.LgScreen {
-// 					display: block;
-// 					font-weight: 300;
-// 				}
-// 				.c-title.smScreen {
-// 					display: none;
-// 				}
-// 				.c-info {
-// 					margin: 1.5em 0;
-// 					width: 100%;
-// 					.c-info-item {
-// 						display: flex;
-// 						align-items: center;
-// 						justify-content: flex-start;
-// 						margin: 1em 0;
-// 						font-weight: 300;
-// 						width: 100%;
-// 						font-size: 1rem;
-// 					}
-// 				}
-// 			}
-// 			.c-Right {
-// 				height: 80%;
-// 				width: 50%;
-// 				background-color: transparent;
-// 				position: relative;
-// 				// overflow: auto;
-// 				.c-right-wrapper {
-// 					color: black;
-// 					padding: 0;
-// 					height: 90%;
-// 					width: 100%;
-// 					.c-desc.LgScreen {
-// 						display: block;
-// 						font-weight: 300;
-
-// 						color: white;
-
-// 						padding: 0 20px;
-// 						font-size: 16px;
-
-// 						.Q-title {
-// 							display: block;
-// 							text-align: center;
-// 							font-weight: 600;
-// 						}
-// 					}
-// 					.c-desc.SmScreen {
-// 						display: none;
-// 						font-size: 1.1em;
-// 					}
-// 					form {
-// 						display: flex;
-// 						flex-direction: column;
-// 						width: 90%;
-// 						align-items: center;
-// 						flex-wrap: nowrap;
-// 						justify-content: space-evenly;
-// 						height: 80%;
-// 						// overflow: auto;
-// 						margin-top: 0;
-// 						input {
-// 							width: 80%;
-// 							height: 30px;
-// 						}
-// 						textarea {
-// 							width: 80%;
-// 							margin: 10px 0px;
-// 							font-size: 14px;
-// 							padding-left: 10px;
-// 						}
-// 						button {
-// 							font-size: 16px;
-// 							border: none;
-// 							padding: 0 8px;
-// 							background-color: #59b256;
-// 							color: white;
-// 							font-weight: 500;
-// 							cursor: pointer;
-// 							margin: 0 auto;
-// 							display: block;
-// 							border-radius: 10%;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// } */
+/* !Max width 320.98px */
+@media screen and (max-width: 320.98px) {
+}
