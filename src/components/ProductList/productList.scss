@@ -147,12 +147,26 @@ box-shadow: 2px -1px 25px -6px rgba(0,0,0,0.75);
 @media (min-width:370px) and (max-width: 767.98px){
 .pl{
 	height: 60%;	
-	.pl-wrapper{
-		.pl-List{
+}
+}
 
-		}
+// !min-width:321px AND max-width:369.98px
+@media(min-width:321px) and (max-width:369.98px){
+	.pl{
+		height: 70%;
 	}
 }
+
+// !Max width 320.98px
+@media screen and (max-width: 320.98px){
+	.pl{
+		height: 65%;
+		.pl-wrapper{
+			.pl-tickerTech{
+				display: none;;
+		}
+	}
+	}
 }
 
 
