@@ -122,7 +122,7 @@ const Contact = () => {
 						<div className='c_Right'>
 							<div className='c_right_wrapper'>
 								<div className='c_info'>
-									<div className='c_info_item'>
+									<div className='c_info_item phoneItem'>
 										<img src={Phone} alt='' className='c_icon phoneIcon' /> +65
 										90301206
 									</div>

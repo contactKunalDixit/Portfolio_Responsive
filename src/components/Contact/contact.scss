@@ -492,6 +492,8 @@
                             font-size: clamp(1rem, -1.0861rem + 7.947vw, 4.5rem);
 		                    // font-size: clamp(1rem, -16.5015rem + 23.3353vw, 4.5rem);
                             font-size: clamp(0.9rem, -1.0861rem + 6.947vw, 3.5rem);
+                            font-size: clamp(0.9rem, -1.0861rem + 6.947vw, 3rem);
+
                         }
                         .c_Left_Desc{
                             width: 90%;
@@ -703,12 +705,13 @@
                                     label{
                                         // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
+                                         padding:0.5rem;
                                     }
                                     textarea{
                                          padding:0.5rem;
                                          margin:0px;
                                          
-                                         height: 3rem;
+                                         height: 2.5rem;
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
                                     }
                                 }
@@ -745,6 +748,8 @@
                                  font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
                                   font-size: clamp(1.1rem, 0.0713rem + 2.143vh, 1.4rem);
                                    font-size: clamp(0.9rem, 0.0713rem + 2.143vh, 1.2rem);
+                                   
+
                                 
 
                             }
@@ -768,6 +773,7 @@
             display: none;
         }
         .contact_Wrapper{
+            padding:0.5rem;
             .contactTop{
                 position:relative;
                 .c_Left{
@@ -794,7 +800,7 @@
                     }
                     .cLeftFormSec{
                         form{
-                            background-color: pink;
+                            background-color: white;;
                             z-index: 200;;
                             .formSectionBox{
                                 .userName{
@@ -805,6 +811,7 @@
                                     }
                                     input{
                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                          
                                          padding:0.5rem;
                                          margin:0px;
                                          height: auto;
@@ -828,22 +835,25 @@
                                     label{
                                         // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
+                                         padding:0.5rem;
                                     }
                                     textarea{
                                          padding:0.5rem;
                                          margin:0px;
                                          height: auto;
                                          height: 2rem;
+                                        //  height: 1rem;
+                                        height: 3rem;;
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
                                     }
                                 }
                             }
                             .submitButton{
                                 button{
-                                    padding:0.5rem;
-                                    width: 8rem;
+                                    padding:0.3rem 0.5rem;
+                                    width: 6rem;
                                      font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
-                                        font-size: clamp(0.8rem, -0.1539rem + 1.5386vh, 1rem);
+                                        font-size: clamp(0.8rem, -0.1539rem + 1.5386vh, 0.9rem);
                                         margin-top:1.5rem;
 
                                 }
@@ -852,12 +862,18 @@
                     }
                 }
                 .c_Right{
+                    
                     z-index:unset;
                     position:absolute;
-                    top:30%;;
+                    
+                    // inset:auto 0 0;
+                    
+                    
                     left:0;
                     height:auto;;
                     width: 100%;
+                    width: 86%;
+                    width: 96%;;
                     padding-right:0px;
                     margin-right:0px;
                     align-items: center;
@@ -865,26 +881,44 @@
                     margin:0rem;
                     justify-content: center;
                    
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    top:29%;
+                    // top:25%;
+                    top:25%;
+
+                    
+
                     .c_right_wrapper{
-                        
+                        padding:0.625rem;
+                        padding-top:1rem;
                         
                         width: 90%;
                         .c_info{
+
+                            .phoneItem{
+                                display:none;
+                            }
                             
                             
                             .c_info_item{
+                                font-weight: 500;
                                 color:black;
                                 // padding:1rem 0.5rem;
                                 padding:0.5rem;
                                 margin:0.5rem;
+                                
                                 margin:0;
                                 padding:0;
                                     padding:0.2rem 0;
+                                    // margin-bottom: 1rem;;
+                                    margin:1rem 0;
                                 font-size: clamp(1rem, -0.9079rem + 3.0772vw, 1.4rem);
                                  font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
                                   font-size: clamp(1.1rem, 0.0713rem + 2.143vh, 1.4rem);
                                    font-size: clamp(0.9rem, 0.0713rem + 2.143vh, 1.2rem);
                                    font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                                   font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
                                     a{
                                     color:black;
                                    
@@ -897,10 +931,10 @@
                                 .c_icon{
                                     width: 1.5rem;;
                                 }
-                                .phoneIcon{
-                                    width: 24px;
-                                    height: auto;;;
-                                }
+                                // .phoneIcon{
+                                //     width: 24px;
+                                //     height: auto;;;
+                                // }
 
                             }
                         }
@@ -908,6 +942,7 @@
                 }
             }
             .contactBottom{
+                display:none;
                 height: 5%;
             }
         }
