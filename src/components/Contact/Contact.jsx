@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-
+import { useMediauery } from 'react-responsive';
 import './contact.scss';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer';
 
 const Contact = () => {
 	const [nameValue, setNameValue] = useState('');
-	const [subjectValue, setSubjectValue] = useState('');
+	// const [subjectValue, setSubjectValue] = useState('');
 	const [emailValue, setEmailValue] = useState('');
 	const [messageValue, setMessageValue] = useState('');
 
@@ -40,9 +40,13 @@ const Contact = () => {
 				}
 			);
 		setNameValue('');
-		setSubjectValue('');
+		// setSubjectValue('');
 		setEmailValue('');
 		setMessageValue('');
+	};
+
+	const formKeyboardTransition = () => {
+		console.log('Transition works');
 	};
 
 	return (
@@ -64,7 +68,7 @@ const Contact = () => {
 									below or use the contact information provided.
 								</p>
 							</div>
-							<div className='cLeftFormSec'>
+							<div className='cLeftFormSec' onClick={formKeyboardTransition}>
 								<form ref={formRef} onSubmit={handleSubmit}>
 									<div className='formSectionBox'>
 										<div className='userName'>
@@ -75,7 +79,10 @@ const Contact = () => {
 												name='user_name'
 												value={nameValue}
 												onChange={(e) => setNameValue(e.target.value)}
-												onClick={(e) => setDone(false)}
+												// onClick={(e) => setDone(false)}
+												onClick={(e) => {
+													setDone(false);
+												}}
 											/>
 										</div>
 
