@@ -13,3 +13,10 @@
 	/* padding: 1rem; */
 	font-size: clamp(0.8rem, -1.0861rem + 7.947vw, 1rem);
 }
+
+/* min-width:768px AND max-width:991.98px  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.footerText {
+		font-size: clamp(0.8rem, -1.1861rem + 7.947vh, 0.9rem);
+	}
+}

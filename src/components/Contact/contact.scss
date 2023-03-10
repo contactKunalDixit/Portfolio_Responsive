@@ -654,19 +654,15 @@
                 .c_Left{
                     .c_Left_Title{
                         .LgScreen{
-                           
-                            font-size: clamp(4rem, 2.2856rem + 3.5717vw, 4.5rem);
-                            font-size: clamp(3rem, -2.1433rem + 10.7152vw, 4.5rem);
-
-                            font-size: clamp(3rem, -2.1433rem + 10.7152vh, 4.5rem);
-
+                           font-size: clamp(3rem, -2.1433rem + 10.7152vh, 4.5rem);
+                           font-size: clamp(3rem, -2.0433rem + 10.7152vh, 3.8rem);
                         }
                         .c_Left_Desc{
                         width: 100%;
-                        // font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
                         text-align: center;;
                         // font-size: clamp(0.76rem, 0.352rem + 0.8501vh, 0.879rem);
                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                        font-size: clamp(0.7srem, 0.0713rem + 2.143vh, 1.3rem);
                     }
                     
                     }
@@ -676,7 +672,8 @@
                                 .userName{
                                     label{
                                          padding:0.5rem;
-                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                        //  font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
                                     }
                                     input{
                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
@@ -688,10 +685,12 @@
                                   .userEmail{
                                          label{
                                          padding:0.5rem;
-                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                        // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
                                     }
                                     input{
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                           
                                          padding:0.5rem;
                                          margin:0px;
                                          height: auto;
@@ -699,7 +698,8 @@
                                 }
                                   .userMessage{
                                     label{
-                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                        // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
                                     }
                                     textarea{
                                          padding:0.5rem;
@@ -713,7 +713,9 @@
                                 button{
                                     padding:0.5rem;
                                     width: 8rem;
-                                     font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem)
+                                     font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
+                                        font-size: clamp(0.8rem, -0.1539rem + 1.5386vh, 1rem);
+                                        margin-top:1.5rem;
 
                                 }
                             }
@@ -723,19 +725,31 @@
                   .c_Right{
                     padding-right:0px;
                     margin-right:0px;
+                    align-items: flex-start;
+                    padding:0rem;
+                    margin:0rem;
+                    
 
                     .c_right_wrapper{
                         width: 90%;
                         .c_info{
+                            margin-top:2rem;
+                            
                             .c_info_item{
                                 padding:1rem 0.5rem;
                                 font-size: clamp(1rem, -0.9079rem + 3.0772vw, 1.4rem);
                                  font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
+                                  font-size: clamp(1.1rem, 0.0713rem + 2.143vh, 1.4rem);
+                                   font-size: clamp(0.9rem, 0.0713rem + 2.143vh, 1.2rem);
+                                
 
                             }
                         }
                     }
                 }
+            }
+            .contactBottom{
+                height: 5%;
             }
         }
     }
