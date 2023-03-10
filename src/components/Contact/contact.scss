@@ -656,6 +656,7 @@
                         .LgScreen{
                            font-size: clamp(3rem, -2.1433rem + 10.7152vh, 4.5rem);
                            font-size: clamp(3rem, -2.0433rem + 10.7152vh, 3.8rem);
+                           font-size: clamp(2.7rem, -2.1433rem + 10.7152vh, 3.8rem);
                         }
                         .c_Left_Desc{
                         width: 100%;
@@ -663,6 +664,7 @@
                         // font-size: clamp(0.76rem, 0.352rem + 0.8501vh, 0.879rem);
                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
                         font-size: clamp(0.7srem, 0.0713rem + 2.143vh, 1.3rem);
+                        padding-top:0.3rem;
                     }
                     
                     }
