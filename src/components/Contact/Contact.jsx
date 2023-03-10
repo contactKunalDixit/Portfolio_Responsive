@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { useMediauery } from 'react-responsive';
 import './contact.scss';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
@@ -124,7 +123,8 @@ const Contact = () => {
 							<div className='c_right_wrapper'>
 								<div className='c_info'>
 									<div className='c_info_item'>
-										<img src={Phone} alt='' className='c_icon' /> +65 90301206
+										<img src={Phone} alt='' className='c_icon phoneIcon' /> +65
+										90301206
 									</div>
 									<div className='c_info_item'>
 										<img src={Email} alt='' className='c_icon' />

@@ -124,7 +124,7 @@
                         font-size: clamp(1rem, -1.0861rem + 7.947vw, 1.2rem);
                         /* width: 50%; */
                         display: flex;
-                        justify-content: start;
+                        justify-content: flex-start;
                         /* filter: invert(100%); */
                         text-align: left;
                         width: 70%;
@@ -222,7 +222,7 @@
                             /* margin: 0 auto; */
                             display: flex;
                             justify-content: center;
-                            align-items: end;
+                            align-items: flex-end;
                             align-items: center;
                             width: 100%;
                             /* margin-top: 2rem; */
@@ -289,7 +289,7 @@
                 flex: 1.5;
                 width: 58%;
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
                 align-items: center;
                 margin: 0 1rem;
                 padding: 0 1rem;
@@ -663,13 +663,14 @@
                         text-align: center;;
                         // font-size: clamp(0.76rem, 0.352rem + 0.8501vh, 0.879rem);
                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
-                        font-size: clamp(0.7srem, 0.0713rem + 2.143vh, 1.3rem);
+                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
                         padding-top:0.3rem;
                     }
                     
                     }
                     .cLeftFormSec{
                         form{
+                            
                             .formSectionBox{
                                 .userName{
                                     label{
@@ -706,7 +707,8 @@
                                     textarea{
                                          padding:0.5rem;
                                          margin:0px;
-                                         height: auto;
+                                         
+                                         height: 3rem;
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
                                     }
                                 }
@@ -758,104 +760,159 @@
 
 }
 
-// min-width:768px AND max-width:991.98px ***** AND  **** 70vh for form inputs*/
-
-// @media (max-height:400px)
-
-// {
-//     .Contact{
-//         .contact_Wrapper{
-//             .contactTop{
-//                 .c_Left{
-//                     .c_Left_Title{
-//                         .LgScreen{
-                           
-//                             font-size: clamp(4rem, 2.2856rem + 3.5717vw, 4.5rem);
-//                             font-size: clamp(3rem, -2.1433rem + 10.7152vw, 4.5rem);
-
-//                         }
-//                         .c_Left_Desc{
-//                         width: 100%;
-//                         font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
-//                         text-align: center;;
-//                         // display:none;
-//                     }
-                    
-//                     }
-//                     .cLeftFormSec{
-//                         form{
-//                             .formSectionBox{
-//                                 .userName{
-//                                     label{
-//                                          padding:0.5rem;
-//                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-//                                     }
-//                                     input{
-//                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-//                                          padding:0.5rem;
-//                                          margin:0px;
-//                                          height: auto;
-//                                     }
-//                                 }
-//                                   .userEmail{
-//                                          label{
-//                                          padding:0.5rem;
-//                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-//                                     }
-//                                     input{
-//                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-//                                          padding:0.5rem;
-//                                          margin:0px;
-//                                          height: auto;
-//                                     }
-//                                 }
-//                                   .userMessage{
-//                                     label{
-//                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-//                                     }
-//                                     textarea{
-//                                          padding:0.5rem;
-//                                          margin:0px;
-//                                          height: auto;
-//                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-//                                     }
-//                                 }
-//                             }
-//                             .submitButton{
-//                                 button{
-//                                     padding:0.5rem;
-//                                     width: 8rem;
-//                                      font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem)
-
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//                   .c_Right{
-//                     padding-right:0px;
-//                     margin-right:0px;
-
-//                     .c_right_wrapper{
-//                         width: 90%;
-//                         .c_info{
-//                             .c_info_item{
-//                                 padding:1rem 0.5rem;
-//                                 font-size: clamp(1rem, -0.9079rem + 3.0772vw, 1.4rem);
-//                                  font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
-
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }
 
 // !min-width:370px AND max-width:767.98px */
 @media (min-width: 370px) and (max-width: 767.98px) {
+    .Contact{
+        .contact_bg{
+            display: none;
+        }
+        .contact_Wrapper{
+            .contactTop{
+                position:relative;
+                .c_Left{
+                    z-index: 100;
+                    justify-content: space-between;
+                    .c_Left_Title{
+                        .LgScreen{
+                           
+                         
+                           font-size: clamp(2rem, 1.5703rem + 4.0203vh, 3.5rem);
+                           font-size: clamp(2.5rem, 2.1479rem + 2.817vw, 3.5rem);
+                           font-size: clamp(2.5rem, 2.1479rem + 2.817vh, 3.5rem);
+                           font-size: clamp(2rem, -2.1533rem + 10.7152vh, 3rem);
+                        }
+                        .c_Left_Desc{
+                        width: 100%;
+                        text-align: center;;
+                        // font-size: clamp(0.76rem, 0.352rem + 0.8501vh, 0.879rem);
+                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                        padding-top:0.3rem;
+                    }
+                    
+                    }
+                    .cLeftFormSec{
+                        form{
+                            background-color: pink;
+                            z-index: 200;;
+                            .formSectionBox{
+                                .userName{
+                                    label{
+                                         padding:0.5rem;
+                                        //  font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
+                                    }
+                                    input{
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                         padding:0.5rem;
+                                         margin:0px;
+                                         height: auto;
+                                    }
+                                }
+                                  .userEmail{
+                                         label{
+                                         padding:0.5rem;
+                                        // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
+                                    }
+                                    input{
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                           
+                                         padding:0.5rem;
+                                         margin:0px;
+                                         height: auto;
+                                    }
+                                }
+                                  .userMessage{
+                                    label{
+                                        // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
+                                    }
+                                    textarea{
+                                         padding:0.5rem;
+                                         margin:0px;
+                                         height: auto;
+                                         height: 2rem;
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                    }
+                                }
+                            }
+                            .submitButton{
+                                button{
+                                    padding:0.5rem;
+                                    width: 8rem;
+                                     font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
+                                        font-size: clamp(0.8rem, -0.1539rem + 1.5386vh, 1rem);
+                                        margin-top:1.5rem;
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .c_Right{
+                    z-index:unset;
+                    position:absolute;
+                    top:30%;;
+                    left:0;
+                    height:auto;;
+                    width: 100%;
+                    padding-right:0px;
+                    margin-right:0px;
+                    align-items: center;
+                    padding:0rem;
+                    margin:0rem;
+                    justify-content: center;
+                   
+                    .c_right_wrapper{
+                        
+                        
+                        width: 90%;
+                        .c_info{
+                            
+                            
+                            .c_info_item{
+                                color:black;
+                                // padding:1rem 0.5rem;
+                                padding:0.5rem;
+                                margin:0.5rem;
+                                margin:0;
+                                padding:0;
+                                    padding:0.2rem 0;
+                                font-size: clamp(1rem, -0.9079rem + 3.0772vw, 1.4rem);
+                                 font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
+                                  font-size: clamp(1.1rem, 0.0713rem + 2.143vh, 1.4rem);
+                                   font-size: clamp(0.9rem, 0.0713rem + 2.143vh, 1.2rem);
+                                   font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                                    a{
+                                    color:black;
+                                   
+                                   }
+                                // .c_icon:first-child{
+                                //     width: 24px;    
+                                //     height: 32px;;;
+                                
+                                // }
+                                .c_icon{
+                                    width: 1.5rem;;
+                                }
+                                .phoneIcon{
+                                    width: 24px;
+                                    height: auto;;;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            .contactBottom{
+                height: 5%;
+            }
+        }
+    }
+
 }
 
 /* !min-width:321px AND max-width:369.98px */

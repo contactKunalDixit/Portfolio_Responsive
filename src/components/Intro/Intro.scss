@@ -375,7 +375,7 @@
 						
 						// padding-right:2rem;
 						// display: flex;
-						// justify-content: center;align-items: start;
+						// justify-content: center;align-items: flex-start;
 						// flex-direction: column;
 
 						li{
@@ -476,7 +476,7 @@
 						
 						// padding-right:2rem;
 						// display: flex;
-						// justify-content: center;align-items: start;
+						// justify-content: center;align-items: flex-start;
 						// flex-direction: column;
 
 						li{
@@ -666,7 +666,7 @@
 
 			.intro-right{
 				
-				align-items: start;
+				align-items: flex-start;
 				position:absolute;
 				inset: 5rem 1rem 2rem 1rem;
 				
@@ -813,7 +813,8 @@
 							// flex-wrap:wrap;
 								flex:3;
 								font-size: clamp(0.7rem, 0.5591rem + 1.1268vw, 1.1rem);
-								display: flex;justify-content: flex-start;align-items: center;
+								display: flex;
+								justify-content: flex-start;align-items: center;
 							}
 						
 						
@@ -840,13 +841,13 @@
 			.intro-right
 			{
 				
-				align-items: start;
+				align-items: flex-start;
 				position:absolute;
 				inset: 1rem 1rem;
 				
 				
 				color:black;
-			align-items: start;
+			align-items: flex-start;
 				position:absolute;
 				inset: 5rem 1rem 2rem 1rem;
 				
@@ -1017,13 +1018,13 @@
 			.intro-right
 			{
 				// display:none;
-				align-items: start;
+				align-items: flex-start;
 				position:absolute;
 				inset: 1rem 1rem;
 				
 				
 				color:black;
-			align-items: start;
+			align-items: flex-start;
 				position:absolute;
 				inset: 5rem 1rem 2rem 1rem;
 				
@@ -1188,7 +1189,7 @@
 							font-size: clamp(0.4rem, 0.4rem + 1.4954vw, 0.7rem);
 							font-size: clamp(0.6rem, 0.4591rem + 1.1268vw, 1rem);
 							display: flex;
-							align-items: center;justify-content: start;
+							align-items: center;justify-content: flex-start;
 						}
 						}
 						
@@ -1211,13 +1212,13 @@
 			.intro-right
 			{
 				
-				align-items: start;
+				align-items: flex-start;
 				position:absolute;
 				inset: 1rem 1rem;
 				
 				
 				color:black;
-			align-items: start;
+			align-items: flex-start;
 				position:absolute;
 				inset: 5rem 1rem 2rem 1rem;
 				
