@@ -60,12 +60,39 @@ const Contact = () => {
 						<div className='c_Left'>
 							<div className='c_Left_Title'>
 								<h1 className='c_title LgScreen'>Let's Connect</h1>
+								<div className='largeScreenDevices'>
+									<p className='c_Left_Desc'>
+										I'd love to hear from you! If you have any questions,
+										comments, or just want to say hello, please fill out the
+										form below or use the contact information provided.
+									</p>
+								</div>
 
-								<p className='c_Left_Desc'>
-									I'd love to hear from you! If you have any questions,
-									comments, or just want to say hello, please fill out the form
-									below or use the contact information provided.
-								</p>
+								<div className='smallScreenDevices'>
+									<p className='c_Left_Desc'>
+										Got questions, comments, or just want to say hi? Drop me a
+										line below
+									</p>
+									<div className='c_info'>
+										<div className='c_info_item phoneItem'>
+											<img src={Phone} alt='' className='c_icon phoneIcon' />{' '}
+											+65 90301206
+										</div>
+										<div className='c_info_item'>
+											<img src={Email} alt='' className='c_icon' />
+											contactkunaldixit@gmail.com
+										</div>
+										<div className='c_info_item'>
+											<img src={linkedin} alt='' className='c_icon' />
+											<a
+												target='_blank'
+												href='https://www.linkedin.com/in/contactkunaldixit'
+											>
+												LinkedIn Profile
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div className='cLeftFormSec' onClick={formKeyboardTransition}>
 								<form ref={formRef} onSubmit={handleSubmit}>
