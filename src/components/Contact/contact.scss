@@ -795,11 +795,9 @@
                     justify-content: space-between;
                     .c_Left_Title{
                         .LgScreen{
-                           font-size: clamp(2rem, 1.5703rem + 4.0203vh, 3.5rem);
-                           font-size: clamp(2.5rem, 2.1479rem + 2.817vw, 3.5rem);
-                           font-size: clamp(2.5rem, 2.1479rem + 2.817vh, 3.5rem);
-                           font-size: clamp(2rem, -2.1533rem + 10.7152vh, 3rem);
-                           font-size: clamp(1.5rem, -2.1533rem + 10.7152vh, 3rem);
+                          
+                           font-size: clamp(1rem, -2.1533rem + 10.7152vh, 3rem);
+                           font-weight: 400;
                         }
                         .largeScreenDevices{
                             display:none;
@@ -862,6 +860,9 @@
                                 // }
                                 .c_icon {
                                     width: 1.5rem;
+                                    
+                                    height: auto;
+                                    // height: 1rem;;
                                     margin-right: 0.5rem;
                                     ;
                                 }
@@ -942,12 +943,14 @@
                                 }
                             }
                             .submitButton{
+                                padding-bottom:0.5rem;
                                 button{
                                     padding:0.3rem 0.5rem;
                                     width: 6rem;
                                      font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
                                         font-size: clamp(0.8rem, -0.1539rem + 1.5386vh, 0.9rem);
                                         margin-top:1.5rem;
+                                        
 
                                 }
                             }
