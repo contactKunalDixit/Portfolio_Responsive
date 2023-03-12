@@ -93,6 +93,33 @@ const Contact = () => {
 										</div>
 									</div>
 								</div>
+
+								<div className='super_smallScreenDevices'>
+									<p className='c_Left_Desc'>
+										I'd love to hear from you! If you have any questions,
+										comments, or just want to say hello, please reach out to me
+										at..
+									</p>
+									<div className='c_info'>
+										<div className='c_info_item phoneItem'>
+											<img src={Phone} alt='' className='c_icon phoneIcon' />{' '}
+											+65 90301206
+										</div>
+										<div className='c_info_item'>
+											<img src={Email} alt='' className='c_icon' />
+											contactkunaldixit@gmail.com
+										</div>
+										<div className='c_info_item'>
+											<img src={linkedin} alt='' className='c_icon' />
+											<a
+												target='_blank'
+												href='https://www.linkedin.com/in/contactkunaldixit'
+											>
+												LinkedIn Profile
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div className='cLeftFormSec' onClick={formKeyboardTransition}>
 								<form ref={formRef} onSubmit={handleSubmit}>

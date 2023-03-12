@@ -153,6 +153,9 @@
                             width: 70%;
                             }
                     }
+                    .super_smallScreenDevices{
+                        display:none;
+                    }
 
                 }
                 .cLeftFormSec{
@@ -402,6 +405,10 @@
                             .smallScreenDevices{
                                 display:none;
                             }
+                             
+                            .super_smallScreenDevices{
+                        display:none;
+                            }
                         
                     }
                     .cLeftFormSec{
@@ -501,6 +508,9 @@
                             .smallScreenDevices {
                                 display: none;
                             }
+                             .super_smallScreenDevices{
+                        display:none;
+                    }
                     }
                     .cLeftFormSec{
                         form{
@@ -582,6 +592,9 @@
                             .smallScreenDevices{
                                 display:none;
                                 }
+                            .super_smallScreenDevices{
+                                display:none;
+                                }
                     
                     }
                     .cLeftFormSec{
@@ -589,7 +602,7 @@
                             .formSectionBox{
                                 .userName{
                                     label{
-                                         font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
+                                     font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
                                          padding:0.5rem;
                                     }
                                     input{
@@ -679,6 +692,9 @@
                         .smallScreenDevices{
                             display: none;;
                         }
+                         .super_smallScreenDevices{
+                        display:none;
+                    }
                         
 
                   
@@ -870,6 +886,9 @@
                             }
                         }
                         }
+                        .super_smallScreenDevices{
+                        display:none;
+                    }
                        
                       
                     }
@@ -1059,63 +1078,142 @@
                     justify-content: space-between;
                     .c_Left_Title{
                         .LgScreen{
-                            font-size: clamp(1.8rem, -2.1533rem + 10.7152vh, 3rem);
-                            // margin-bottom:0.5rem;
+                          
+                           font-size: clamp(1rem, -2.1533rem + 10.7152vh, 3rem);
+                        //    font-size: clamp(0.5rem, -2.1533rem + 10.7152vh, 3rem);
+                        
+                           font-weight: 400;
+                           padding-bottom:0.25rem;
                         }
-                        .c_Left_Desc{
-                        width: 100%;
-                        text-align: center;;
-                        // font-size: clamp(0.76rem, 0.352rem + 0.8501vh, 0.879rem);
-                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
-                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
-                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
-                        padding-top:0.5rem;
+                        .largeScreenDevices{
+                            display:none;
+                        }
+                        .smallScreenDevices{
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;align-items: center;
 
+                            .c_Left_Desc{
+                                width: 100%;
+                                text-align: center;;
+                                 font-size: clamp(0.5rem, 0.0713rem + 2.143vh, 1.3rem);
+                                padding-top:0.3rem;
+                                
+                            }
+                             .c_info{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;align-items: flex-start;
+                                width: 80%;
+                                // padding-top: 1.5rem;;
+                                margin-top:0.5rem;
+                            .c_info_item {
+                                display: flex;
+                                font-weight: 500;
+                                color: black;
+                                // padding:1rem 0.5rem;
+                                padding: 0.5rem;
+                                margin: 0.5rem;
+
+                                margin: 0;
+                                padding: 0;
+                                padding: 0.2rem 0;
+                                // margin-bottom: 1rem;;
+                                margin: 1rem 0;
+                                margin:0.025rem 0;
+                                font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
+                                font-size: clamp(0.5rem, 0.0713rem + 2.143vh, 1.3rem);
+                                
+
+                                a {
+                                    color: black;
+                                    text-decoration: none;;
+
+                                }
+
+                                // .c_icon:first-child{
+                                //     width: 24px;    
+                                //     height: 32px;;;
+
+                                // }
+                                .c_icon {
+                                    width: 1.5rem;
+                                    
+                                    height: auto;
+                                    // height: 1rem;;
+                                    margin-right: 0.5rem;
+                                    ;
+                                }
+
+                            }
+                        }
+                        }
+                         .super_smallScreenDevices{
+                        display:none;
+                    }
+                       
+                      
                     }
                     
-                    }
                     .cLeftFormSec{
                         form{
                             background-color: white;;
                             z-index: 200;;
                             .formSectionBox{
                                 .userName{
+                                    
                                     label{
                                          padding:0.5rem;
+                                         
+                                         margin:0px;
                                         //  font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
-                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.2rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                        //   font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
                                     }
                                     input{
                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-                                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.2rem);
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
                                           
-                                         padding:0.5rem;
+                                         padding:0.3rem;
+                                         
                                          margin:0px;
                                          height: auto;
+                                         margin-top:0.5rem;
+                                         border-bottom: 0.5px solid black;;
                                     }
                                 }
                                   .userEmail{
+                                    
                                          label{
                                          padding:0.5rem;
                                         // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
-                                        font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.2rem);
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
                                     }
                                     input{
                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.2rem);
                                            
                                          padding:0.5rem;
                                          margin:0px;
                                          height: auto;
+                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                          
+                                         padding:0.3rem;
+                                         margin-top:0.5rem;
+                                         border-bottom: 0.5px solid black;
+                                        
                                     }
                                 }
                                   .userMessage{
+                                    
                                     label{
                                         // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
-                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.2rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
                                          padding:0.5rem;
                                     }
                                     textarea{
@@ -1124,13 +1222,19 @@
                                          height: auto;
                                          height: 2rem;
                                         //  height: 1rem;
-                                        height: 2rem;;
-                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
-                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.2rem);
+                                        margin-top:0.5rem;
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                          
+                                         padding:0.3rem;
+                                         
+                                         border-bottom: 0.5px solid black;
+                                         
                                     }
                                 }
                             }
                             .submitButton{
+                                padding-bottom:0.5rem;
                                 button{
                                     padding:0.3rem 0.5rem;
                                     width: 6rem;
@@ -1145,86 +1249,81 @@
                     }
                 }
                 .c_Right{
-                    
-                    z-index:unset;
-                    position:absolute;
-                    
-                    // inset:auto 0 0;
+                    display:none;
                     
                     
-                    left:0;
-                    height:auto;;
-                    width: 100%;
-                    width: 86%;
-                    width: 96%;;
-                    padding-right:0px;
-                    margin-right:0px;
-                    align-items: center;
-                    padding:0rem;
-                    margin:0rem;
-                    justify-content: center;
+                    // z-index:unset;
+                    // position:absolute;
+                    
+                    // // inset:auto 0 0;
+                    
+                    
+                    // left:0;
+                    // height:auto;;
+                    // width: 100%;
+                    // width: 86%;
+                    // width: 96%;;
+                    // padding-right:0px;
+                    // margin-right:0px;
+                    // align-items: center;
+                    // padding:0rem;
+                    // margin:0rem;
+                    // justify-content: center;
                    
-                    left: 50%;
-                    transform: translate(-50%, 0);
-                    top:29%;
+                    // left: 50%;
+                    // transform: translate(-50%, 0);
+                    // top:29%;
                     // top:25%;
-                    top:25%;
-                    top:30%;
-
-                    
-
-                    .c_right_wrapper{
-                        padding:0.625rem;
-                        padding-top:1rem;
+                    // .c_right_wrapper{
+                    //     padding:0.625rem;
+                    //     padding-top:1rem;
                         
-                        width: 90%;
-                        .c_info{
+                    //     width: 90%;
+                    //     .c_info{
 
-                            .phoneItem{
-                                display:none;
-                            }
+                    //         .phoneItem{
+                    //             display:none;
+                    //         }
                             
                             
-                            .c_info_item{
-                                font-weight: 500;
-                                color:black;
-                                // padding:1rem 0.5rem;
-                                padding:0.5rem;
-                                margin:0.5rem;
+                    //         .c_info_item{
+                    //             font-weight: 500;
+                    //             color:black;
+                    //             // padding:1rem 0.5rem;
+                    //             padding:0.5rem;
+                    //             margin:0.5rem;
                                 
-                                margin:0;
-                                padding:0;
-                                    padding:0.2rem 0;
-                                    // margin-bottom: 1rem;;
-                                    margin:1rem 0;
-                                font-size: clamp(1rem, -0.9079rem + 3.0772vw, 1.4rem);
-                                 font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
-                                  font-size: clamp(1.1rem, 0.0713rem + 2.143vh, 1.4rem);
-                                   font-size: clamp(0.9rem, 0.0713rem + 2.143vh, 1.2rem);
-                                   font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
-                                   font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
-                                    font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
-                                    letter-spacing: unset;
-                                    a{
-                                    color:black;
+                    //             margin:0;
+                    //             padding:0;
+                    //                 padding:0.2rem 0;
+                    //                 // margin-bottom: 1rem;;
+                    //                 margin:1rem 0;
+                    //             font-size: clamp(1rem, -0.9079rem + 3.0772vw, 1.4rem);
+                    //              font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
+                    //               font-size: clamp(1.1rem, 0.0713rem + 2.143vh, 1.4rem);
+                    //                font-size: clamp(0.9rem, 0.0713rem + 2.143vh, 1.2rem);
+                    //                font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                    //                font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
+                    //                 a{
+                    //                 color:black;
                                    
-                                   }
-                                // .c_icon:first-child{
-                                //     width: 24px;    
-                                //     height: 32px;;;
+                    //                }
+                    //             // .c_icon:first-child{
+                    //             //     width: 24px;    
+                    //             //     height: 32px;;;
                                 
-                                // }
-                                .c_icon{
-                                    width: 1.5rem;;
-                                }
-                                // .phoneIcon{
-                                //     width: 24px;
-                                //     height: auto;;;
-                                // }
+                    //             // }
+                    //             .c_icon{
+                    //                 width: 1.5rem;;
+                    //             }
+                    //             // .phoneIcon{
+                    //             //     width: 24px;
+                    //             //     height: auto;;;
+                    //             // }
 
-                            }
-                        }
-                    }
+                    //         }
+                    //     }
+                    // }
                 }
             }
             .contactBottom{
@@ -1236,6 +1335,395 @@
 
 }
 
-/* !Max width 320.98px */
+// !Max width 320.98px */
 @media screen and (max-width: 320.98px) {
+    .Contact{
+        .contact_bg{
+            display: none;
+        }
+        .contact_Wrapper{
+            padding:0.5rem;
+            .contactTop{
+                position:relative;
+                .c_Left{
+                    height: 80vh;
+                    justify-content: space-between;
+                    padding:0px;
+                    .c_Left_Title{
+
+                        .LgScreen{
+                        font-size: clamp(1rem, 0.0949rem + 14.4809vh, 2rem);
+                        font-size: clamp(0.7rem, -1.0949rem + 14.4809vh, 2rem);
+                           font-weight: 400;
+                           padding-bottom:0.25rem;
+                        }
+                        .largeScreenDevices{
+                            display:none;
+                        }
+                        .smallScreenDevices{
+                            
+                            width: 100%;
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            display: none;;
+
+                            .c_Left_Desc{
+                                text-align: center;
+                                padding:1rem;
+                                width: 100%;
+                                
+                               
+                                
+                            }
+                             .c_info{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;align-items: flex-start;
+                                width: 80%;
+                                // padding-top: 1.5rem;;
+                                margin-top:0.5rem;
+                            .c_info_item {
+                                
+                                display: flex;
+                                font-weight: 500;
+                                color: black;
+                                // padding:1rem 0.5rem;
+                                padding: 0.5rem;
+                                margin: 0.5rem;
+
+                                margin: 0;
+                                padding: 0;
+                                padding: 0.2rem 0;
+                                // margin-bottom: 1rem;;
+                                margin: 1rem 0;
+                                margin:0.025rem 0;
+                                font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
+                                font-size: clamp(0.5rem, 0.0713rem + 2.143vh, 1.3rem);
+                                
+
+                                a {
+                                    color: black;
+                                    text-decoration: none;;
+
+                                }
+
+                                // .c_icon:first-child{
+                                //     width: 24px;    
+                                //     height: 32px;;;
+
+                                // }
+                                .c_icon {
+                                    width: 1rem;
+                                    
+                                    height: auto;
+                                    // height: 1rem;;
+                                    margin-right: 0.5rem;
+                                    ;
+                                }
+
+                            }
+                            .c_info_item:nth-child(2){
+                                display: none;;
+                            }
+                        }
+                        
+                        }
+                         .super_smallScreenDevices{
+                            width: 100%;
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            // display: none;;
+
+                            .c_Left_Desc{
+                                text-align: center;
+                                padding:1rem;
+                                width: 100%;
+                                
+                                font-size: 1rem;;
+
+                               
+                                
+                            }
+                             .c_info{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;align-items: flex-start;
+                                width: 90%;
+                                // padding-top: 1.5rem;;
+                                margin-top:0.5rem;
+                            .c_info_item {
+                                
+                                display: flex;
+                                font-weight: 500;
+                                color: black;
+                                // padding:1rem 0.5rem;
+                                padding: 0.5rem;
+                                margin: 0.5rem;
+
+                                margin: 0;
+                                padding: 0;
+                                padding: 0.2rem 0;
+                                // margin-bottom: 1rem;;
+                                margin: 1rem 0;
+                                margin:0.025rem 0;
+                                font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
+                                font-size: clamp(0.5rem, 0.0713rem + 2.143vh, 1.3rem);
+                                font-size:1rem;
+                                margin:1rem;
+                                width: 80%;
+                                text-align: center;
+
+                                
+
+                                a {
+                                    color: black;
+                                    text-decoration: none;;
+
+                                }
+
+                                // .c_icon:first-child{
+                                //     width: 24px;    
+                                //     height: 32px;;;
+
+                                // }
+                                .c_icon {
+                                    width: 2rem;
+                                    
+                                    height: auto;
+                                    // height: 1rem;;
+                                    margin-right: 1rem;
+                                    ;
+                                }
+
+                            }
+                            .c_info_item:nth-child(2){
+                                display: none;;
+                            }
+                        }
+                    }
+                    
+                    // 
+                    
+                    // .320px_smallScreenDevices{
+                    //     width: 100%;;
+                    //     display:flex;
+                    //         flex-direction: column;
+                    //         justify-content: center;
+                    //         align-items: center;
+                    //     .c_Left_Desc{
+
+                    //     }
+                    //     .c_info{
+
+                    //     }
+                    // }
+                }
+                       
+                    
+                    
+                    
+                    .cLeftFormSec{
+                        display:none;
+                        form{
+
+                            background-color: white;;
+                            z-index: 200;;
+                            // height: 80vh;
+                            min-width: none;
+                            // min-height: 200px;
+                            .formSectionBox{
+                                
+                                .userName{
+                                    flex-direction: row;;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    margin-top:0.5rem;
+                                    label{
+                                         padding:0.5rem;
+                                         
+                                         margin:0px;
+                                         
+                                        //  font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                        //   font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                                         font-size: clamp(0.8rem, 0.05737rem + 3.6202vw, 1.3rem);
+                                         margin-right:1rem;
+                                    }
+                                    input{
+                                        width:unset;
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                        font-size: clamp(0.8rem, 0.05737rem + 3.6202vw, 1.3rem);
+                                          
+                                         padding:0.3rem;
+                                         
+                                         margin:0px;
+                                         height: auto;
+                                         
+                                         border-bottom: 0.5px solid black;;
+                                    }
+                                }
+                                  .userEmail{
+                                    margin-top:0.5rem;
+                                    flex-direction: row;
+                                         label{
+                                         padding:0.5rem;
+                                        // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1.1rem);
+                                        font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                                         font-size: clamp(0.8rem, 0.05737rem + 3.6202vw, 1.3rem);
+                                    }
+                                    input{
+                                        width: 70%;
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                           
+                                         padding:0.5rem;
+                                         margin:0px;
+                                         height: auto;
+                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                          font-size: clamp(0.8rem, 0.05737rem + 3.6202vw, 1.3rem);
+                                          
+                                         padding:0.3rem;
+                                         
+                                         border-bottom: 0.5px solid black;
+                                        
+                                    }
+                                }
+                                  .userMessage{
+                                    margin-top:0.5rem;
+                                    flex-direction: row;
+                                    label{
+                                        // font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1.1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vh, 1rem);
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                         font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                                         font-size: clamp(0.8rem, 0.05737rem + 3.6202vw, 1.3rem);
+                                         padding:0.5rem;
+                                    }
+                                    textarea{
+                                         padding:0.5rem;
+                                         margin:0px;
+                                         height: auto;
+                                         height: 2rem;
+                                        //  height: 1rem;
+                                        
+                                         font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                          font-size: clamp(0.9rem, 0.2142rem + 1.4287vw, 1rem);
+                                          font-size: clamp(0.8rem, 0.05737rem + 3.6202vw, 1.3rem);
+                                          
+                                         padding:0.3rem;
+                                         
+                                         border-bottom: 0.5px solid black;
+                                         
+                                    }
+                                }
+                            }
+                            .submitButton{
+                                padding-bottom:0.5rem;
+                                button{
+                                    padding:0.3rem 0.5rem;
+                                    width: 6rem;
+                                     font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
+                                        font-size: clamp(0.8rem, -0.1539rem + 1.5386vh, 0.9rem);
+                                        margin-top:1.5rem;
+                                        
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .c_Right{
+                    display:none;
+                    
+                    
+                    // z-index:unset;
+                    // position:absolute;
+                    
+                    // // inset:auto 0 0;
+                    
+                    
+                    // left:0;
+                    // height:auto;;
+                    // width: 100%;
+                    // width: 86%;
+                    // width: 96%;;
+                    // padding-right:0px;
+                    // margin-right:0px;
+                    // align-items: center;
+                    // padding:0rem;
+                    // margin:0rem;
+                    // justify-content: center;
+                   
+                    // left: 50%;
+                    // transform: translate(-50%, 0);
+                    // top:29%;
+                    // top:25%;
+                    // .c_right_wrapper{
+                    //     padding:0.625rem;
+                    //     padding-top:1rem;
+                        
+                    //     width: 90%;
+                    //     .c_info{
+
+                    //         .phoneItem{
+                    //             display:none;
+                    //         }
+                            
+                            
+                    //         .c_info_item{
+                    //             font-weight: 500;
+                    //             color:black;
+                    //             // padding:1rem 0.5rem;
+                    //             padding:0.5rem;
+                    //             margin:0.5rem;
+                                
+                    //             margin:0;
+                    //             padding:0;
+                    //                 padding:0.2rem 0;
+                    //                 // margin-bottom: 1rem;;
+                    //                 margin:1rem 0;
+                    //             font-size: clamp(1rem, -0.9079rem + 3.0772vw, 1.4rem);
+                    //              font-size: clamp(1.1rem, 0.0713rem + 2.143vw, 1.4rem);
+                    //               font-size: clamp(1.1rem, 0.0713rem + 2.143vh, 1.4rem);
+                    //                font-size: clamp(0.9rem, 0.0713rem + 2.143vh, 1.2rem);
+                    //                font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1.3rem);
+                    //                font-size: clamp(0.8rem, 0.0713rem + 2.143vh, 1rem);
+                    //                 a{
+                    //                 color:black;
+                                   
+                    //                }
+                    //             // .c_icon:first-child{
+                    //             //     width: 24px;    
+                    //             //     height: 32px;;;
+                                
+                    //             // }
+                    //             .c_icon{
+                    //                 width: 1.5rem;;
+                    //             }
+                    //             // .phoneIcon{
+                    //             //     width: 24px;
+                    //             //     height: auto;;;
+                    //             // }
+
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+            .contactBottom{
+                display:none;
+                height: 5%;
+            }
+        }
+    }
+
 }
+
