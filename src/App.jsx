@@ -33,8 +33,8 @@ function App() {
 					color: darkMode && '#ccebff',
 				}}
 			>
-				{/* <Intro /> */}
-				{/* <About /> */}
+				<Intro />
+				<About />
 				{/* <ProductList /> */}
 				<Contact />
 			</div>

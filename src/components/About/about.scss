@@ -119,6 +119,7 @@ background: linear-gradient(45deg, #0e0768
 				position: relative;
 				height: 100%;
 				padding: 0 1rem;
+				
 
 
 				.about-card {
@@ -190,6 +191,7 @@ background: linear-gradient(45deg, #0e0768
 				align-items: center;
 				position: relative;
 				height: 100%;
+				
 
 				.about-card {
 					width: 100%;
@@ -312,9 +314,9 @@ background: linear-gradient(45deg, #0e0768
 			position:relative;
 			flex-direction:column;
 			.about-left{
-				// display:none; 
+				
 				position:absolute;
-				z-index: 200;
+				
 				width: 100%;;
 				padding:0px;
 				inset: 4rem auto  ;
@@ -365,11 +367,15 @@ background: linear-gradient(45deg, #0e0768
 			}
 			.about-right{
 				height: 100%;
+				// * **********
+					// display:none;
+					//* ***************
 				.about-card{
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
 					align-items: center;
+					
 					.pageTitleSec{
 						height: auto;
 						flex:unset;
@@ -403,7 +409,7 @@ background: linear-gradient(45deg, #0e0768
 			.about-left{
 				// display:none; 
 				position:absolute;
-				z-index: 200;
+				
 				width: 100%;;
 				padding:0px;
 				inset: 4rem auto  ;
@@ -496,7 +502,7 @@ background: linear-gradient(45deg, #0e0768
 			.about-left{
 				
 				position:absolute;
-				z-index: 200;
+				// z-index: 200;
 				width: 100%;;
 				padding:0px;
 				inset: 4rem auto  ;
