@@ -87,9 +87,9 @@ const Intro = () => {
 								<div className='normalDesc'>SQL, MongoDB</div>
 							</li>
 						</ul>
-						<div className='downArrow'>
+						{/* <div className='downArrow'>
 							<AiOutlineDown></AiOutlineDown>
-						</div>
+						</div> */}
 					</div>
 				</div>
 				<div className='intro-right'>

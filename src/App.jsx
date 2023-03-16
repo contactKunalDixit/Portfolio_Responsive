@@ -1,15 +1,13 @@
-/* eslint-disable no-unused-vars */
+import Navbar from './components/Navbar/Navbar.jsx';
 import Intro from './components/Intro/Intro';
-// eslint-disable-next-line no-unused-vars
 import About from './components/About/About';
-import ProductList from './components/ProductList/ProductList';
 import Contact from './components/Contact/Contact';
-
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import { useContext } from 'react';
 import { ThemeContext } from './context';
-import Testimonials from './components/Testimonials/Testimonials';
-import Navbar from './components/Navbar/Navbar.jsx';
 import './app.scss';
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 	const theme = useContext(ThemeContext);
@@ -26,6 +24,7 @@ function App() {
 			<div className='Navbar'>
 				<Navbar />
 			</div>
+
 			<div
 				className='Sections'
 				style={{
@@ -33,10 +32,12 @@ function App() {
 					color: darkMode && '#ccebff',
 				}}
 			>
-				<Intro />
-				<About />
-				{/* <ProductList /> */}
-				<Contact />
+				<Routes>
+					<Route path='/' element={<Intro />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='*' element={<ErrorPage />} />
+				</Routes>
 			</div>
 		</div>
 	);

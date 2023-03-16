@@ -4,11 +4,13 @@ import './navbar.scss';
 import { MdImportantDevices } from 'react-icons/md';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
+import { NavLink } from 'react-router-dom';
+
 const Navbar = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
 	return (
-		<div className='navbar'>
+		<nav className='navbar'>
 			<div className='navbar-wrapper'>
 				<div className='navbar-left'>
 					<div className='nav-logo'>
@@ -44,43 +46,38 @@ const Navbar = () => {
 
 					<ul className='navbar-ul header-normalScreen'>
 						<li className='navbar-li'>
-							<a
+							<NavLink
+								to='/'
 								className='navbar-li-a'
-								href='#intro'
-								style={{ color: 'white' }}
+								style={({ isActive }) => {
+									return isActive ? { color: 'pink' } : { color: 'white' };
+								}}
 							>
 								WELCOME
-							</a>
+							</NavLink>
 						</li>
 
 						<li className='navbar-li'>
-							<a
+							<NavLink
 								className='navbar-li-a'
-								href='#about'
-								style={{ color: 'white' }}
+								to='about'
+								style={({ isActive }) => {
+									return isActive ? { color: 'pink' } : { color: 'white' };
+								}}
 							>
 								SERVICES
-							</a>
+							</NavLink>
 						</li>
-
-						{/* <li className='navbar-li'>
-							<a
-								className='navbar-li-a'
-								href='#work'
-								style={{ color: 'white' }}
-							>
-								MY WORK
-							</a>
-						</li> */}
-
 						<li className='navbar-li'>
-							<a
+							<NavLink
 								className='navbar-li-a'
-								href='#contact'
-								style={{ color: 'white' }}
+								to='contact'
+								style={({ isActive }) => {
+									return isActive ? { color: 'pink' } : { color: 'white' };
+								}}
 							>
 								CONTACT
-							</a>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
@@ -88,7 +85,7 @@ const Navbar = () => {
 					<Toggle></Toggle>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
