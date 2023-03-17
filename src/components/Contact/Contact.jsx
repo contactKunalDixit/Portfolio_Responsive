@@ -7,14 +7,15 @@ import emailjs from 'emailjs-com';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
 import Footer from '../Footer/Footer';
+import Modal from '../Modal/Modal';
 
 const Contact = () => {
 	const [nameValue, setNameValue] = useState('');
 	// const [subjectValue, setSubjectValue] = useState('');
 	const [emailValue, setEmailValue] = useState('');
 	const [messageValue, setMessageValue] = useState('');
-
 	const [done, setDone] = useState(false);
+	const [modalOpen, setModalOpen] = useState(false);
 
 	const formRef = useRef();
 	const theme = useContext(ThemeContext);
@@ -38,14 +39,21 @@ const Contact = () => {
 					console.log(error.text);
 				}
 			);
+		setModalOpen(true);
 		setNameValue('');
-		// setSubjectValue('');
+
 		setEmailValue('');
 		setMessageValue('');
 	};
 
 	const formKeyboardTransition = () => {
 		console.log('Transition works');
+	};
+
+	// ! Modal functions:
+
+	const handleCloseModal = () => {
+		setModalOpen(false);
 	};
 
 	return (
@@ -164,12 +172,6 @@ const Contact = () => {
 									<div className='submitButton'>
 										<button className='cLeftSecSubmitButton'>Submit</button>
 									</div>
-
-									{done && (
-										<p style={{ marginTop: '20px' }}>
-											Thank you! We'll be in touch soon.
-										</p>
-									)}
 								</form>
 							</div>
 						</div>
@@ -202,6 +204,8 @@ const Contact = () => {
 						<Footer></Footer>
 					</div>
 				</div>
+
+				<Modal isOpen={modalOpen} onClose={handleCloseModal}></Modal>
 			</div>
 		</>
 	);

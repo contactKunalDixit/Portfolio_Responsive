@@ -388,10 +388,18 @@
 
 			.navbar-center{
 				.header-smallScreen{
-					display:flex
+					// display:flex
+					display:none;
 				}
 				.header-normalScreen{
-					display:none;
+					// display:none;
+					display:flex;
+					padding-left:0px;
+					.navbar-li{
+						.navbar-li-a{
+							font-size: 0.85rem;;
+						}
+					}
 				}
 				
 			}

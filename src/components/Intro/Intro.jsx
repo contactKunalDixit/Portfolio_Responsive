@@ -3,9 +3,6 @@ import './Intro.scss';
 import Me from '../../img/guylaptop.png';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
-// import { FaAngleDown } from 'react-icons/fa';
-import { AiOutlineDown } from 'react-icons/ai';
-import handWave from './../../img/hiIconSVG.png';
 
 const Intro = () => {
 	const theme = useContext(ThemeContext);
