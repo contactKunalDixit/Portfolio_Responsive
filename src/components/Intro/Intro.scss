@@ -249,7 +249,7 @@
 							color:rgb(84, 81, 81);
 							// width:25%;
 							font-size: clamp(1rem, -0.2rem + 1.6vw, 1.5rem);
-							font-size: clamp(0.9rem, 0rem + 1.2vw, 1.1rem);
+							font-size: clamp(0.9rem, 0rem + 1.2vw, 1rem);
 							flex:1;
 							display: flex;
 							justify-content:center;
@@ -265,8 +265,9 @@
 							justify-content:flex-start;
 							align-items: center;
 							letter-spacing: 0.5px;
+							letter-spacing: 1px;;
 							font-weight: 400;
-							font-size: clamp(0.9rem, 0rem + 1.2vw, 1.5rem);
+							font-size: clamp(0.9rem, 0.1rem + 1.2vw, 1.5rem);
 						// font-size: clamp(0.9rem, 0rem + 1.2vw, 1.5rem);
 						}
 					}
@@ -380,12 +381,17 @@
 						// justify-content: center;align-items: flex-start;
 						// flex-direction: column;
 
+
 						li{
 							font-size: clamp(2rem, 0.5rem + 1.2vw, 3.5rem); 
 							margin:1rem;	
 							margin-left:0;
 							.boldHeader {
 								font-size: clamp(1.8rem, 0.1rem + 1.36vw, 3.5rem);
+								font-size: clamp(1rem, 1.2rem + 1.2vw, 1.5rem);
+							}
+							.normalDesc{
+
 							}
 						}
 					}
