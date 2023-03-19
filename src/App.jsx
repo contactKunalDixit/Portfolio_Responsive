@@ -9,6 +9,8 @@ import './app.scss';
 
 import { Route, Routes } from 'react-router-dom';
 
+import { IndexRoute } from 'react-router';
+
 function App() {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
@@ -33,7 +35,7 @@ function App() {
 				}}
 			>
 				<Routes>
-					<Route path='/' element={<Intro />} />
+					<Route path='/' element={<Intro />} index />
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='*' element={<ErrorPage />} />

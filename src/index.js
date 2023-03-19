@@ -5,15 +5,17 @@ import { ThemeProvider } from './context';
 import Modal from './components/Modal/Modal';
 
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<HashRouter>
+			{/* <BrowserRouter> */}
 			<ThemeProvider>
 				<App />
 			</ThemeProvider>
-		</BrowserRouter>
+			{/* </BrowserRouter> */}
+		</HashRouter>
 	</React.StrictMode>,
 	document.getElementById('root')
 );

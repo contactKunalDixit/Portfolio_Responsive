@@ -675,6 +675,7 @@
 			.intro-right{
 				
 				align-items: flex-start;
+				align-items: center;
 				position:absolute;
 				inset: 5rem 1rem 2rem 1rem;
 				
@@ -683,8 +684,9 @@
 
 				.intro-img{
 					
-					max-width: 100%;
-					width:100%;
+					
+					max-width: 800px;
+					width:700px;
 					object-fit:cover;
 					  opacity: 0.25;
 					
