@@ -137,6 +137,7 @@ const Contact = () => {
 											<label htmlFor='userName'>Name:</label>
 											<input
 												id='userName'
+												required
 												type='text'
 												name='user_name'
 												value={nameValue}
@@ -152,6 +153,7 @@ const Contact = () => {
 											<label htmlFor='userEmail'>Email:</label>
 											<input
 												id='userEmail'
+												required
 												type='email'
 												name='user_email'
 												value={emailValue}
@@ -161,6 +163,7 @@ const Contact = () => {
 										<div className='userMessage'>
 											<label htmlFor='userMessage'>Message:</label>
 											<textarea
+												required
 												id='userMessage'
 												name='message'
 												value={messageValue}
