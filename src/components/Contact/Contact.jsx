@@ -32,6 +32,7 @@ const Contact = () => {
 			)
 			.then(
 				(result) => {
+					setModalOpen(true);
 					console.log(result.text);
 					setDone(true);
 				},
@@ -39,7 +40,7 @@ const Contact = () => {
 					console.log(error.text);
 				}
 			);
-		setModalOpen(true);
+		// setModalOpen(true);
 		setNameValue('');
 
 		setEmailValue('');
