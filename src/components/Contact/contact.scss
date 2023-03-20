@@ -507,6 +507,7 @@
                                     width: 90%;
                                     text-align: center;
                                     font-size: clamp(0.9rem, 0rem + 1.2vw, 1.5rem);
+                                    padding:0.5rem 0;
                                 }
                             }
 
@@ -554,6 +555,11 @@
                                     }
                                 }
                             }
+                            .submitButton{
+                                button{
+                                    padding:0.6rem;
+                                }
+                            }
                         }
                     }
                 }
@@ -585,12 +591,13 @@
                 .c_Left{
                     .c_Left_Title{
                             .LgScreen{
-                                font-size: clamp(2rem, -2.7697rem + 7.693vw, 3rem);
+                                font-size: clamp(1.5rem, -2.7697rem + 7.693vw, 2.5rem);
                             }
                             .largeScreenDevices{
                                 .c_Left_Desc{
                                 width: 100%;
                                 font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
+                                padding:0.5rem 0;
                                 }
                             }
                             
@@ -608,11 +615,11 @@
                                 .userName{
                                     label{
                                      font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
-                                         padding:0.5rem;
+                                         padding:0.25rem;
                                     }
                                     input{
                                          font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
-                                         padding:0.5rem;
+                                         padding:0.25rem;
                                          margin:0px;
                                          height: auto;
                                     }
@@ -620,11 +627,11 @@
                                   .userEmail{
                                     label{
                                          font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
-                                         padding:0.5rem;
+                                         padding:0.25rem;
                                     }
                                     input{
                                          font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
-                                         padding:0.5rem;
+                                         padding:0.25rem;
                                          margin:0px;
                                          height: auto;
                                     }
@@ -632,11 +639,11 @@
                                   .userMessage{
                                     label{
                                          font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
-                                         padding:0.5rem;
+                                         padding:0.25rem;
                                     }
                                     textarea{
                                          font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem);
-                                         padding:0.5rem;
+                                         padding:0.25rem;
                                          margin:0px;
                                          height: auto;
                                     }
@@ -644,7 +651,7 @@
                             }
                             .submitButton{
                                 button{
-                                    padding:0.5rem;
+                                    padding:0.25rem;
                                     width: 8rem;
                                      font-size: clamp(0.8rem, -0.1539rem + 1.5386vw, 1rem)
 
