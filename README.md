@@ -1,6 +1,9 @@
-# ********  Website  LIVE **********
+# ********  Website Shine Wave LIVE **********
+              Application and Systems 
+						+	Knowledge management 
+            + product implementation 
+            + and driving product adoption initiatives in IT-enabled and cloud-based ecosystems
 
-# Project Paused  - - Should resume after the side project completion
 # Project 1 : Booking App : LamaDev
 # Project 2 : HR_Unified App
 # Project 3 : JavaScript Mastery
