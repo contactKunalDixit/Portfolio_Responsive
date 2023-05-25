@@ -14,7 +14,7 @@ const Navbar = () => {
 			<div className='navbar-wrapper'>
 				<div className='navbar-left'>
 					<div className='nav-logo'>
-						<a href='#intro'>
+						<NavLink to='/'>
 							<MdImportantDevices
 								style={{
 									margin: '0px 10px',
@@ -29,7 +29,7 @@ const Navbar = () => {
 							>
 								Kunal D.
 							</div>
-						</a>
+						</NavLink>
 					</div>
 				</div>
 				<div className='navbar-center'>
